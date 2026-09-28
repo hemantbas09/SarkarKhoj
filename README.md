@@ -4,6 +4,26 @@
 
 Instead of searching the internet for individual government websites, users can use SarkarKhoj to quickly discover and access official government portals, departments, organizations, and public services.
 
+## 📸 Screenshots
+
+| Home | Search Results | Search with Query |
+|------|----------------|-------------------|
+| ![Home](docs/screenshots/home.png) | ![Search Results](docs/screenshots/search.png) | ![Search with Query](docs/screenshots/search-query.png) |
+
+### Category Pages
+
+| Ministries | Departments | Commissions |
+|------------|-------------|-------------|
+| ![Ministries](docs/screenshots/category.png) | ![Departments](docs/screenshots/category-departments.png) | ![Commissions](docs/screenshots/category-commissions.png) |
+
+| Provincial Governments | Local Governments | Universities |
+|------------------------|-------------------|--------------|
+| ![Provincial Governments](docs/screenshots/category-provincial-governments.png) | ![Local Governments](docs/screenshots/category-local-governments.png) | ![Universities](docs/screenshots/category-universities.png) |
+
+| Public Institutions | Constitutional Bodies |
+|---------------------|-----------------------|
+| ![Public Institutions](docs/screenshots/category-public-institutions.png) | ![Constitutional Bodies](docs/screenshots/category-constitutional-bodies.png) |
+
 ## ✨ Features
 
 - 🔎 Search government websites by name, department, or keyword
