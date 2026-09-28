@@ -1,0 +1,75 @@
+{
+  "breadcrumb": {
+    "icon": "home",
+    "items": [
+      {
+        "label": "Directory",
+        "path": "/"
+      },
+      {
+        "label": "Search Results",
+        "path": "/search"
+      }
+    ],
+    "queryPrefix": "q="
+  },
+  "search": {
+    "query": "finance",
+    "button": "Search",
+    "visitLabel": "Visit Website",
+    "latency": "Search query latency: 18ms",
+    "domainFilter": {
+      "icon": "filter_alt",
+      "label": "Domain-filtered (.gov.np, .mil.np, .edu.np, official corporations)"
+    }
+  },
+  "summary": {
+    "catalog": "Catalog v4.2",
+    "allCategories": "All Categories",
+    "matchesNote": "Matches found in Organization Name, Category, and Description"
+  },
+  "insight": {
+    "icon": "tips_and_updates",
+    "title": "Search Insight",
+    "text": "Searching for tax payments, VAT declarations, or customs duty? All federal monetary transactions are routed via the Central Financial System through verified .gov.np portals.",
+    "rows": [
+      {
+        "label": "Official TLD",
+        "value": ".gov.np"
+      },
+      {
+        "label": "Security Standard",
+        "value": "SSL 256-bit"
+      }
+    ]
+  },
+  "notFound": {
+    "icon": "search_off",
+    "title": "Can't find what you're looking for?",
+    "description": "Browse all civic categories or view the complete alphabetical index of Nepal government services and autonomous agencies.",
+    "button": "Browse All Categories",
+    "secondaryLink": "View A–Z Index"
+  },
+  "relatedServices": {
+    "icon": "bolt",
+    "title": "Related Finance Services",
+    "items": [
+      {
+        "icon": "badge",
+        "label": "PAN Registration"
+      },
+      {
+        "icon": "verified",
+        "label": "Tax Clearance Certificate"
+      },
+      {
+        "icon": "bar_chart",
+        "label": "Federal Budget Speech & Data"
+      },
+      {
+        "icon": "trending_up",
+        "label": "Treasury Revenue Daily Status"
+      }
+    ]
+  }
+}

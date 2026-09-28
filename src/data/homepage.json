@@ -1,0 +1,226 @@
+{
+  "header": {
+    "title": "Nepal Government Websites",
+    "subtitle": "नेपाल सरकार वेबसाइट निर्देशिका",
+    "logo": "https://lh3.googleusercontent.com/aida/AEtjO1XseQTexVOzpMJKpOQS1nEEgxr5CHJe0C83tJMbNPSiOz3YwwdBakOa82mKq3fNMba52nn_5QZDUDprXIQ5G10bGNuHeA7TSsScO2JxZFC8kE8PhQ7iIhGwifasNLQj1xXN_D4hOdyWpmxOg2YDTVa049UmIPtVH9KRE734gmF_-j6dihY7VMfyQWykZZ_qbDLbX6Xfk1yPOrii9VM1iJLkob9UdeiOAGKiua0ytUvw2Jq6HFtRMl_ff1Y",
+    "logoAlt": "Nepal National Emblem Flag Logo",
+    "navLinks": [
+      { "label": "Home", "path": "home", "active": true },
+      { "label": "Ministries", "path": "ministries", "active": false },
+      { "label": "All Categories", "path": "all-categories", "active": false },
+      { "label": "About Directory", "path": "about", "active": false }
+    ],
+    "verifiedBadge": {
+      "top": ".gov.np Verified",
+      "bottom": "Official Directory"
+    }
+  },
+  "hero": {
+    "badge": "Official Directory • नेपाल सरकार",
+    "heading": "Find Nepal Government Websites",
+    "subheading": "Official government websites, organized in one place. Authenticated civic links across all administrative levels.",
+    "searchPlaceholder": "Search government websites by name, department, or keyword...",
+    "searchButton": "Search Directory",
+    "popularSearchesLabel": "Popular searches:",
+    "quickChips": [
+      "Finance",
+      "Home Affairs",
+      "Passport",
+      "Inland Revenue",
+      "Education",
+      "Foreign Affairs",
+      "Health",
+      "Hydropower"
+    ]
+  },
+  "essentialSection": {
+    "eyebrow": "Fast Direct Access",
+    "title": "Essential Government Portals",
+    "description": "Primary executive points of contact, central ministries, and critical citizen registration services.",
+    "portals": [
+      {
+        "icon": "account_balance",
+        "name": "Office of the Prime Minister and Council of Ministers",
+        "nepali": "प्रधानमन्त्री तथा मन्त्रिपरिषद्को कार्यालय",
+        "domain": "opmcm.gov.np",
+        "url": "https://opmcm.gov.np",
+        "description": "Apex executive body overseeing federal policies, governance directives, and cabinet actions."
+      },
+      {
+        "icon": "shield",
+        "name": "Ministry of Home Affairs",
+        "nepali": "गृह मन्त्रालय",
+        "domain": "moha.gov.np",
+        "url": "https://moha.gov.np",
+        "description": "Internal security, national emergency relief, district administration, and citizenship."
+      },
+      {
+        "icon": "receipt_long",
+        "name": "Inland Revenue Department",
+        "nepali": "आन्तरिक राजस्व विभाग",
+        "domain": "ird.gov.np",
+        "url": "https://ird.gov.np",
+        "description": "Taxpayer registration, PAN filing, VAT assessments, and online corporate and individual revenue services."
+      },
+      {
+        "icon": "badge",
+        "name": "Department of Passports",
+        "nepali": "राहदानी विभाग",
+        "domain": "nepalpassport.gov.np",
+        "url": "https://nepalpassport.gov.np",
+        "description": "Official electronic passport issuance, pre-enrollment booking system, and verification services."
+      }
+    ]
+  },
+  "banner": {
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDp03bcOSiKYbz7Et1MDCcrKUtVa6g1PevqfBFeOmT2hIPDq1ZmAOTbxpVcT01yN7zxKCQrvchitT5D9JTdu5H49DsDQ4PsebIpjP2S2cPUWFV2qT6emxCKVo5a4lUC6MFB19KjwKgBgEUTaXulsOYRmfKqNXfmC-rESv83eaSTw3VU15_0xI0XZFVdaW73XW8hOxhBuADByyURgzMm_2bXYI8r2uuZGwzpAJAr-cmy1-NmTjVXIn9i",
+    "imageAlt": "Distant wide architectural view of Singha Durbar and government ministry complex in Kathmandu under a clear blue Himalayan sky",
+    "eyebrow": "Singha Durbar Secretariat",
+    "title": "Connecting citizens to authenticated federal governance",
+    "description": "Direct navigation across all 7 Provinces, 753 Municipalities, and 22 Ministries under the Digital Nepal Framework."
+  },
+  "categoriesSection": {
+    "eyebrow": "Directory Taxonomy",
+    "title": "Browse by Government Category",
+    "description": "Access verified public portals categorized by administrative branch, constitutional authority, and territorial governance.",
+    "categories": [
+      {
+        "icon": "corporate_fare",
+        "count": "22 Ministries",
+        "title": "Ministries",
+        "description": "Central executive policy portfolios including Finance, Foreign Affairs, Health, and Home.",
+        "path": "ministries"
+      },
+      {
+        "icon": "apartment",
+        "count": "54+ Line Depts",
+        "title": "Departments",
+        "description": "Specialized administrative and execution bodies executing public services, licensing, and records.",
+        "path": "departments"
+      },
+      {
+        "icon": "policy",
+        "count": "12 Commissions",
+        "title": "Commissions",
+        "description": "Constitutional, oversight, and statutory regulatory bodies maintaining institutional integrity.",
+        "path": "commissions"
+      },
+      {
+        "icon": "map",
+        "count": "7 Provinces",
+        "title": "Provincial Governments",
+        "description": "Koshi, Madhesh, Bagmati, Gandaki, Lumbini, Karnali, and Sudurpashchim state assemblies.",
+        "path": "provincial-governments"
+      },
+      {
+        "icon": "location_city",
+        "count": "753 Municipalities",
+        "title": "Local Governments",
+        "description": "Metropolitan cities, sub-metropolises, municipalities, and Gaunpalikas providing civic ward services.",
+        "path": "local-governments"
+      },
+      {
+        "icon": "school",
+        "count": "14 Universities",
+        "title": "Universities",
+        "description": "Chartered national universities including Tribhuvan University, Kathmandu University, and regional academies.",
+        "path": "universities"
+      },
+      {
+        "icon": "hub",
+        "count": "40+ Corporations",
+        "title": "Public Institutions",
+        "description": "Public sector enterprises, civil aviation, electricity authorities (NEA), and national communication boards.",
+        "path": "public-institutions"
+      },
+      {
+        "icon": "gavel",
+        "count": "9 Bodies",
+        "title": "Constitutional Bodies",
+        "description": "Supreme Court, Election Commission, CIAA, Auditor General, and National Human Rights Commission.",
+        "path": "constitutional-bodies"
+      }
+    ]
+  },
+  "trustSection": {
+    "eyebrow": "Official Domain Security Protocol",
+    "standards": "NITC Standards",
+    "title": "Citizen Security & Official Web Standards",
+    "description": "All legitimate federal, provincial, and local government platforms operate exclusively on verified .gov.np or educational .edu.np second-level domains with Transport Layer Security (TLS/HTTPS). Always verify the URL in your browser's address bar before providing personal identity information.",
+    "features": [
+      {
+        "icon": "check_circle",
+        "title": "DNSSEC Verified",
+        "subtitle": "National IT Center Host"
+      },
+      {
+        "icon": "security",
+        "title": "Spam & Phishing Shield",
+        "subtitle": "Zero-trust verified registry"
+      }
+    ]
+  },
+  "footer": {
+    "brand": {
+      "title": "Nepal Government Web Directory",
+      "description": "Official centralized civic registry connecting citizens and organizations to all verified digital portals of the Government of Nepal (नेपाल सरकार).",
+      "standards": "National Information Technology Center (NITC) Standards"
+    },
+    "columns": [
+      {
+        "title": "Federal Entities",
+        "links": [
+          "Office of the Prime Minister",
+          "Federal Ministries",
+          "Departments & Bureaus",
+          "Constitutional Bodies"
+        ]
+      },
+      {
+        "title": "Sub-National",
+        "links": [
+          "Koshi Province",
+          "Madhesh Province",
+          "Bagmati Province",
+          "Gandaki Province",
+          "Lumbini Province",
+          "Karnali Province",
+          "Sudurpashchim Province"
+        ]
+      },
+      {
+        "title": "Directory Tools",
+        "links": [
+          "Domain Verification (.gov.np)",
+          "Public Service Directory",
+          "Nagarik App Integration",
+          "Report Broken Link"
+        ]
+      }
+    ],
+    "copyright": "© 2025 Government of Nepal. All Rights Reserved.",
+    "directoryLabel": "Official Public Directory",
+    "backToTop": "Back to top"
+  },
+  "bottomNav": [
+    { "icon": "home", "label": "Home", "path": "home", "active": true },
+    { "icon": "account_balance", "label": "Ministries", "path": "ministries", "active": false },
+    { "icon": "apartment", "label": "Departments", "path": "departments", "active": false },
+    { "icon": "map", "label": "Provinces", "path": "provincial-governments", "active": false },
+    { "icon": "balance", "label": "Bodies", "path": "constitutional-bodies", "active": false }
+  ],
+  "searchIndex": [
+    { "name": "Ministry of Finance", "nepali": "अर्थ मन्त्रालय", "url": "mof.gov.np", "category": "Ministries" },
+    { "name": "Ministry of Home Affairs", "nepali": "गृह मन्त्रालय", "url": "moha.gov.np", "category": "Ministries" },
+    { "name": "Department of Passports", "nepali": "राहदानी विभाग", "url": "nepalpassport.gov.np", "category": "Departments" },
+    { "name": "Inland Revenue Department", "nepali": "आन्तरिक राजस्व विभाग", "url": "ird.gov.np", "category": "Departments" },
+    { "name": "Ministry of Education, Science and Technology", "nepali": "शिक्षा, विज्ञान तथा प्रविधि मन्त्रालय", "url": "moest.gov.np", "category": "Ministries" },
+    { "name": "Ministry of Foreign Affairs", "nepali": "परराष्ट्र मन्त्रालय", "url": "mofa.gov.np", "category": "Ministries" },
+    { "name": "Ministry of Health and Population", "nepali": "स्वास्थ्य तथा जनसंख्या मन्त्रालय", "url": "mohp.gov.np", "category": "Ministries" },
+    { "name": "Department of Electricity Development", "nepali": "विद्युत विकास विभाग", "url": "doed.gov.np", "category": "Departments" },
+    { "name": "Election Commission Nepal", "nepali": "निर्वाचन आयोग", "url": "election.gov.np", "category": "Constitutional" },
+    { "name": "Koshi Provincial Government", "nepali": "कोशी प्रदेश सरकार", "url": "koshi.gov.np", "category": "Provincial" },
+    { "name": "Kathmandu Metropolitan City", "nepali": "काठमाडौं महानगरपालिका", "url": "kathmandu.gov.np", "category": "Local Government" },
+    { "name": "Tribhuvan University", "nepali": "त्रिभुवन विश्वविद्यालय", "url": "tu.edu.np", "category": "Universities" }
+  ]
+}

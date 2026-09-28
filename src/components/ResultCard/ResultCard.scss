@@ -1,0 +1,240 @@
+@use '../../styles/variables' as *;
+
+.result-card {
+  display: flex;
+  flex-direction: column;
+  gap: $space-sm;
+  background: $surface-container-lowest;
+  border: 1px solid $outline-variant;
+  border-left: 3px solid $secondary-fixed-dim;
+  border-radius: $radius-xl;
+  padding: $space-md;
+  box-shadow: $shadow-sm;
+  transition: box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: $shadow-md;
+  }
+
+  &--featured {
+    border-left-color: $primary;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $space-sm;
+  }
+
+  &__badges {
+    display: flex;
+    align-items: center;
+    gap: $space-sm;
+    min-width: 0;
+  }
+
+  &__category {
+    display: inline-flex;
+    align-items: center;
+    gap: $space-xs;
+    padding: 3px $space-sm;
+    border-radius: $radius;
+    background: $secondary-fixed;
+    color: $on-secondary-fixed-variant;
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    .material-symbols-outlined {
+      font-size: 12px;
+    }
+
+    &--primary {
+      background: $primary-fixed;
+      color: $on-primary-fixed-variant;
+    }
+  }
+
+  &__location {
+    display: none;
+    align-items: center;
+    gap: $space-xs;
+    color: $on-surface-variant;
+    font-size: $label-md-size;
+    line-height: $label-md-line;
+    min-width: 0;
+
+    .material-symbols-outlined {
+      font-size: 14px;
+      color: $secondary;
+    }
+  }
+
+  &__domain {
+    display: inline-flex;
+    align-items: center;
+    gap: $space-xs;
+    padding: 3px $space-sm;
+    border-radius: $radius;
+    background: $surface-container-low;
+    color: $secondary;
+    font-size: $label-sm-size;
+    line-height: $label-sm-line;
+    font-weight: 600;
+    white-space: nowrap;
+
+    .material-symbols-outlined {
+      font-size: 13px;
+    }
+  }
+
+  &__verified {
+    color: $tertiary;
+  }
+
+  &__title-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: $space-sm;
+  }
+
+  &__titles {
+    min-width: 0;
+  }
+
+  &__name {
+    margin: 0;
+    color: $on-surface;
+    font-size: $title-md-size;
+    line-height: $title-md-line;
+    font-weight: $title-md-weight;
+  }
+
+  &__nepali {
+    display: block;
+    margin-top: 2px;
+    color: $on-surface-variant;
+    font-size: $label-md-size;
+    line-height: $label-md-line;
+  }
+
+  &__icon {
+    font-size: 28px;
+    color: $secondary;
+    flex-shrink: 0;
+  }
+
+  &__description {
+    margin: 0;
+    color: $on-surface-variant;
+    font-size: $body-sm-size;
+    line-height: $body-sm-line;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &__highlight {
+    background: $primary-fixed;
+    color: $on-primary-fixed-variant;
+    border-radius: 2px;
+    padding: 0 2px;
+  }
+
+  &__meta {
+    display: none;
+    flex-wrap: wrap;
+    gap: $space-sm $space-md;
+  }
+
+  &__meta-item {
+    display: inline-flex;
+    align-items: center;
+    gap: $space-xs;
+    color: $on-surface-variant;
+    font-size: $label-sm-size;
+    line-height: $label-sm-line;
+
+    .material-symbols-outlined {
+      font-size: 14px;
+      color: $secondary;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $space-sm;
+    margin-top: auto;
+  }
+
+  &__location-mobile {
+    display: inline-flex;
+    align-items: center;
+    gap: $space-xs;
+    color: $on-surface-variant;
+    font-size: $label-md-size;
+    line-height: $label-md-line;
+
+    .material-symbols-outlined {
+      font-size: 14px;
+      color: $secondary;
+    }
+  }
+
+  &__visit {
+    display: inline-flex;
+    align-items: center;
+    gap: $space-xs;
+    padding: $space-sm $space-md;
+    border-radius: $radius-lg;
+    background: $primary;
+    color: $on-primary;
+    font-size: $label-md-size;
+    line-height: $label-md-line;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.2s ease;
+
+    &:hover {
+      background: $primary-container;
+    }
+
+    .material-symbols-outlined {
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: $bp-md) {
+    padding: $space-lg;
+
+    &__location {
+      display: inline-flex;
+    }
+
+    &__location-mobile {
+      display: none;
+    }
+
+    &__description {
+      display: block;
+      -webkit-line-clamp: unset;
+    }
+
+    &__meta {
+      display: flex;
+    }
+
+    &__footer {
+      justify-content: flex-end;
+    }
+  }
+}

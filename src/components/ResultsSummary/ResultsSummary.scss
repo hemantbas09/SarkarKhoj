@@ -1,0 +1,93 @@
+@use '../../styles/variables' as *;
+
+.results-summary {
+  &__heading {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: $space-sm;
+  }
+
+  &__title {
+    margin: 0;
+    color: $on-surface;
+    font-size: $headline-lg-mobile-size;
+    line-height: $headline-lg-mobile-line;
+    font-weight: $headline-lg-mobile-weight;
+    letter-spacing: $headline-lg-mobile-tracking;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+  }
+
+  &__count {
+    color: $primary;
+  }
+
+  &__query {
+    font-style: normal;
+    color: $primary;
+  }
+
+  &__pill {
+    display: none;
+    align-items: center;
+    padding: $space-xs $space-sm;
+    border-radius: $radius-full;
+    background: $secondary-fixed;
+    color: $on-secondary-fixed;
+    font-size: $label-sm-size;
+    line-height: $label-sm-line;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  &__all-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: $space-xs $space-sm;
+    border-radius: $radius-full;
+    background: $secondary-fixed;
+    color: $on-secondary-fixed;
+    font-size: $label-sm-size;
+    line-height: $label-sm-line;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+    gap: $space-sm;
+    margin-top: $space-xs;
+  }
+
+  &__note {
+    margin: 0;
+    color: $on-surface-variant;
+    font-size: $body-sm-size;
+    line-height: $body-sm-line;
+  }
+
+  @media (min-width: $bp-md) {
+    &__title {
+      font-size: $headline-md-size;
+      line-height: $headline-md-line;
+      font-weight: $headline-md-weight;
+      white-space: normal;
+    }
+
+    &__pill {
+      display: inline-flex;
+    }
+
+    &__all-pill {
+      display: none;
+    }
+
+    &__meta {
+      display: none;
+    }
+  }
+}

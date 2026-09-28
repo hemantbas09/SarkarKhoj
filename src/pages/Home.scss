@@ -1,0 +1,139 @@
+@use '../styles/variables' as *;
+
+.app {
+  &__main {
+    width: 100%;
+    padding-top: $header-height;
+    padding-bottom: $bottom-nav-height;
+    min-height: calc(100vh - #{$header-height});
+  }
+
+  &__section {
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: $space-md $gutter-mobile $space-lg;
+
+    &--essential {
+      padding-top: $space-lg;
+    }
+
+    &--categories {
+      padding-top: $space-lg;
+      padding-bottom: $space-xl;
+    }
+  }
+
+  &__section-header {
+    display: flex;
+    flex-direction: column;
+    gap: $space-xs;
+    margin-bottom: $space-md;
+  }
+
+  &__eyebrow {
+    display: flex;
+    align-items: center;
+    gap: $space-xs;
+    margin-bottom: $space-xs;
+    color: $primary;
+    font-size: $label-sm-size;
+    line-height: $label-sm-line;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  &__eyebrow-icon {
+    font-size: 16px;
+  }
+
+  &__section-title {
+    margin: 0;
+    color: $on-surface;
+    font-size: $headline-md-size;
+    line-height: $headline-md-line;
+    font-weight: $headline-md-weight;
+    letter-spacing: $headline-md-tracking;
+  }
+
+  &__section-description {
+    margin: 0;
+    max-width: 28rem;
+    color: $secondary;
+    font-size: $body-sm-size;
+    line-height: $body-sm-line;
+  }
+
+  &__portal-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $space-sm;
+  }
+
+  &__category-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $space-sm;
+  }
+
+  @media (min-width: $bp-sm) {
+    &__portal-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: $gutter-mobile;
+    }
+
+    &__category-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: $gutter-mobile;
+    }
+  }
+
+  @media (min-width: $bp-md) {
+    &__main {
+      padding-bottom: 0;
+    }
+
+    &__section {
+      padding: $space-xl $margin;
+
+      &--essential {
+        padding-top: $space-xl;
+      }
+
+      &--categories {
+        padding-top: $space-xl;
+        padding-bottom: $space-xl;
+      }
+    }
+
+    &__section-header {
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: $space-lg;
+    }
+
+    &__section-description {
+      margin-top: 0;
+      max-width: 28rem;
+    }
+
+    &__section-title {
+      font-size: $headline-lg-size;
+      line-height: $headline-lg-line;
+      font-weight: $headline-lg-weight;
+      letter-spacing: $headline-lg-tracking;
+    }
+
+    &__portal-grid {
+      grid-template-columns: repeat(4, 1fr);
+      gap: $gutter;
+    }
+
+    &__category-grid {
+      grid-template-columns: repeat(4, 1fr);
+      gap: $gutter;
+    }
+  }
+}

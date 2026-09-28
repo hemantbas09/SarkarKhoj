@@ -1,0 +1,116 @@
+@use '../../styles/variables' as *;
+
+.banner {
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: $space-sm $gutter-mobile;
+
+  &__image {
+    position: relative;
+    width: 100%;
+    height: 8rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    box-shadow: $shadow-sm;
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to top,
+      rgba($inverse-surface, 0.9),
+      rgba($inverse-surface, 0.4) 60%,
+      transparent
+    );
+  }
+
+  &__content {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    padding: $space-md;
+  }
+
+  &__eyebrow-row {
+    display: inline-flex;
+    align-items: center;
+    gap: $space-sm;
+    margin-bottom: $space-xs;
+  }
+
+  &__eyebrow-icon {
+    font-size: 20px;
+    color: $secondary-fixed;
+  }
+
+  &__eyebrow {
+    color: $secondary-fixed;
+    font-size: $label-sm-size;
+    line-height: $label-sm-line;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin: 0 0 $space-xs;
+    color: $on-primary;
+    font-size: $title-sm-size;
+    line-height: $title-sm-line;
+    font-weight: $title-sm-weight;
+  }
+
+  &__description {
+    display: none;
+    margin: 0;
+    color: $secondary-fixed-dim;
+    font-size: $body-sm-size;
+    line-height: $body-sm-line;
+  }
+
+  @media (min-width: $bp-md) {
+    padding: $space-md $margin;
+
+    &__image {
+      height: 13rem;
+      border-radius: 1rem;
+    }
+
+    &__overlay {
+      background: linear-gradient(
+        to right,
+        rgba($on-surface, 0.9),
+        rgba($on-surface, 0.7) 45%,
+        transparent
+      );
+    }
+
+    &__content {
+      justify-content: center;
+      max-width: 36rem;
+      padding: $space-xl;
+    }
+
+    &__eyebrow-row {
+      gap: $space-sm;
+      margin-bottom: $space-xs;
+    }
+
+    &__title {
+      font-size: $headline-sm-size;
+      line-height: $headline-sm-line;
+      font-weight: $headline-sm-weight;
+    }
+
+    &__description {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,239 @@
+@use '../../styles/variables' as *;
+
+.related-branches {
+  margin-top: $space-md;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $space-sm;
+    margin-bottom: $space-sm;
+  }
+
+  &__heading {
+    min-width: 0;
+  }
+
+  &__eyebrow {
+    display: none;
+  }
+
+  &__title {
+    font-size: $label-lg-size;
+    line-height: $label-lg-line;
+    font-weight: $label-lg-weight;
+    color: $on-surface;
+  }
+
+  &__subtitle {
+    display: none;
+  }
+
+  &__count {
+    font-size: $label-sm-size;
+    line-height: $label-sm-line;
+    color: $secondary;
+    flex-shrink: 0;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $space-sm;
+  }
+
+  &__tile {
+    display: flex;
+    align-items: center;
+    gap: $space-sm;
+    padding: $space-sm;
+    border-radius: $radius-xl;
+    background: $surface-container-lowest;
+    box-shadow: $shadow-sm;
+    text-decoration: none;
+    transition: background 0.15s ease;
+
+    &:hover {
+      background: $surface-container-low;
+    }
+  }
+
+  &__tile-icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: $radius-lg;
+    background: $surface-container;
+    color: $secondary;
+    flex-shrink: 0;
+    transition: color 0.15s ease;
+  }
+
+  &__tile-icon {
+    font-size: 22px;
+  }
+
+  &__tile-body {
+    flex: 1;
+    min-width: 0;
+  }
+
+  &__tile-title {
+    font-size: $title-sm-size;
+    line-height: $title-sm-line;
+    color: $on-surface;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__tile-count {
+    font-size: $label-sm-size;
+    line-height: $label-sm-line;
+    color: $secondary;
+  }
+
+  &__tile-description {
+    display: none;
+  }
+
+  &__tile-chevron {
+    font-size: 18px;
+    color: $secondary;
+    flex-shrink: 0;
+    transition: color 0.15s ease;
+  }
+
+  &__tile-arrow {
+    display: none;
+  }
+
+  &__tile:hover &__tile-icon-wrap {
+    color: $primary;
+  }
+
+  &__tile:hover &__tile-chevron {
+    color: $primary;
+  }
+
+  @media (min-width: $bp-md) {
+    margin-top: $space-xl;
+    padding: $space-lg;
+    background: $surface-container-lowest;
+    border-radius: $radius-xl;
+    box-shadow: $shadow-sm;
+
+    &__header {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: $space-lg;
+      gap: $space-md;
+    }
+
+    &__eyebrow {
+      display: block;
+      font-size: $label-sm-size;
+      line-height: $label-sm-line;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: $secondary;
+      font-weight: 700;
+    }
+
+    &__title {
+      font-size: $headline-sm-size;
+      line-height: $headline-sm-line;
+      font-weight: $headline-sm-weight;
+    }
+
+    &__subtitle {
+      display: block;
+      font-size: $body-sm-size;
+      line-height: $body-sm-line;
+      color: $on-surface-variant;
+    }
+
+    &__count {
+      display: none;
+    }
+
+    &__grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: $gutter;
+    }
+
+    &__tile {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+      padding: $space-lg;
+      background: $surface-container-low;
+
+      &:hover {
+        background: $surface-container;
+      }
+    }
+
+    &__tile-icon-wrap {
+      width: 3rem;
+      height: 3rem;
+      background: $surface-container-lowest;
+      color: $primary;
+      box-shadow: $shadow-sm;
+      margin-bottom: $space-md;
+      transition: transform 0.15s ease, color 0.15s ease;
+    }
+
+    &__tile-icon {
+      font-size: 24px;
+    }
+
+    &__tile-body {
+      width: 100%;
+    }
+
+    &__tile-title {
+      font-size: $title-md-size;
+      line-height: $title-md-line;
+      font-weight: $title-md-weight;
+      white-space: normal;
+      transition: color 0.15s ease;
+    }
+
+    &__tile-count {
+      display: none;
+    }
+
+    &__tile-description {
+      display: block;
+      font-size: $body-sm-size;
+      line-height: $body-sm-line;
+      color: $on-surface-variant;
+      margin-top: $space-xs;
+    }
+
+    &__tile-chevron {
+      display: none;
+    }
+
+    &__tile-arrow {
+      display: inline;
+      font-size: 18px;
+      color: $secondary;
+      margin-top: $space-lg;
+      transition: transform 0.15s ease;
+    }
+
+    &__tile:hover &__tile-icon-wrap {
+      transform: scale(1.05);
+    }
+
+    &__tile:hover &__tile-arrow {
+      transform: translateX(0.25rem);
+    }
+  }
+}

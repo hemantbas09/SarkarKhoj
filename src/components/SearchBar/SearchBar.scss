@@ -1,0 +1,292 @@
+@use '../../styles/variables' as *;
+
+.search-bar {
+  width: 100%;
+  max-width: 48rem;
+  margin: 0 auto;
+
+  &__input-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: $surface-container-lowest;
+    border-radius: $radius-full;
+    padding: $space-xs;
+    box-shadow: $shadow-sm;
+    transition: box-shadow 0.2s ease;
+
+    &:focus-within {
+      box-shadow: $shadow-md;
+    }
+  }
+
+  &__search-icon {
+    flex-shrink: 0;
+    margin-left: $space-md;
+    font-size: 22px;
+    color: $secondary;
+    pointer-events: none;
+  }
+
+  &__input {
+    flex: 1;
+    min-width: 0;
+    height: 2.75rem;
+    padding: 0 $space-sm;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: $on-surface;
+    font-family: $font-sans;
+    font-size: $body-md-size;
+    line-height: $body-md-line;
+
+    &::placeholder {
+      color: $outline;
+    }
+  }
+
+  &__clear {
+    display: none;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    padding: $space-xs;
+    margin-right: $space-xs;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: $secondary;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $on-surface;
+    }
+  }
+
+  &__clear-icon {
+    font-size: 20px;
+  }
+
+  &__submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    flex-shrink: 0;
+    height: 2.75rem;
+    padding: 0 $space-md;
+    margin-right: $space-xs;
+    border: none;
+    border-radius: $radius-full;
+    background: $primary;
+    color: $on-primary;
+    font-family: $font-sans;
+    font-size: $label-md-size;
+    line-height: $label-md-line;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+
+    &:hover {
+      background: $primary-container;
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+
+  &__submit-label {
+    display: none;
+  }
+
+  &__submit-icon {
+    font-size: 18px;
+  }
+
+  &__dropdown {
+    position: absolute;
+    top: calc(100% + $space-sm);
+    left: 0;
+    right: 0;
+    z-index: 30;
+    padding: $space-sm;
+    border-radius: $radius-xl;
+    background: $surface-container-lowest;
+    box-shadow: $shadow-lg;
+    text-align: left;
+  }
+
+  &__dropdown-heading {
+    padding: $space-xs $space-sm;
+    color: $secondary;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  &__no-results {
+    padding: $space-sm $space-md;
+    color: $secondary;
+    font-size: $body-sm-size;
+    line-height: $body-sm-line;
+  }
+
+  &__no-results-query {
+    color: $on-surface;
+  }
+
+  &__result {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $space-sm;
+    width: 100%;
+    padding: $space-sm $space-md;
+    border: none;
+    border-radius: $radius-lg;
+    background: transparent;
+    font-family: inherit;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+
+    &:hover {
+      background: $surface-container;
+    }
+  }
+
+  &__result-info {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+
+  &__result-name {
+    color: $on-surface;
+    font-size: $title-sm-size;
+    line-height: $title-sm-line;
+    font-weight: $title-sm-weight;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color 0.15s ease;
+  }
+
+  &__result:hover &__result-name {
+    color: $primary;
+  }
+
+  &__result-meta {
+    color: $secondary;
+    font-size: $label-sm-size;
+    line-height: $label-sm-line;
+    font-family: ui-monospace, Consolas, monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__result-side {
+    display: flex;
+    align-items: center;
+    gap: $space-xs;
+    flex-shrink: 0;
+    color: $secondary;
+  }
+
+  &__result-category {
+    padding: 2px 6px;
+    border-radius: $radius;
+    background: $surface-container-high;
+    font-size: 11px;
+    line-height: 14px;
+  }
+
+  &__result-icon {
+    font-size: 16px;
+  }
+
+  &__chips {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: $space-xs;
+    margin-top: $space-md;
+  }
+
+  &__chips-label {
+    color: $secondary;
+    font-size: $label-sm-size;
+    line-height: $label-sm-line;
+    margin-right: $space-xs;
+  }
+
+  &__chip {
+    padding: 4px $space-md;
+    border: none;
+    border-radius: $radius-full;
+    background: $surface-container-low;
+    color: $on-surface;
+    font-family: $font-sans;
+    font-size: $label-sm-size;
+    line-height: $label-sm-line;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      background: $surface-container;
+    }
+
+    &--active {
+      background: $primary;
+      color: $on-primary;
+    }
+  }
+
+  @media (min-width: $bp-md) {
+    &__input-wrap {
+      border-radius: $radius-xl;
+      padding: $space-xs;
+      box-shadow: $shadow-md;
+
+      &:focus-within {
+        box-shadow: $shadow-lg;
+      }
+    }
+
+    &__search-icon {
+      margin-left: $space-md;
+      font-size: 24px;
+    }
+
+    &__input {
+      height: 3rem;
+      padding: 0 $space-md;
+    }
+
+    &__clear {
+      display: flex;
+    }
+
+    &__submit {
+      height: 3rem;
+      padding: 0 $space-lg;
+      border-radius: $radius-lg;
+      font-size: $label-lg-size;
+      line-height: $label-lg-line;
+    }
+
+    &__submit-label {
+      display: inline;
+    }
+
+    &__submit-icon {
+      font-size: 18px;
+    }
+  }
+}

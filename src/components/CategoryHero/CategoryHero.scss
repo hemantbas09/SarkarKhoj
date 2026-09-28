@@ -1,0 +1,205 @@
+@use '../../styles/variables' as *;
+
+.category-hero {
+  position: relative;
+  background: $surface-container-low;
+  border-radius: $radius-xl $radius-xl 0 0;
+  padding: $space-md;
+  box-shadow: $shadow-sm;
+  overflow: hidden;
+
+  &__glow {
+    display: none;
+  }
+
+  &__embellish {
+    position: absolute;
+    right: -1rem;
+    bottom: -1.5rem;
+    font-size: 130px;
+    color: $primary;
+    opacity: 0.1;
+    pointer-events: none;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: $space-xs;
+    padding: $space-xs 0.625rem;
+    border-radius: $radius-full;
+    background: rgba($primary, 0.1);
+    color: $primary;
+    font-size: $label-sm-size;
+    line-height: $label-sm-line;
+    font-weight: 600;
+    margin-bottom: $space-sm;
+  }
+
+  &__badge-icon {
+    font-size: 14px;
+  }
+
+  &__badge-dot {
+    display: none;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: $primary;
+  }
+
+  &__badge-location {
+    display: none;
+    color: $secondary;
+    font-weight: 500;
+  }
+
+  &__title-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: $headline-lg-mobile-size;
+    line-height: $headline-lg-mobile-line;
+    font-weight: $headline-lg-mobile-weight;
+    letter-spacing: $headline-lg-mobile-tracking;
+    color: $on-surface;
+  }
+
+  &__nepali {
+    font-size: $title-sm-size;
+    line-height: $title-sm-line;
+    font-weight: 500;
+    color: $primary;
+    margin-top: 0.125rem;
+  }
+
+  &__description {
+    font-size: $body-sm-size;
+    line-height: 1.6;
+    color: $secondary;
+    margin-top: $space-sm;
+  }
+
+  &__description-desktop {
+    display: none;
+  }
+
+  &__stats {
+    display: none;
+  }
+
+  &__stat {
+    display: inline-flex;
+    align-items: center;
+    gap: $space-xs;
+    font-size: $label-md-size;
+    line-height: $label-md-line;
+    font-weight: 600;
+    color: $on-surface;
+  }
+
+  &__stat-icon {
+    font-size: 20px;
+  }
+
+  @media (min-width: $bp-md) {
+    background: $surface-container-lowest;
+    border-radius: $radius-xl;
+    padding: $space-lg;
+    box-shadow: $shadow-sm;
+    overflow: hidden;
+
+    &__embellish {
+      display: none;
+    }
+
+    &__glow {
+      display: block;
+      position: absolute;
+      top: -4rem;
+      right: -4rem;
+      width: 20rem;
+      height: 20rem;
+      border-radius: 50%;
+      background: rgba($primary, 0.05);
+      filter: blur(40px);
+      pointer-events: none;
+    }
+
+    &__badge {
+      background: $surface-container-high;
+      color: $on-surface;
+      padding: $space-xs $space-md;
+      margin-bottom: $space-md;
+    }
+
+    &__badge-label {
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    &__badge-icon {
+      color: $primary;
+      font-size: 18px;
+    }
+
+    &__badge-dot {
+      display: inline-block;
+    }
+
+    &__badge-location {
+      display: inline;
+    }
+
+    &__title-row {
+      flex-direction: row;
+      align-items: baseline;
+      gap: $space-md;
+      margin-bottom: $space-sm;
+    }
+
+    &__title {
+      font-size: $display-size;
+      line-height: $display-line;
+      font-weight: $display-weight;
+      letter-spacing: $display-tracking;
+    }
+
+    &__nepali {
+      font-size: $headline-md-size;
+      line-height: $headline-md-line;
+      font-weight: 400;
+      color: $secondary;
+      margin-top: 0;
+    }
+
+    &__description {
+      display: none;
+    }
+
+    &__description-desktop {
+      display: block;
+      font-size: $body-lg-size;
+      line-height: 1.6;
+      color: $on-surface-variant;
+      max-width: 48rem;
+    }
+
+    &__stats {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: $space-lg;
+      margin-top: $space-lg;
+      padding-top: $space-md;
+      border-top: 1px solid $outline-variant;
+    }
+  }
+}

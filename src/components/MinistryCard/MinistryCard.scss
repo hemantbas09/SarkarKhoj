@@ -1,0 +1,305 @@
+@use '../../styles/variables' as *;
+
+.ministry-card {
+  display: flex;
+  flex-direction: column;
+  gap: $space-sm;
+  background: $surface-container-lowest;
+  border-radius: $radius-xl;
+  padding: $space-md;
+  box-shadow: $shadow-sm;
+  transition: box-shadow 0.2s ease;
+
+  &__top {
+    display: flex;
+    align-items: flex-start;
+    gap: $space-sm;
+  }
+
+  &__icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: $radius-xl;
+    background: $surface-container-low;
+    color: $primary;
+    flex-shrink: 0;
+  }
+
+  &__icon {
+    font-size: 26px;
+  }
+
+  &__body {
+    flex: 1;
+    min-width: 0;
+  }
+
+  &__badge-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $space-sm;
+  }
+
+  &__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: $space-xs;
+    padding: 0.125rem 0.5rem;
+    border-radius: $radius;
+    background: $surface-container;
+    color: $secondary;
+    font-size: $label-sm-size;
+    line-height: $label-sm-line;
+  }
+
+  &__badge-icon {
+    display: none;
+    font-size: 14px;
+  }
+
+  &__open {
+    font-size: 18px;
+    color: $secondary;
+  }
+
+  &__verified-top {
+    display: none;
+  }
+
+  &__verified-icon {
+    font-size: 14px;
+    color: $tertiary;
+  }
+
+  &__name {
+    font-size: $title-md-size;
+    line-height: $title-md-line;
+    font-weight: $title-md-weight;
+    color: $on-surface;
+    margin-top: $space-xs;
+  }
+
+  &__nepali {
+    font-size: $label-sm-size;
+    line-height: $label-sm-line;
+    font-weight: 500;
+    color: $primary;
+  }
+
+  &__description {
+    font-size: $body-sm-size;
+    line-height: 1.6;
+    color: $secondary;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $space-sm;
+    padding-top: $space-sm;
+  }
+
+  &__domain-col {
+    display: flex;
+    align-items: center;
+    gap: $space-xs;
+    min-width: 0;
+  }
+
+  &__domain-label {
+    display: none;
+  }
+
+  &__domain {
+    display: inline-flex;
+    align-items: center;
+    gap: $space-xs;
+    padding: 0.125rem 0.5rem;
+    border-radius: $radius-full;
+    background: $surface-container-high;
+    color: $on-surface;
+    font-size: $label-sm-size;
+    line-height: $label-sm-line;
+    max-width: 100%;
+  }
+
+  &__lock {
+    font-size: 13px;
+    color: $tertiary;
+  }
+
+  &__domain-text {
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__verified {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.125rem;
+    color: $tertiary;
+    font-size: $label-sm-size;
+    line-height: $label-sm-line;
+    flex-shrink: 0;
+  }
+
+  &__verified-label {
+    display: none;
+  }
+
+  &__visit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: $space-xs;
+    height: 2.25rem;
+    padding: 0 0.875rem;
+    border-radius: $radius-lg;
+    background: $primary;
+    color: $on-primary;
+    font-size: $label-sm-size;
+    line-height: $label-sm-line;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: $shadow-sm;
+    flex-shrink: 0;
+    transition: background 0.15s ease;
+
+    &:hover {
+      background: $primary-container;
+    }
+  }
+
+  &__visit-icon {
+    font-size: 15px;
+  }
+
+  @media (min-width: $bp-md) {
+    padding: $space-lg;
+    gap: 0;
+    justify-content: space-between;
+
+    &:hover {
+      box-shadow: $shadow-md;
+    }
+
+    &__top {
+      display: block;
+    }
+
+    &__icon-wrap {
+      display: none;
+    }
+
+    &__badge-row {
+      margin-bottom: $space-md;
+    }
+
+    &__badge {
+      border-radius: $radius-full;
+      padding: 0.25rem $space-sm;
+      font-weight: 600;
+    }
+
+    &__badge-icon {
+      display: inline;
+    }
+
+    &__open {
+      display: none;
+    }
+
+    &__verified-top {
+      display: inline-flex;
+      align-items: center;
+      gap: $space-xs;
+      color: $tertiary;
+      font-size: $label-sm-size;
+      line-height: $label-sm-line;
+      font-weight: 500;
+    }
+
+    &__name {
+      transition: color 0.15s ease;
+    }
+
+    &:hover &__name {
+      color: $primary;
+    }
+
+    &__nepali {
+      font-size: $label-md-size;
+      line-height: $label-md-line;
+      font-weight: 400;
+      color: $secondary;
+      margin-top: 0.125rem;
+    }
+
+    &__description {
+      font-size: $body-md-size;
+      line-height: $body-md-line;
+      color: $on-surface-variant;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-bottom: $space-lg;
+    }
+
+    &__footer {
+      margin: 0 (-$space-lg) (-$space-lg);
+      padding: $space-md $space-lg $space-lg;
+      background: rgba($surface-container-low, 0.4);
+      border-radius: 0 0 $radius-xl $radius-xl;
+    }
+
+    &__domain-col {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+    }
+
+    &__domain-label {
+      display: block;
+      font-size: $label-sm-size;
+      line-height: $label-sm-line;
+      color: $secondary;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+
+    &__domain {
+      background: transparent;
+      padding: 0;
+      border-radius: 0;
+      font-size: $body-sm-size;
+      line-height: $body-sm-line;
+      font-family: monospace;
+      font-weight: 500;
+      color: $on-surface;
+    }
+
+    &__lock {
+      display: none;
+    }
+
+    &__verified {
+      display: none;
+    }
+
+    &__visit {
+      height: auto;
+      padding: 0.5rem $space-md;
+      font-size: $label-lg-size;
+      line-height: $label-lg-line;
+    }
+  }
+}

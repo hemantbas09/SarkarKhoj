@@ -1,0 +1,70 @@
+@use '../../styles/variables' as *;
+
+.search-insight {
+  background: $secondary-fixed;
+  border-radius: $radius-xl;
+  padding: $space-lg;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: $space-sm;
+    margin-bottom: $space-sm;
+  }
+
+  &__icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: $radius-lg;
+    background: $surface-container-lowest;
+    color: $secondary;
+    flex-shrink: 0;
+
+    .material-symbols-outlined {
+      font-size: 20px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    color: $on-secondary-fixed;
+    font-size: $title-sm-size;
+    line-height: $title-sm-line;
+    font-weight: $title-sm-weight;
+  }
+
+  &__text {
+    margin: 0 0 $space-md;
+    color: $on-secondary-fixed-variant;
+    font-size: $body-sm-size;
+    line-height: $body-sm-line;
+  }
+
+  &__rows {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $space-sm;
+    padding: $space-sm 0;
+    border-top: 1px solid rgba(42, 71, 115, 0.15);
+    font-size: $label-md-size;
+    line-height: $label-md-line;
+  }
+
+  &__row-label {
+    color: $on-secondary-fixed-variant;
+  }
+
+  &__row-value {
+    color: $on-secondary-fixed;
+    font-weight: 600;
+  }
+}

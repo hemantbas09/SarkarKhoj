@@ -1,0 +1,176 @@
+@use '../../styles/variables' as *;
+
+.portal-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: $space-md;
+  border-radius: $radius-xl;
+  background: $surface-container-lowest;
+  box-shadow: $shadow-sm;
+  text-decoration: none;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    box-shadow: $shadow-md;
+    transform: translateY(-4px);
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $space-sm;
+    margin-bottom: $space-sm;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: $radius-lg;
+    background: $surface-container-low;
+    color: $primary;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  &:hover &__icon {
+    background: $primary;
+    color: $on-primary;
+  }
+
+  &__icon-symbol {
+    font-size: 20px;
+  }
+
+  &__verified {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px $space-sm;
+    border-radius: $radius;
+    background: $surface-container-high;
+    color: $secondary;
+    font-size: $label-sm-size;
+    line-height: $label-sm-line;
+  }
+
+  &__verified-symbol {
+    font-size: 14px;
+    color: $tertiary;
+  }
+
+  &__nepali {
+    display: block;
+    margin-bottom: $space-xs;
+    color: $secondary;
+    font-size: $label-sm-size;
+    line-height: $label-sm-line;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__title {
+    margin: 0 0 $space-xs;
+    color: $on-surface;
+    font-size: $title-sm-size;
+    line-height: $title-sm-line;
+    font-weight: $title-sm-weight;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: color 0.2s ease;
+  }
+
+  &:hover &__title {
+    color: $primary;
+  }
+
+  &__description {
+    display: none;
+    margin: 0 0 $space-md;
+    color: $secondary;
+    font-size: $body-sm-size;
+    line-height: $body-sm-line;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $space-sm;
+    padding-top: $space-sm;
+    margin-top: auto;
+    color: $secondary;
+    font-size: $label-sm-size;
+    line-height: $label-sm-line;
+    font-weight: 600;
+    transition: color 0.2s ease;
+  }
+
+  &:hover &__footer {
+    color: $primary;
+  }
+
+  &__domain {
+    font-family: ui-monospace, Consolas, monospace;
+    font-size: $body-sm-size;
+    letter-spacing: -0.02em;
+    color: $on-surface-variant;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__visit {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+  }
+
+  &__visit-symbol {
+    font-size: 16px;
+    transition: transform 0.2s ease;
+  }
+
+  &:hover &__visit-symbol {
+    transform: translate(2px, -2px);
+  }
+
+  @media (min-width: $bp-md) {
+    padding: $space-lg;
+
+    &__header {
+      margin-bottom: $space-md;
+    }
+
+    &__icon {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    &__icon-symbol {
+      font-size: 26px;
+    }
+
+    &__nepali {
+      white-space: normal;
+    }
+
+    &__title {
+      font-size: $title-md-size;
+      line-height: $title-md-line;
+      font-weight: $title-md-weight;
+    }
+
+    &__description {
+      display: -webkit-box;
+    }
+  }
+}

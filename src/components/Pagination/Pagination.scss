@@ -1,0 +1,59 @@
+@use '../../styles/variables' as *;
+
+.pagination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $space-sm;
+  margin-top: $space-lg;
+
+  &__info {
+    font-size: $label-md-size;
+    line-height: $label-md-line;
+    color: $on-surface-variant;
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    gap: $space-md;
+  }
+
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid $outline-variant;
+    border-radius: $radius-full;
+    background: $surface-container-lowest;
+    color: $on-surface;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+
+    &:hover:not(:disabled) {
+      background: $primary;
+      border-color: $primary;
+      color: $on-primary;
+    }
+
+    &:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+  }
+
+  &__page {
+    font-size: $label-lg-size;
+    line-height: $label-lg-line;
+    font-weight: $label-lg-weight;
+    color: $on-surface;
+  }
+
+  @media (min-width: $bp-md) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}

@@ -1,0 +1,52 @@
+@use '../../styles/variables' as *;
+
+.breadcrumb {
+  display: none;
+  align-items: center;
+  gap: $space-sm;
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: $space-md $gutter-mobile 0;
+  color: $on-surface-variant;
+  font-size: $label-md-size;
+  line-height: $label-md-line;
+
+  @media (min-width: $bp-md) {
+    display: flex;
+    padding: $space-md $margin 0;
+  }
+
+  &--always {
+    display: flex;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    gap: $space-xs;
+    color: $secondary;
+    text-decoration: none;
+
+    &:hover {
+      color: $primary;
+    }
+
+    &--static {
+      cursor: default;
+    }
+  }
+
+  &__icon {
+    font-size: 16px;
+  }
+
+  &__separator {
+    color: $outline;
+  }
+
+  &__current {
+    color: $on-surface;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,160 @@
+@use '../../styles/variables' as *;
+
+.hero {
+  position: relative;
+  width: 100%;
+  padding: $space-md $gutter-mobile $space-lg;
+  overflow: hidden;
+  background: linear-gradient(
+    to bottom,
+    $surface-container-low,
+    $surface
+  );
+
+  &__glow {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    filter: blur(60px);
+
+    &--primary {
+      top: -3rem;
+      right: -3rem;
+      width: 16rem;
+      height: 16rem;
+      background: rgba($primary-fixed, 0.3);
+    }
+
+    &--tertiary {
+      top: 6rem;
+      left: -2.5rem;
+      width: 12rem;
+      height: 12rem;
+      background: rgba($secondary-container, 0.4);
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $space-sm;
+    max-width: 36rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: $space-xs;
+    padding: 4px $space-sm;
+    border-radius: $radius-full;
+    background: $surface-container-lowest;
+    box-shadow: $shadow-sm;
+  }
+
+  &__badge-dot {
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 50%;
+    background: $primary;
+    animation: hero-pulse 2s ease-in-out infinite;
+  }
+
+  &__badge-text {
+    color: $primary;
+    font-size: $label-sm-size;
+    line-height: $label-sm-line;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  &__heading {
+    margin: 0;
+    color: $on-surface;
+    font-size: $headline-lg-mobile-size;
+    line-height: $headline-lg-mobile-line;
+    font-weight: $headline-lg-mobile-weight;
+    letter-spacing: $headline-lg-mobile-tracking;
+  }
+
+  &__subheading {
+    margin: 0;
+    color: $secondary;
+    font-size: $body-md-size;
+    line-height: $body-md-line;
+  }
+
+  @media (min-width: $bp-md) {
+    padding: 4rem $margin 5rem;
+
+    &__glow {
+      &--primary {
+        top: -8rem;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 47.5rem;
+        height: 21.25rem;
+        background: rgba($primary, 0.05);
+      }
+
+      &--tertiary {
+        top: 2.5rem;
+        left: 15%;
+        width: 18rem;
+        height: 18rem;
+        background: rgba($tertiary, 0.05);
+      }
+    }
+
+    &__content {
+      max-width: 64rem;
+    }
+
+    &__badge {
+      padding: $space-xs $space-md;
+      margin-bottom: $space-lg;
+
+      &-dot {
+        width: 0.5rem;
+        height: 0.5rem;
+      }
+    }
+
+    &__badge-text {
+      color: $secondary;
+      letter-spacing: 0.1em;
+    }
+
+    &__heading {
+      margin-bottom: $space-md;
+      max-width: 48rem;
+      font-size: $display-size;
+      line-height: $display-line;
+      font-weight: $display-weight;
+      letter-spacing: $display-tracking;
+    }
+
+    &__subheading {
+      max-width: 42rem;
+      margin-bottom: $space-xl;
+      font-size: $body-lg-size;
+      line-height: $body-lg-line;
+    }
+  }
+}
+
+@keyframes hero-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}

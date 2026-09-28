@@ -1,0 +1,50 @@
+@use '../../styles/variables' as *;
+
+.region-filter {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-sm;
+  margin-top: $space-md;
+
+  &__field {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: $surface-container-lowest;
+    border: 1px solid $outline-variant;
+    border-radius: $radius-lg;
+    overflow: hidden;
+  }
+
+  &__icon {
+    position: absolute;
+    left: $space-sm;
+    font-size: 1.125rem;
+    color: $on-surface-variant;
+    pointer-events: none;
+  }
+
+  &__select {
+    width: 100%;
+    appearance: none;
+    border: none;
+    background: transparent;
+    padding: $space-sm $space-lg $space-sm 2.25rem;
+    font-family: inherit;
+    font-size: $label-lg-size;
+    line-height: $label-lg-line;
+    font-weight: $label-lg-weight;
+    color: $on-surface;
+    cursor: pointer;
+    outline: none;
+
+    &:focus-visible {
+      box-shadow: 0 0 0 2px $primary-container;
+    }
+  }
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: 1fr 1fr;
+    gap: $space-md;
+  }
+}

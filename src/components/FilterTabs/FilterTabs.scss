@@ -1,0 +1,62 @@
+@use '../../styles/variables' as *;
+
+.filter-tabs {
+  display: flex;
+  gap: $space-sm;
+  overflow-x: auto;
+  padding-bottom: $space-xs;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__tab {
+    display: inline-flex;
+    align-items: center;
+    gap: $space-xs;
+    padding: $space-sm $space-md;
+    border: 1px solid $outline-variant;
+    border-radius: $radius-full;
+    background: $surface-container-lowest;
+    color: $on-surface;
+    font-size: $label-md-size;
+    line-height: $label-md-line;
+    font-weight: 500;
+    font-family: inherit;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      border-color: $secondary;
+    }
+
+    &--active {
+      background: $secondary;
+      border-color: $secondary;
+      color: $on-secondary;
+
+      .filter-tabs__count {
+        background: rgba(255, 255, 255, 0.2);
+        color: $on-secondary;
+      }
+    }
+  }
+
+  &__count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 5px;
+    border-radius: $radius-full;
+    background: $surface-container;
+    color: $on-surface-variant;
+    font-size: 11px;
+    line-height: 1;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,103 @@
+@use '../../styles/variables' as *;
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: $surface-container-lowest;
+  border: 1px solid $outline-variant;
+  border-radius: $radius-xl;
+  padding: $space-lg $space-md;
+  box-shadow: $shadow-sm;
+
+  &__icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: $radius-xl;
+    background: $secondary-fixed;
+    color: $secondary;
+    margin-bottom: $space-sm;
+
+    .material-symbols-outlined {
+      font-size: 24px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 $space-xs;
+    color: $on-surface;
+    font-size: $title-md-size;
+    line-height: $title-md-line;
+    font-weight: $title-md-weight;
+  }
+
+  &__description {
+    margin: 0 0 $space-md;
+    color: $on-surface-variant;
+    font-size: $body-sm-size;
+    line-height: $body-sm-line;
+    max-width: 24rem;
+  }
+
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: $space-sm;
+    width: 100%;
+    padding: $space-sm $space-md;
+    border: none;
+    border-radius: $radius-lg;
+    background: $inverse-surface;
+    color: $inverse-on-surface;
+    font-size: $label-lg-size;
+    line-height: $label-lg-line;
+    font-weight: $label-lg-weight;
+    font-family: inherit;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.9;
+    }
+
+    .material-symbols-outlined {
+      font-size: 18px;
+    }
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: $space-xs;
+    margin-top: $space-sm;
+    padding: $space-xs;
+    border: none;
+    background: transparent;
+    color: $secondary;
+    font-size: $label-md-size;
+    line-height: $label-md-line;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+
+    &:hover {
+      color: $primary;
+    }
+
+    .material-symbols-outlined {
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: $bp-md) {
+    align-items: flex-start;
+    text-align: left;
+    padding: $space-lg;
+  }
+}

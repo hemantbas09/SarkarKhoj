@@ -1,0 +1,58 @@
+@use '../styles/variables' as *;
+
+.category-page {
+  width: 100%;
+  min-height: calc(100vh - #{$header-height});
+  padding-top: $header-height;
+  padding-bottom: $bottom-nav-height;
+  background: $surface;
+
+  &__band {
+    width: 100%;
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding-left: $gutter-mobile;
+    padding-right: $gutter-mobile;
+  }
+
+  &__body {
+    padding-top: $space-sm;
+    padding-bottom: $space-lg;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $space-sm;
+    margin-top: $space-sm;
+  }
+
+  @media (min-width: $bp-md) {
+    padding-bottom: 0;
+
+    &__band {
+      background: rgba($surface-container-low, 0.6);
+      padding-bottom: $space-xl;
+    }
+
+    &__container {
+      padding-left: $margin;
+      padding-right: $margin;
+    }
+
+    &__body {
+      padding-top: $space-xl;
+      padding-bottom: $space-xl;
+    }
+
+    &__grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: $gutter;
+      margin-top: 0;
+    }
+  }
+}

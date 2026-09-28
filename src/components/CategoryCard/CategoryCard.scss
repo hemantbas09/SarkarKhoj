@@ -1,0 +1,128 @@
+@use '../../styles/variables' as *;
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: $space-md;
+  border-radius: $radius-xl;
+  background: $surface-container-lowest;
+  box-shadow: $shadow-sm;
+  text-decoration: none;
+  transition: box-shadow 0.2s ease, background-color 0.2s ease;
+
+  &:hover {
+    box-shadow: $shadow-md;
+    background: $surface-container-low;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $space-sm;
+    margin-bottom: $space-sm;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: $radius-lg;
+    background: $surface-container;
+    color: $primary;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  &:hover &__icon {
+    background: $primary;
+    color: $on-primary;
+  }
+
+  &__icon-symbol {
+    font-size: 22px;
+  }
+
+  &__count {
+    padding: 2px $space-sm;
+    border-radius: $radius-full;
+    background: $surface-container;
+    color: $secondary;
+    font-size: $label-sm-size;
+    line-height: $label-sm-line;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  &__title {
+    margin: 0 0 $space-xs;
+    color: $on-surface;
+    font-size: $title-sm-size;
+    line-height: $title-sm-line;
+    font-weight: $title-sm-weight;
+    transition: color 0.2s ease;
+  }
+
+  &:hover &__title {
+    color: $primary;
+  }
+
+  &__description {
+    margin: 0 0 $space-md;
+    color: $secondary;
+    font-size: $body-sm-size;
+    line-height: $body-sm-line;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: auto;
+    color: $secondary;
+    font-size: $label-sm-size;
+    line-height: $label-sm-line;
+    font-weight: 600;
+    transition: color 0.2s ease;
+  }
+
+  &:hover &__link {
+    color: $primary;
+  }
+
+  &__link-symbol {
+    font-size: 16px;
+    transition: transform 0.2s ease;
+  }
+
+  &:hover &__link-symbol {
+    transform: translateX(4px);
+  }
+
+  @media (min-width: $bp-md) {
+    padding: $space-lg;
+
+    &__header {
+      margin-bottom: $space-md;
+    }
+
+    &__title {
+      font-size: $title-md-size;
+      line-height: $title-md-line;
+      font-weight: $title-md-weight;
+    }
+
+    &__description {
+      margin-bottom: $space-lg;
+    }
+  }
+}

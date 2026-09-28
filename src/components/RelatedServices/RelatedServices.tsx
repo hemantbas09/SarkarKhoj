@@ -1,0 +1,31 @@
+import data from '../../data/searchResults.json'
+import './RelatedServices.scss'
+
+function RelatedServices() {
+  const { relatedServices } = data
+  return (
+    <aside className="related-services">
+      <div className="related-services__header">
+        <span className="material-symbols-outlined related-services__icon">
+          {relatedServices.icon}
+        </span>
+        <h3 className="related-services__title">{relatedServices.title}</h3>
+      </div>
+      <ul className="related-services__list">
+        {relatedServices.items.map((item) => (
+          <li key={item.label} className="related-services__item">
+            <span className="material-symbols-outlined related-services__item-icon">
+              {item.icon}
+            </span>
+            <span className="related-services__item-label">{item.label}</span>
+            <span className="material-symbols-outlined related-services__chevron">
+              chevron_right
+            </span>
+          </li>
+        ))}
+      </ul>
+    </aside>
+  )
+}
+
+export default RelatedServices
