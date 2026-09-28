@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import data from '../../data/homepage.json'
 import categoryData from '../../data/categories'
+import { useLanguage } from '../../i18n'
 import './BottomNav.scss'
 
 const categoryKeys = Object.keys(categoryData.categories)
@@ -12,6 +13,7 @@ function resolveRoute(path: string): string | null {
 }
 
 function BottomNav() {
+  const { t } = useLanguage()
   return (
     <nav className="bottom-nav">
       {data.bottomNav.map((item) => {
@@ -23,7 +25,9 @@ function BottomNav() {
             <span className="material-symbols-outlined bottom-nav__icon">
               {item.icon}
             </span>
-            <span className="bottom-nav__label">{item.label}</span>
+            <span className="bottom-nav__label">
+              {t.bottomNav[item.path] ?? item.label}
+            </span>
           </>
         )
         return to ? (

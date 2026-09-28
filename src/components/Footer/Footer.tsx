@@ -1,8 +1,8 @@
-import data from '../../data/homepage.json'
+import { useLanguage } from '../../i18n'
 import './Footer.scss'
 
 function Footer() {
-  const { footer } = data
+  const { t } = useLanguage()
 
   const handleBackToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -12,9 +12,9 @@ function Footer() {
     <footer className="footer">
       <div className="footer__inner">
         <div className="footer__bottom">
-          <span className="footer__copyright">{footer.copyright}</span>
+          <span className="footer__copyright">{t.footer.copyright}</span>
           <span className="footer__directory-label">
-            {footer.directoryLabel}
+            {t.footer.directoryLabel}
           </span>
           <button
             className="footer__back-to-top"
@@ -24,7 +24,7 @@ function Footer() {
             <span className="material-symbols-outlined footer__back-to-top-icon">
               arrow_upward
             </span>
-            <span>{footer.backToTop}</span>
+            <span>{t.footer.backToTop}</span>
           </button>
         </div>
       </div>

@@ -1,21 +1,22 @@
-import data from '../../data/searchResults.json'
+import { useLanguage } from '../../i18n'
 import './ResultsSummary.scss'
 
 function ResultsSummary({ query, count }: { query: string; count: number }) {
-  const { summary } = data
+  const { t } = useLanguage()
   return (
     <div className="results-summary">
       <div className="results-summary__heading">
         <h1 className="results-summary__title">
-          <span className="results-summary__count">{count}</span>{' '}
-          Results for <em className="results-summary__query">“{query}”</em>
+          {t.search.summary.resultsFor(count, query)}
         </h1>
       </div>
       <div className="results-summary__meta">
         <span className="results-summary__all-pill">
-          {summary.allCategories}
+          {t.search.summary.allCategories}
         </span>
-        <p className="results-summary__note">{summary.matchesNote}</p>
+        <p className="results-summary__note">
+          {t.search.summary.matchesNote}
+        </p>
       </div>
     </div>
   )

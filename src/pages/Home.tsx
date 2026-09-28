@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import data from '../data/homepage.json'
+import { useLanguage } from '../i18n'
 import Hero from '../components/Hero/Hero'
 import PortalCard from '../components/PortalCard/PortalCard'
 import Banner from '../components/Banner/Banner'
@@ -10,6 +11,7 @@ import './Home.scss'
 
 function Home() {
   const location = useLocation()
+  const { t } = useLanguage()
 
   useEffect(() => {
     const state = location.state as { scrollTo?: string } | null
@@ -32,14 +34,12 @@ function Home() {
               <span className="material-symbols-outlined app__eyebrow-icon">
                 stars
               </span>
-              <span>{data.essentialSection.eyebrow}</span>
+              <span>{t.essential.eyebrow}</span>
             </div>
-            <h2 className="app__section-title">
-              {data.essentialSection.title}
-            </h2>
+            <h2 className="app__section-title">{t.essential.title}</h2>
           </div>
           <p className="app__section-description">
-            {data.essentialSection.description}
+            {t.essential.description}
           </p>
         </div>
         <div className="app__portal-grid">
@@ -61,14 +61,14 @@ function Home() {
               <span className="material-symbols-outlined app__eyebrow-icon">
                 folder_open
               </span>
-              <span>{data.categoriesSection.eyebrow}</span>
+              <span>{t.categoriesSection.eyebrow}</span>
             </div>
             <h2 className="app__section-title">
-              {data.categoriesSection.title}
+              {t.categoriesSection.title}
             </h2>
           </div>
           <p className="app__section-description">
-            {data.categoriesSection.description}
+            {t.categoriesSection.description}
           </p>
         </div>
         <div className="app__category-grid">

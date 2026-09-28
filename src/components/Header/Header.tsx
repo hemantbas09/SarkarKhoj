@@ -1,6 +1,7 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import data from '../../data/homepage.json'
 import categoryData from '../../data/categories'
+import { useLanguage } from '../../i18n'
 import './Header.scss'
 
 const categoryKeys = Object.keys(categoryData.categories)
@@ -13,6 +14,7 @@ function resolveRoute(path: string): string | null {
 
 function Header() {
   const { header } = data
+  const { lang, setLang, t } = useLanguage()
   const navigate = useNavigate()
   const location = useLocation()
 
@@ -46,8 +48,8 @@ function Header() {
               alt={header.logoAlt}
             />
             <div className="header__titles">
-              <span className="header__title">{header.title}</span>
-              <span className="header__subtitle">{header.subtitle}</span>
+              <span className="header__title">{t.header.title}</span>
+              <span className="header__subtitle">{t.header.subtitle}</span>
             </div>
           </Link>
         </div>
@@ -56,6 +58,10 @@ function Header() {
           {header.navLinks.map((link) => {
             const className = `header__nav-link${link.active ? ' header__nav-link--active' : ''}`
             const ariaCurrent = link.active ? 'page' : undefined
+            const label =
+              link.path === 'all-categories'
+                ? t.header.navAllCategories
+                : t.header.navHome
             if (link.path === 'all-categories') {
               return (
                 <button
@@ -64,7 +70,7 @@ function Header() {
                   className={`${className} header__nav-link--button`}
                   onClick={handleAllCategories}
                 >
-                  {link.label}
+                  {label}
                 </button>
               )
             }
@@ -76,7 +82,7 @@ function Header() {
                 className={className}
                 aria-current={ariaCurrent}
               >
-                {link.label}
+                {label}
               </Link>
             ) : (
               <a
@@ -85,25 +91,28 @@ function Header() {
                 href={`#${link.path}`}
                 aria-current={ariaCurrent}
               >
-                {link.label}
+                {label}
               </a>
             )
           })}
         </nav>
 
         <div className="header__right">
-          <div className="header__verified">
-            <span className="material-symbols-outlined header__verified-icon">
-              verified
-            </span>
-            <div className="header__verified-text">
-              <span className="header__verified-top">
-                {header.verifiedBadge.top}
-              </span>
-              <span className="header__verified-bottom">
-                {header.verifiedBadge.bottom}
-              </span>
-            </div>
+          <div className="header__lang-toggle" role="group" aria-label={t.header.langToggleAria}>
+            <button
+              type="button"
+              className={`header__lang-option${lang === 'en' ? ' header__lang-option--active' : ''}`}
+              onClick={() => setLang('en')}
+            >
+              EN
+            </button>
+            <button
+              type="button"
+              className={`header__lang-option${lang === 'np' ? ' header__lang-option--active' : ''}`}
+              onClick={() => setLang('np')}
+            >
+              नेपाली
+            </button>
           </div>
           <div className="header__avatar">
             <span className="material-symbols-outlined header__avatar-icon">

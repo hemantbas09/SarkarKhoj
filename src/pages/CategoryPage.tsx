@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import data from '../data/categories'
+import { useLanguage, type CategoryKey } from '../i18n'
 import Breadcrumb from '../components/Breadcrumb/Breadcrumb'
 import CategoryHero from '../components/CategoryHero/CategoryHero'
 import CategorySearch from '../components/CategorySearch/CategorySearch'
@@ -18,12 +19,14 @@ const DEFAULT_CATEGORY = 'ministries'
 
 function CategoryPage() {
   const [searchParams] = useSearchParams()
+  const { t } = useLanguage()
   const requested = searchParams.get('c') ?? DEFAULT_CATEGORY
   const key =
     requested in categories
       ? (requested as keyof typeof categories)
       : DEFAULT_CATEGORY
   const category = categories[key]
+  const dict = t.categoryPage.categories[key as CategoryKey]
 
   const [query, setQuery] = useState('')
   const [activeSector, setActiveSector] = useState('all')
@@ -107,14 +110,18 @@ function CategoryPage() {
       <div className="category-page__band">
         <Breadcrumb
           icon={data.breadcrumb.icon}
-          items={data.breadcrumb.items}
-          current={category.breadcrumbCurrent}
+          items={[
+            { label: t.categoryPage.breadcrumbHome, path: '/' },
+            { label: t.categoryPage.breadcrumbCategories, path: '/' },
+          ]}
+          current={dict.breadcrumbCurrent}
           alwaysVisible
         />
         <div className="category-page__container">
-          <CategoryHero hero={category.hero} />
+          <CategoryHero hero={category.hero} categoryKey={key as CategoryKey} />
           <CategorySearch
             search={category.search}
+            categoryKey={key as CategoryKey}
             value={query}
             onChange={setQuery}
             activeSector={activeSector}
@@ -123,7 +130,7 @@ function CategoryPage() {
           />
           {regionFilter && (
             <RegionFilter
-              config={regionFilter}
+              config={dict.regionFilter ?? regionFilter}
               provinces={provinces}
               districts={districts}
               activeProvince={activeProvince}
@@ -143,11 +150,15 @@ function CategoryPage() {
           ))}
         </div>
         {filtered.length === 0 && (
-          <CategoryEmptyState emptyState={category.emptyState} onReset={handleReset} />
+          <CategoryEmptyState
+            emptyState={category.emptyState}
+            categoryKey={key as CategoryKey}
+            onReset={handleReset}
+          />
         )}
         {pagination && (
           <Pagination
-            config={pagination}
+            pageSize={pagination.pageSize}
             page={safePage}
             totalPages={totalPages}
             totalCount={filtered.length}
@@ -157,7 +168,10 @@ function CategoryPage() {
             }}
           />
         )}
-        <TrustNotice trustNotice={category.trustNotice} />
+        <TrustNotice
+          trustNotice={category.trustNotice}
+          categoryKey={key as CategoryKey}
+        />
         <RelatedBranches />
       </div>
     </div>

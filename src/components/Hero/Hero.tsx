@@ -1,9 +1,9 @@
-import data from '../../data/homepage.json'
+import { useLanguage } from '../../i18n'
 import SearchBar from '../SearchBar/SearchBar'
 import './Hero.scss'
 
 function Hero() {
-  const { hero } = data
+  const { t } = useLanguage()
 
   return (
     <section className="hero">
@@ -14,10 +14,10 @@ function Hero() {
       <div className="hero__content">
         <div className="hero__badge">
           <span className="hero__badge-dot" aria-hidden="true" />
-          <span className="hero__badge-text">{hero.badge}</span>
+          <span className="hero__badge-text">{t.hero.badge}</span>
         </div>
-        <h1 className="hero__heading">{hero.heading}</h1>
-        <p className="hero__subheading">{hero.subheading}</p>
+        <h1 className="hero__heading">{t.hero.heading}</h1>
+        <p className="hero__subheading">{t.hero.subheading}</p>
         <SearchBar />
       </div>
     </section>

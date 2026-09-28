@@ -7,11 +7,7 @@
     "navLinks": [
       { "label": "Home", "path": "home", "active": true },
       { "label": "All Categories", "path": "all-categories", "active": false }
-    ],
-    "verifiedBadge": {
-      "top": ".gov.np Verified",
-      "bottom": "Official Directory"
-    }
+    ]
   },
   "hero": {
     "badge": "Official Directory • नेपाल सरकार",

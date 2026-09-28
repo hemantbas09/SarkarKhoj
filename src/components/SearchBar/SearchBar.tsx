@@ -1,15 +1,15 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import data from '../../data/homepage.json'
 import categoryData from '../../data/categories'
+import { useLanguage } from '../../i18n'
 import { searchItems } from '../../utils/search'
 import './SearchBar.scss'
 
 const items = categoryData.items
-const categories = categoryData.categories
 
 function SearchBar() {
   const navigate = useNavigate()
+  const { lang, t } = useLanguage()
   const [query, setQuery] = useState('')
   const [focused, setFocused] = useState(false)
   const wrapperRef = useRef<HTMLDivElement>(null)
@@ -48,7 +48,7 @@ function SearchBar() {
           className="search-bar__input"
           type="text"
           autoComplete="off"
-          placeholder={data.hero.searchPlaceholder}
+          placeholder={t.hero.searchPlaceholder}
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onFocus={() => setFocused(true)}
@@ -77,7 +77,7 @@ function SearchBar() {
             <div className="search-bar__dialog-list">
               {results.length === 0 ? (
                 <div className="search-bar__no-results">
-                  No verified portals found matching &ldquo;{query}&rdquo;.
+                  {t.hero.noResults(query)}
                 </div>
               ) : (
                 results.map((item) => (
@@ -90,15 +90,20 @@ function SearchBar() {
                   >
                     <div className="search-bar__result-info">
                       <span className="search-bar__result-name">
-                        {item.name}
+                        {lang === 'np' ? item.nepali : item.name}
                       </span>
                       <span className="search-bar__result-meta">
-                        {item.domain} &bull; {item.nepali}
+                        {item.domain} &bull;{' '}
+                        {lang === 'np' ? item.name : item.nepali}
                       </span>
                     </div>
                     <div className="search-bar__result-side">
                       <span className="search-bar__result-category">
-                        {categories[item.code as keyof typeof categories]?.breadcrumbCurrent ?? item.sectorLabel}
+                        {t.categoryPage.categories[
+                          item.code as keyof typeof t.categoryPage.categories
+                        ]?.breadcrumbCurrent ??
+                          t.sectors[item.sectorLabel] ??
+                          item.sectorLabel}
                       </span>
                       <span className="material-symbols-outlined search-bar__result-icon">
                         north_east
@@ -110,7 +115,9 @@ function SearchBar() {
             </div>
             <div className="search-bar__dialog-footer">
               <span className="search-bar__dialog-count">
-                {results.length} result{results.length === 1 ? '' : 's'}
+                {lang === 'np'
+                  ? `${results.length} परिणाम`
+                  : `${results.length} result${results.length === 1 ? '' : 's'}`}
               </span>
               <button
                 type="button"
@@ -118,7 +125,7 @@ function SearchBar() {
                 onMouseDown={(e) => e.preventDefault()}
                 onClick={goAll}
               >
-                See all
+                {lang === 'np' ? 'सबै हेर्नुहोस्' : 'See all'}
                 <span className="material-symbols-outlined search-bar__see-all-icon">
                   arrow_forward
                 </span>
@@ -130,9 +137,9 @@ function SearchBar() {
 
       <div className="search-bar__chips">
         <span className="search-bar__chips-label">
-          {data.hero.popularSearchesLabel}
+          {t.hero.popularSearchesLabel}
         </span>
-        {data.hero.quickChips.map((chip) => (
+        {t.hero.quickChips.map((chip) => (
           <button
             key={chip}
             className={`search-bar__chip${query === chip ? ' search-bar__chip--active' : ''}`}

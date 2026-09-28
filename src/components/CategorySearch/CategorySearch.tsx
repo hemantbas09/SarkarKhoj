@@ -1,10 +1,12 @@
 import data from '../../data/categories'
+import { useLanguage, type CategoryKey } from '../../i18n'
 import './CategorySearch.scss'
 
 type Category = (typeof data.categories)[keyof typeof data.categories]
 
 function CategorySearch({
   search,
+  categoryKey,
   value,
   onChange,
   activeSector,
@@ -12,12 +14,16 @@ function CategorySearch({
   visibleCount,
 }: {
   search: Category['search']
+  categoryKey: CategoryKey
   value: string
   onChange: (value: string) => void
   activeSector: string
   onSelectSector: (sector: string) => void
   visibleCount: number
 }) {
+  const { t } = useLanguage()
+  const dict = t.categoryPage.categories[categoryKey]
+  const common = t.categoryPage.common
   const countText = value.trim() ? visibleCount : search.totalCount
 
   return (
@@ -30,7 +36,7 @@ function CategorySearch({
           <input
             className="category-search__input"
             type="search"
-            placeholder={search.placeholder}
+            placeholder={dict.searchPlaceholder}
             value={value}
             onChange={(e) => onChange(e.target.value)}
           />
@@ -45,15 +51,15 @@ function CategorySearch({
           <span className="material-symbols-outlined">close</span>
         </button>
         <div className="category-search__meta">
-          <span className="category-search__showing">{search.showingLabel}</span>
+          <span className="category-search__showing">{common.showing}</span>
           <span className="category-search__showing-count">
-            {visibleCount} of {search.totalCount} {search.countLabel}
+            {visibleCount} of {search.totalCount} {common.active}
           </span>
         </div>
       </div>
 
       <div className="category-search__chips">
-        {search.chips.map((chip) => (
+        {dict.chips.map((chip) => (
           <button
             key={chip.filter}
             type="button"
@@ -68,8 +74,8 @@ function CategorySearch({
       </div>
 
       <div className="category-search__pills">
-        <span className="category-search__filter-label">{search.filterLabel}</span>
-        {search.pills.map((pill) => (
+        <span className="category-search__filter-label">{dict.filterLabel}</span>
+        {dict.pills.map((pill) => (
           <button
             key={pill.filter}
             type="button"

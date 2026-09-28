@@ -1,4 +1,5 @@
 import data from '../../data/categories'
+import { useLanguage, itemDescription } from '../../i18n'
 import './MinistryCard.scss'
 
 function MinistryCard({
@@ -6,6 +7,11 @@ function MinistryCard({
 }: {
   ministry: (typeof data.items)[number]
 }) {
+  const { lang, t } = useLanguage()
+  const common = t.categoryPage.common
+  const primary = lang === 'np' ? ministry.nepali : ministry.name
+  const secondary = lang === 'np' ? ministry.name : ministry.nepali
+
   return (
     <article className="ministry-card">
       <div className="ministry-card__top">
@@ -20,7 +26,7 @@ function MinistryCard({
               <span className="material-symbols-outlined ministry-card__badge-icon">
                 {ministry.icon}
               </span>
-              {ministry.sectorLabel}
+              {t.sectors[ministry.sectorLabel] ?? ministry.sectorLabel}
             </span>
             <span className="material-symbols-outlined ministry-card__open">
               open_in_new
@@ -29,17 +35,21 @@ function MinistryCard({
               <span className="material-symbols-outlined ministry-card__verified-icon">
                 check_circle
               </span>
-              Verified .gov.np
+              {common.verifiedGovNp}
             </span>
           </div>
-          <h3 className="ministry-card__name">{ministry.name}</h3>
-          <div className="ministry-card__nepali">{ministry.nepali}</div>
+          <h3 className="ministry-card__name">{primary}</h3>
+          <div className="ministry-card__nepali">{secondary}</div>
         </div>
       </div>
-      <p className="ministry-card__description">{ministry.description}</p>
+      <p className="ministry-card__description">
+        {itemDescription(t, ministry)}
+      </p>
       <div className="ministry-card__footer">
         <div className="ministry-card__domain-col">
-          <span className="ministry-card__domain-label">Official Domain</span>
+          <span className="ministry-card__domain-label">
+            {common.officialDomain}
+          </span>
           <span className="ministry-card__domain">
             <span className="material-symbols-outlined ministry-card__lock">
               lock
@@ -51,7 +61,9 @@ function MinistryCard({
           <span className="material-symbols-outlined ministry-card__verified-icon">
             check_circle
           </span>
-          <span className="ministry-card__verified-label">Verified</span>
+          <span className="ministry-card__verified-label">
+            {common.verified}
+          </span>
         </span>
         <a
           className="ministry-card__visit"
@@ -59,7 +71,9 @@ function MinistryCard({
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span className="ministry-card__visit-label">Visit Website</span>
+          <span className="ministry-card__visit-label">
+            {common.visitWebsite}
+          </span>
           <span className="material-symbols-outlined ministry-card__visit-icon">
             arrow_forward
           </span>

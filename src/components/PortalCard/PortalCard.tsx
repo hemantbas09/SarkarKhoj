@@ -1,4 +1,5 @@
 import data from '../../data/homepage.json'
+import { useLanguage } from '../../i18n'
 import './PortalCard.scss'
 
 function PortalCard({
@@ -6,6 +7,8 @@ function PortalCard({
 }: {
   portal: (typeof data.essentialSection.portals)[number]
 }) {
+  const { lang, t } = useLanguage()
+  const description = t.essential.portalDescriptions[portal.domain]
   return (
     <a
       className="portal-card"
@@ -26,13 +29,19 @@ function PortalCard({
           .gov.np
         </span>
       </div>
-      <span className="portal-card__nepali">{portal.nepali}</span>
-      <h3 className="portal-card__title">{portal.name}</h3>
-      <p className="portal-card__description">{portal.description}</p>
+      <span className="portal-card__nepali">
+        {lang === 'np' ? portal.name : portal.nepali}
+      </span>
+      <h3 className="portal-card__title">
+        {lang === 'np' ? portal.nepali : portal.name}
+      </h3>
+      <p className="portal-card__description">
+        {description ?? portal.description}
+      </p>
       <div className="portal-card__footer">
         <span className="portal-card__domain">{portal.domain}</span>
         <span className="portal-card__visit">
-          Visit
+          {t.essential.visit}
           <span className="material-symbols-outlined portal-card__visit-symbol">
             north_east
           </span>

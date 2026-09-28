@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import data from '../../data/homepage.json'
 import categoryData from '../../data/categories'
+import { useLanguage, type CategoryKey } from '../../i18n'
 import './CategoryCard.scss'
 
 const categoryKeys = Object.keys(categoryData.categories)
@@ -10,6 +11,8 @@ function CategoryCard({
 }: {
   category: (typeof data.categoriesSection.categories)[number]
 }) {
+  const { t } = useLanguage()
+  const card = t.categoriesSection.cards[category.path as CategoryKey]
   const to = categoryKeys.includes(category.path)
     ? `/category?c=${category.path}`
     : null
@@ -22,13 +25,13 @@ function CategoryCard({
               {category.icon}
             </span>
           </span>
-          <span className="category-card__count">{category.count}</span>
+          <span className="category-card__count">{card.count}</span>
         </div>
-        <h3 className="category-card__title">{category.title}</h3>
-        <p className="category-card__description">{category.description}</p>
+        <h3 className="category-card__title">{card.title}</h3>
+        <p className="category-card__description">{card.description}</p>
       </div>
       <span className="category-card__link">
-        Explore portals
+        {t.categoriesSection.explorePortals}
         <span className="material-symbols-outlined category-card__link-symbol">
           arrow_forward
         </span>

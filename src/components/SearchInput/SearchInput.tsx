@@ -1,3 +1,4 @@
+import { useLanguage } from '../../i18n'
 import './SearchInput.scss'
 
 function SearchInput({
@@ -9,6 +10,7 @@ function SearchInput({
   onChange: (value: string) => void
   onClear: () => void
 }) {
+  const { t } = useLanguage()
   return (
     <div className="search-input">
       <span className="material-symbols-outlined search-input__icon">
@@ -18,7 +20,7 @@ function SearchInput({
         className="search-input__field"
         type="text"
         value={value}
-        placeholder="Search government portals…"
+        placeholder={t.search.searchPlaceholder}
         onChange={(e) => onChange(e.target.value)}
       />
       {value.length > 0 && (

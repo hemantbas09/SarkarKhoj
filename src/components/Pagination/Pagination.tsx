@@ -1,27 +1,22 @@
+import { useLanguage } from '../../i18n'
 import './Pagination.scss'
 
 function Pagination({
-  config,
+  pageSize,
   page,
   totalPages,
   totalCount,
   onPageChange,
 }: {
-  config: {
-    pageSize: number
-    showingLabel: string
-    ofLabel: string
-    prevLabel: string
-    nextLabel: string
-  }
+  pageSize: number
   page: number
   totalPages: number
   totalCount: number
   onPageChange: (page: number) => void
 }) {
+  const { t } = useLanguage()
   if (totalPages <= 1) return null
 
-  const { pageSize } = config
   const from = (page - 1) * pageSize + 1
   const to = Math.min(page * pageSize, totalCount)
 
@@ -30,7 +25,7 @@ function Pagination({
   return (
     <nav className="pagination" aria-label="Results pages">
       <span className="pagination__info">
-        {config.showingLabel} {from}–{to} {config.ofLabel} {totalCount}
+        {t.search.pagination.showing(from, to, totalCount)}
       </span>
       <div className="pagination__controls">
         <button
@@ -38,7 +33,7 @@ function Pagination({
           type="button"
           disabled={page <= 1}
           onClick={() => onPageChange(page - 1)}
-          aria-label={config.prevLabel}
+          aria-label={t.search.pagination.prev}
         >
           <span className="material-symbols-outlined">chevron_left</span>
         </button>
@@ -64,7 +59,7 @@ function Pagination({
           type="button"
           disabled={page >= totalPages}
           onClick={() => onPageChange(page + 1)}
-          aria-label={config.nextLabel}
+          aria-label={t.search.pagination.next}
         >
           <span className="material-symbols-outlined">chevron_right</span>
         </button>

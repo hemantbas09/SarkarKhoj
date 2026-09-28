@@ -1,5 +1,5 @@
-import data from '../../data/searchResults.json'
 import categoryData from '../../data/categories'
+import { useLanguage, itemDescription, type CategoryKey } from '../../i18n'
 import './ResultCard.scss'
 
 type Category = (typeof categoryData.categories)[keyof typeof categoryData.categories]
@@ -34,6 +34,14 @@ function ResultCard({
   query: string
   featured?: boolean
 }) {
+  const { lang, t } = useLanguage()
+  const primary = lang === 'np' ? item.nepali : item.name
+  const secondary = lang === 'np' ? item.name : item.nepali
+  const categoryLabel =
+    t.categoryPage.categories[item.code as CategoryKey]?.breadcrumbCurrent ??
+    category.breadcrumbCurrent
+  const description = itemDescription(t, item)
+
   return (
     <article
       className={`result-card${featured ? ' result-card--featured' : ''}`}
@@ -46,7 +54,7 @@ function ResultCard({
             }`}
           >
             <span className="material-symbols-outlined">{category.icon}</span>
-            {category.breadcrumbCurrent}
+            {categoryLabel}
           </span>
         </div>
         <span className="result-card__domain">
@@ -60,10 +68,8 @@ function ResultCard({
 
       <div className="result-card__title-row">
         <div className="result-card__titles">
-          <h3 className="result-card__name">
-            {highlight(item.name, query)}
-          </h3>
-          <span className="result-card__nepali">{item.nepali}</span>
+          <h3 className="result-card__name">{highlight(primary, query)}</h3>
+          <span className="result-card__nepali">{secondary}</span>
         </div>
         <span className="material-symbols-outlined result-card__icon">
           {item.icon}
@@ -71,7 +77,7 @@ function ResultCard({
       </div>
 
       <p className="result-card__description">
-        {highlight(item.description, query)}
+        {highlight(description, query)}
       </p>
 
       <div className="result-card__footer">
@@ -81,7 +87,7 @@ function ResultCard({
           target="_blank"
           rel="noreferrer"
         >
-          {data.search.visitLabel}
+          {t.search.visitLabel}
           <span className="material-symbols-outlined">open_in_new</span>
         </a>
       </div>

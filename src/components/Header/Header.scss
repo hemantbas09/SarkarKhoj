@@ -133,38 +133,40 @@
     flex-shrink: 0;
   }
 
-  &__verified {
-    display: none;
-    align-items: center;
-    gap: $space-xs;
-    padding: $space-xs $space-md;
-    border-radius: $radius-xl;
-    background: $surface-container-low;
-    box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04);
-  }
-
-  &__verified-icon {
-    font-size: 18px;
-    color: $tertiary;
-  }
-
-  &__verified-text {
+  &__lang-toggle {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    padding: 3px;
+    border: 1px solid $outline-variant;
+    border-radius: $radius-full;
+    background: $surface-container-low;
   }
 
-  &__verified-top {
-    color: $tertiary;
+  &__lang-option {
+    padding: 4px 10px;
+    border: none;
+    border-radius: $radius-full;
+    background: none;
+    color: $on-surface-variant;
     font-size: $label-sm-size;
     line-height: $label-sm-line;
-    font-weight: 700;
-    letter-spacing: -0.01em;
-  }
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
 
-  &__verified-bottom {
-    color: $secondary;
-    font-size: $label-sm-size;
-    line-height: 1;
+    &:hover {
+      color: $primary;
+    }
+
+    &--active {
+      background: $primary;
+      color: $on-primary;
+
+      &:hover {
+        color: $on-primary;
+      }
+    }
   }
 
   &__avatar {
@@ -193,10 +195,6 @@
     }
 
     &__nav {
-      display: flex;
-    }
-
-    &__verified {
       display: flex;
     }
 

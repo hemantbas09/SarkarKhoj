@@ -1,8 +1,10 @@
 import data from '../../data/homepage.json'
+import { useLanguage } from '../../i18n'
 import './Banner.scss'
 
 function Banner() {
   const { banner } = data
+  const { t } = useLanguage()
 
   return (
     <section className="banner">
@@ -18,10 +20,10 @@ function Banner() {
             <span className="material-symbols-outlined banner__eyebrow-icon">
               domain
             </span>
-            <span className="banner__eyebrow">{banner.eyebrow}</span>
+            <span className="banner__eyebrow">{t.banner.eyebrow}</span>
           </div>
-          <p className="banner__title">{banner.title}</p>
-          <p className="banner__description">{banner.description}</p>
+          <p className="banner__title">{t.banner.title}</p>
+          <p className="banner__description">{t.banner.description}</p>
         </div>
       </div>
     </section>

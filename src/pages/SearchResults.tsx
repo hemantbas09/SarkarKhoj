@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import data from '../data/searchResults.json'
 import categoryData from '../data/categories'
+import { useLanguage } from '../i18n'
 import { searchItems } from '../utils/search'
 import Breadcrumb from '../components/Breadcrumb/Breadcrumb'
 import SearchInput from '../components/SearchInput/SearchInput'
@@ -18,6 +19,7 @@ const items = categoryData.items
 
 function SearchResults() {
   const [searchParams] = useSearchParams()
+  const { t } = useLanguage()
   const navigate = useNavigate()
   const urlQuery = searchParams.get('q') ?? data.search.query
   const [query, setQuery] = useState(urlQuery)
@@ -52,7 +54,10 @@ function SearchResults() {
     <div className="search-results">
       <Breadcrumb
         icon={data.breadcrumb.icon}
-        items={data.breadcrumb.items}
+        items={[
+          { label: t.search.breadcrumbDirectory, path: '/' },
+          { label: t.search.breadcrumbResults, path: '/search' },
+        ]}
         current={query}
       />
       <div className="search-results__container">
@@ -70,13 +75,13 @@ function SearchResults() {
               {data.emptySearch.icon}
             </span>
             <h2 className="search-results__empty-title">
-              {data.emptySearch.title}
+              {t.search.emptySearch.title}
             </h2>
             <p className="search-results__empty-text">
-              {data.emptySearch.text}
+              {t.search.emptySearch.text}
             </p>
             <div className="search-results__empty-chips">
-              {data.emptySearch.suggestions.map((suggestion) => (
+              {t.search.emptySearch.suggestions.map((suggestion) => (
                 <button
                   key={suggestion}
                   type="button"
@@ -100,16 +105,13 @@ function SearchResults() {
                       {data.noResults.icon}
                     </span>
                     <h2 className="search-results__empty-title">
-                      {data.noResults.titlePrefix}{' '}
-                      <em className="search-results__empty-query">
-                        “{query.trim()}”
-                      </em>
+                      {t.search.noResults.title(query.trim())}
                     </h2>
                     <p className="search-results__empty-text">
-                      {data.noResults.text}
+                      {t.search.noResults.text}
                     </p>
                     <div className="search-results__empty-chips">
-                      {data.noResults.suggestions.map((suggestion) => (
+                      {t.search.noResults.suggestions.map((suggestion) => (
                         <button
                           key={suggestion}
                           type="button"
@@ -145,7 +147,7 @@ function SearchResults() {
             </div>
 
             <Pagination
-              config={data.pagination}
+              pageSize={data.pagination.pageSize}
               page={safePage}
               totalPages={totalPages}
               totalCount={filtered.length}
