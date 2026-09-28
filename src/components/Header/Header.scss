@@ -117,6 +117,13 @@
       font-weight: $title-sm-weight;
       border-bottom: 2px solid $primary;
     }
+
+    &--button {
+      background: none;
+      border: none;
+      font: inherit;
+      cursor: pointer;
+    }
   }
 
   &__right {

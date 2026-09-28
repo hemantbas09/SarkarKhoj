@@ -1,3 +1,5 @@
+import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import data from '../data/homepage.json'
 import Hero from '../components/Hero/Hero'
 import PortalCard from '../components/PortalCard/PortalCard'
@@ -7,6 +9,18 @@ import TrustBanner from '../components/TrustBanner/TrustBanner'
 import './Home.scss'
 
 function Home() {
+  const location = useLocation()
+
+  useEffect(() => {
+    const state = location.state as { scrollTo?: string } | null
+    if (state?.scrollTo === 'categories') {
+      document
+        .getElementById('categories')
+        ?.scrollIntoView({ behavior: 'smooth' })
+      window.history.replaceState(null, '')
+    }
+  }, [location.state])
+
   return (
     <main className="app__main">
       <Hero />
@@ -37,7 +51,10 @@ function Home() {
 
       <Banner />
 
-      <section className="app__section app__section--categories">
+      <section
+        id="categories"
+        className="app__section app__section--categories"
+      >
         <div className="app__section-header">
           <div className="app__section-heading">
             <div className="app__eyebrow">

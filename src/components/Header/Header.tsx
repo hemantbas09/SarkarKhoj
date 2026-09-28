@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import data from '../../data/homepage.json'
 import categoryData from '../../data/categories'
 import './Header.scss'
@@ -13,6 +13,18 @@ function resolveRoute(path: string): string | null {
 
 function Header() {
   const { header } = data
+  const navigate = useNavigate()
+  const location = useLocation()
+
+  const handleAllCategories = () => {
+    if (location.pathname === '/') {
+      document
+        .getElementById('categories')
+        ?.scrollIntoView({ behavior: 'smooth' })
+    } else {
+      navigate('/', { state: { scrollTo: 'categories' } })
+    }
+  }
 
   return (
     <header className="header">
@@ -42,9 +54,21 @@ function Header() {
 
         <nav className="header__nav">
           {header.navLinks.map((link) => {
-            const to = resolveRoute(link.path)
             const className = `header__nav-link${link.active ? ' header__nav-link--active' : ''}`
             const ariaCurrent = link.active ? 'page' : undefined
+            if (link.path === 'all-categories') {
+              return (
+                <button
+                  key={link.path}
+                  type="button"
+                  className={`${className} header__nav-link--button`}
+                  onClick={handleAllCategories}
+                >
+                  {link.label}
+                </button>
+              )
+            }
+            const to = resolveRoute(link.path)
             return to ? (
               <Link
                 key={link.path}

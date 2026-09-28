@@ -6,9 +6,7 @@
     "logoAlt": "Nepal National Emblem Flag Logo",
     "navLinks": [
       { "label": "Home", "path": "home", "active": true },
-      { "label": "Ministries", "path": "ministries", "active": false },
-      { "label": "All Categories", "path": "all-categories", "active": false },
-      { "label": "About Directory", "path": "about", "active": false }
+      { "label": "All Categories", "path": "all-categories", "active": false }
     ],
     "verifiedBadge": {
       "top": ".gov.np Verified",
