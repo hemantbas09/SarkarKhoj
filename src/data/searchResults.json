@@ -10,23 +10,34 @@
         "label": "Search Results",
         "path": "/search"
       }
-    ],
-    "queryPrefix": "q="
+    ]
   },
   "search": {
     "query": "finance",
-    "button": "Search",
-    "visitLabel": "Visit Website",
-    "latency": "Search query latency: 18ms",
-    "domainFilter": {
-      "icon": "filter_alt",
-      "label": "Domain-filtered (.gov.np, .mil.np, .edu.np, official corporations)"
-    }
+    "visitLabel": "Visit Website"
+  },
+  "pagination": {
+    "pageSize": 5,
+    "showingLabel": "Showing",
+    "ofLabel": "of",
+    "prevLabel": "Previous page",
+    "nextLabel": "Next page"
   },
   "summary": {
-    "catalog": "Catalog v4.2",
     "allCategories": "All Categories",
     "matchesNote": "Matches found in Organization Name, Category, and Description"
+  },
+  "emptySearch": {
+    "icon": "search",
+    "title": "Search the government directory",
+    "text": "Type an organization name, department, or keyword above — or try one of these:",
+    "suggestions": ["finance", "passport", "tax", "university", "kathmandu", "election"]
+  },
+  "noResults": {
+    "icon": "manage_search",
+    "titlePrefix": "No results for",
+    "text": "Check the spelling, use a shorter keyword, or try one of these searches:",
+    "suggestions": ["finance", "passport", "tax", "university", "kathmandu", "election"]
   },
   "insight": {
     "icon": "tips_and_updates",

@@ -7,8 +7,10 @@ function Hero() {
 
   return (
     <section className="hero">
-      <div className="hero__glow hero__glow--primary" aria-hidden="true" />
-      <div className="hero__glow hero__glow--tertiary" aria-hidden="true" />
+      <div className="hero__glows" aria-hidden="true">
+        <div className="hero__glow hero__glow--primary" />
+        <div className="hero__glow hero__glow--tertiary" />
+      </div>
       <div className="hero__content">
         <div className="hero__badge">
           <span className="hero__badge-dot" aria-hidden="true" />

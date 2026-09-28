@@ -1,7 +1,9 @@
+import { useNavigate } from 'react-router-dom'
 import data from '../../data/searchResults.json'
 import './RelatedServices.scss'
 
 function RelatedServices() {
+  const navigate = useNavigate()
   const { relatedServices } = data
   return (
     <aside className="related-services">
@@ -14,13 +16,21 @@ function RelatedServices() {
       <ul className="related-services__list">
         {relatedServices.items.map((item) => (
           <li key={item.label} className="related-services__item">
-            <span className="material-symbols-outlined related-services__item-icon">
-              {item.icon}
-            </span>
-            <span className="related-services__item-label">{item.label}</span>
-            <span className="material-symbols-outlined related-services__chevron">
-              chevron_right
-            </span>
+            <button
+              type="button"
+              className="related-services__item-button"
+              onClick={() =>
+                navigate(`/search?q=${encodeURIComponent(item.label)}`)
+              }
+            >
+              <span className="material-symbols-outlined related-services__item-icon">
+                {item.icon}
+              </span>
+              <span className="related-services__item-label">{item.label}</span>
+              <span className="material-symbols-outlined related-services__chevron">
+                chevron_right
+              </span>
+            </button>
           </li>
         ))}
       </ul>

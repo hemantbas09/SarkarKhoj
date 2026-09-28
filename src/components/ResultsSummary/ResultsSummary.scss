@@ -30,19 +30,6 @@
     color: $primary;
   }
 
-  &__pill {
-    display: none;
-    align-items: center;
-    padding: $space-xs $space-sm;
-    border-radius: $radius-full;
-    background: $secondary-fixed;
-    color: $on-secondary-fixed;
-    font-size: $label-sm-size;
-    line-height: $label-sm-line;
-    font-weight: 600;
-    white-space: nowrap;
-  }
-
   &__all-pill {
     display: inline-flex;
     align-items: center;
@@ -76,10 +63,6 @@
       line-height: $headline-md-line;
       font-weight: $headline-md-weight;
       white-space: normal;
-    }
-
-    &__pill {
-      display: inline-flex;
     }
 
     &__all-pill {

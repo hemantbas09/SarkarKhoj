@@ -10,7 +10,6 @@ function ResultsSummary({ query, count }: { query: string; count: number }) {
           <span className="results-summary__count">{count}</span>{' '}
           Results for <em className="results-summary__query">“{query}”</em>
         </h1>
-        <span className="results-summary__pill">{summary.catalog}</span>
       </div>
       <div className="results-summary__meta">
         <span className="results-summary__all-pill">

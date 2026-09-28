@@ -68,6 +68,140 @@
     font-size: 20px;
   }
 
+  &__dialog {
+    position: absolute;
+    top: calc(100% + $space-sm);
+    left: 0;
+    right: 0;
+    z-index: 30;
+    border-radius: $radius-xl;
+    background: $surface-container-lowest;
+    box-shadow: $shadow-lg;
+    text-align: left;
+    overflow: hidden;
+  }
+
+  &__dialog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    max-height: 12.5rem;
+    overflow-y: auto;
+    padding: $space-sm;
+  }
+
+  &__no-results {
+    padding: $space-md;
+    color: $secondary;
+    font-size: $body-sm-size;
+    line-height: $body-sm-line;
+    text-align: center;
+  }
+
+  &__result {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $space-sm;
+    width: 100%;
+    padding: 8px $space-md;
+    border: none;
+    border-radius: $radius-lg;
+    background: transparent;
+    font-family: inherit;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+
+    &:hover {
+      background: $surface-container;
+    }
+  }
+
+  &__result-info {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+
+  &__result-name {
+    color: $on-surface;
+    font-size: $title-sm-size;
+    line-height: $title-sm-line;
+    font-weight: $title-sm-weight;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color 0.15s ease;
+  }
+
+  &__result:hover &__result-name {
+    color: $primary;
+  }
+
+  &__result-meta {
+    color: $secondary;
+    font-size: $label-sm-size;
+    line-height: $label-sm-line;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__result-side {
+    display: flex;
+    align-items: center;
+    gap: $space-xs;
+    flex-shrink: 0;
+    color: $secondary;
+  }
+
+  &__result-category {
+    padding: 2px 6px;
+    border-radius: $radius;
+    background: $surface-container-high;
+    font-size: 11px;
+    line-height: 14px;
+  }
+
+  &__result-icon {
+    font-size: 16px;
+  }
+
+  &__dialog-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $space-sm;
+    padding: $space-sm $space-md;
+    border-top: 1px solid $outline-variant;
+    background: $surface-container-low;
+  }
+
+  &__dialog-count {
+    color: $secondary;
+    font-size: $label-sm-size;
+    line-height: $label-sm-line;
+  }
+
+  &__see-all {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    border: none;
+    background: none;
+    color: $primary;
+    font-family: $font-sans;
+    font-size: $label-md-size;
+    line-height: $label-md-line;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  &__see-all-icon {
+    font-size: 16px;
+  }
+
   &__chips {
     display: flex;
     flex-wrap: wrap;

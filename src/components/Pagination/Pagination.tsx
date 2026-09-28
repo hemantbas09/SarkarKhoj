@@ -25,6 +25,8 @@ function Pagination({
   const from = (page - 1) * pageSize + 1
   const to = Math.min(page * pageSize, totalCount)
 
+  const pageItems = getPageItems(page, totalPages)
+
   return (
     <nav className="pagination" aria-label="Results pages">
       <span className="pagination__info">
@@ -40,9 +42,23 @@ function Pagination({
         >
           <span className="material-symbols-outlined">chevron_left</span>
         </button>
-        <span className="pagination__page">
-          {page} / {totalPages}
-        </span>
+        {pageItems.map((item, index) =>
+          item === 'ellipsis' ? (
+            <span key={`ellipsis-${index}`} className="pagination__ellipsis">
+              …
+            </span>
+          ) : (
+            <button
+              key={item}
+              type="button"
+              className={`pagination__button${item === page ? ' pagination__button--active' : ''}`}
+              aria-current={item === page ? 'page' : undefined}
+              onClick={() => onPageChange(item)}
+            >
+              {item}
+            </button>
+          ),
+        )}
         <button
           className="pagination__button"
           type="button"
@@ -55,6 +71,18 @@ function Pagination({
       </div>
     </nav>
   )
+}
+
+function getPageItems(current: number, total: number): (number | 'ellipsis')[] {
+  if (total <= 7) return Array.from({ length: total }, (_, i) => i + 1)
+  const items: (number | 'ellipsis')[] = [1]
+  const start = Math.max(2, current - 1)
+  const end = Math.min(total - 1, current + 1)
+  if (start > 2) items.push('ellipsis')
+  for (let i = start; i <= end; i += 1) items.push(i)
+  if (end < total - 1) items.push('ellipsis')
+  items.push(total)
+  return items
 }
 
 export default Pagination

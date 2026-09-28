@@ -3,22 +3,14 @@ import './SearchInput.scss'
 function SearchInput({
   value,
   onChange,
-  onSubmit,
-  buttonLabel,
+  onClear,
 }: {
   value: string
   onChange: (value: string) => void
-  onSubmit: () => void
-  buttonLabel: string
+  onClear: () => void
 }) {
   return (
-    <form
-      className="search-input"
-      onSubmit={(e) => {
-        e.preventDefault()
-        onSubmit()
-      }}
-    >
+    <div className="search-input">
       <span className="material-symbols-outlined search-input__icon">
         search
       </span>
@@ -34,18 +26,12 @@ function SearchInput({
           type="button"
           className="search-input__clear"
           aria-label="Clear search"
-          onClick={() => onChange('')}
+          onClick={onClear}
         >
           <span className="material-symbols-outlined">close</span>
         </button>
       )}
-      <button type="submit" className="search-input__submit">
-        <span className="search-input__submit-label">{buttonLabel}</span>
-        <span className="material-symbols-outlined search-input__submit-icon">
-          arrow_forward
-        </span>
-      </button>
-    </form>
+    </div>
   )
 }
 

@@ -16,7 +16,7 @@
   &__controls {
     display: flex;
     align-items: center;
-    gap: $space-md;
+    gap: $space-xs;
   }
 
   &__button {
@@ -42,13 +42,29 @@
       opacity: 0.4;
       cursor: not-allowed;
     }
+
+    &--active {
+      background: $primary;
+      border-color: $primary;
+      color: $on-primary;
+      font-weight: 600;
+
+      &:hover {
+        background: $primary;
+        border-color: $primary;
+        color: $on-primary;
+      }
+    }
   }
 
-  &__page {
-    font-size: $label-lg-size;
-    line-height: $label-lg-line;
-    font-weight: $label-lg-weight;
-    color: $on-surface;
+  &__ellipsis {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: $on-surface-variant;
+    user-select: none;
   }
 
   @media (min-width: $bp-md) {

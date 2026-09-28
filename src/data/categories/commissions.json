@@ -69,6 +69,13 @@
         }
       ]
     },
+    "pagination": {
+      "pageSize": 5,
+      "showingLabel": "Showing",
+      "ofLabel": "of",
+      "prevLabel": "Previous page",
+      "nextLabel": "Next page"
+    },
     "emptyState": {
       "icon": "manage_search",
       "title": "No matching commissions found",

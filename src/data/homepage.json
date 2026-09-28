@@ -168,19 +168,5 @@
     { "icon": "apartment", "label": "Departments", "path": "departments", "active": false },
     { "icon": "map", "label": "Provinces", "path": "provincial-governments", "active": false },
     { "icon": "balance", "label": "Bodies", "path": "constitutional-bodies", "active": false }
-  ],
-  "searchIndex": [
-    { "name": "Ministry of Finance", "nepali": "अर्थ मन्त्रालय", "url": "mof.gov.np", "category": "Ministries" },
-    { "name": "Ministry of Home Affairs", "nepali": "गृह मन्त्रालय", "url": "moha.gov.np", "category": "Ministries" },
-    { "name": "Department of Passports", "nepali": "राहदानी विभाग", "url": "nepalpassport.gov.np", "category": "Departments" },
-    { "name": "Inland Revenue Department", "nepali": "आन्तरिक राजस्व विभाग", "url": "ird.gov.np", "category": "Departments" },
-    { "name": "Ministry of Education, Science and Technology", "nepali": "शिक्षा, विज्ञान तथा प्रविधि मन्त्रालय", "url": "moest.gov.np", "category": "Ministries" },
-    { "name": "Ministry of Foreign Affairs", "nepali": "परराष्ट्र मन्त्रालय", "url": "mofa.gov.np", "category": "Ministries" },
-    { "name": "Ministry of Health and Population", "nepali": "स्वास्थ्य तथा जनसंख्या मन्त्रालय", "url": "mohp.gov.np", "category": "Ministries" },
-    { "name": "Department of Electricity Development", "nepali": "विद्युत विकास विभाग", "url": "doed.gov.np", "category": "Departments" },
-    { "name": "Election Commission Nepal", "nepali": "निर्वाचन आयोग", "url": "election.gov.np", "category": "Constitutional" },
-    { "name": "Koshi Provincial Government", "nepali": "कोशी प्रदेश सरकार", "url": "koshi.gov.np", "category": "Provincial" },
-    { "name": "Kathmandu Metropolitan City", "nepali": "काठमाडौं महानगरपालिका", "url": "kathmandu.gov.np", "category": "Local Government" },
-    { "name": "Tribhuvan University", "nepali": "त्रिभुवन विश्वविद्यालय", "url": "tu.edu.np", "category": "Universities" }
   ]
 }

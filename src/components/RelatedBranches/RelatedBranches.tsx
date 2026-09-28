@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import data from '../../data/categories'
 import './RelatedBranches.scss'
 
@@ -19,10 +20,10 @@ function RelatedBranches() {
       </div>
       <div className="related-branches__grid">
         {relatedBranches.items.map((item) => (
-          <a
+          <Link
             key={item.path}
             className="related-branches__tile"
-            href={`#${item.path}`}
+            to={`/category?c=${item.path}`}
           >
             <div className="related-branches__tile-icon-wrap">
               <span className="material-symbols-outlined related-branches__tile-icon">
@@ -42,7 +43,7 @@ function RelatedBranches() {
             <span className="material-symbols-outlined related-branches__tile-arrow">
               arrow_forward
             </span>
-          </a>
+          </Link>
         ))}
       </div>
     </section>
