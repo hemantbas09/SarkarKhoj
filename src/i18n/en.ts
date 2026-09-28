@@ -10,9 +10,9 @@ export const en: Dictionary = {
   },
   hero: {
     badge: 'Official Directory • नेपाल सरकार',
-    heading: 'Find Nepal Government Websites on SarkarWeb',
+    heading: 'Find Nepal Government Websites Easily',
     subheading:
-      'Official government websites, organized in one place. Authenticated civic links across all administrative levels.',
+      'Find official websites of Nepal’s government offices and organizations, all in one place.',
     searchPlaceholder:
       'Search government websites by name, department, or keyword...',
     popularSearchesLabel: 'Popular searches:',
