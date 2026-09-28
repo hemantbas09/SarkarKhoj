@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import data from '../data/searchResults.json'
-import categoryData from '../data/categoryPage.json'
+import categoryData from '../data/categories'
 import Breadcrumb from '../components/Breadcrumb/Breadcrumb'
 import SearchInput from '../components/SearchInput/SearchInput'
 import ResultsSummary from '../components/ResultsSummary/ResultsSummary'

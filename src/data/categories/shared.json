@@ -1,0 +1,43 @@
+{
+  "breadcrumb": {
+    "icon": "home",
+    "items": [
+      {
+        "label": "Home",
+        "path": "/"
+      },
+      {
+        "label": "Categories"
+      }
+    ]
+  },
+  "relatedBranches": {
+    "eyebrow": "Government Hierarchy",
+    "title": "Explore Related Branches & Entities",
+    "subtitle": "Connecting all executive levels under the Constitution of Nepal",
+    "countLabel": "3 Categories",
+    "items": [
+      {
+        "icon": "apartment",
+        "title": "Departments",
+        "count": "54 Line Agencies",
+        "description": "Central operational line agencies delivering specialized civil administration and enforcement.",
+        "path": "departments"
+      },
+      {
+        "icon": "balance",
+        "title": "Commissions",
+        "count": "12 Official Bodies",
+        "description": "Statutory regulatory commissions ensuring public compliance, anti-corruption, and inclusion.",
+        "path": "commissions"
+      },
+      {
+        "icon": "policy",
+        "title": "Constitutional Entities",
+        "count": "9 Constitutional Bodies",
+        "description": "Independent oversight entities mandated directly by Part 21–27 of the Constitution.",
+        "path": "constitutional-bodies"
+      }
+    ]
+  }
+}

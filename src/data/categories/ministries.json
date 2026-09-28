@@ -1,0 +1,232 @@
+{
+  "config": {
+    "title": "Ministries of Nepal",
+    "icon": "verified_user",
+    "description": "Explore official web portals of the federal executive ministries of the Government of Nepal.",
+    "breadcrumbCurrent": "Ministries",
+    "hero": {
+      "badge": {
+        "icon": "verified_user",
+        "label": "Federal Executive Portals"
+      },
+      "title": "Ministries of Nepal",
+      "nepali": "नेपालका मन्त्रालयहरू",
+      "description": "Explore official web portals of the federal executive ministries of the Government of Nepal.",
+      "descriptionDesktop": "Explore official web portals of the federal executive ministries of the Government of Nepal. Access direct policy directives, citizen e-services, gazette notices, and senior administrative secretariats across the federal cabinet.",
+      "location": "Singha Durbar, Kathmandu",
+      "stats": [
+        {
+          "icon": "verified_user",
+          "text": "22 Verified Federal Ministries"
+        },
+        {
+          "icon": "security",
+          "text": "Strict .gov.np Validation"
+        },
+        {
+          "icon": "domain",
+          "text": "NITC Tier-III Data Center Hosted"
+        }
+      ]
+    },
+    "search": {
+      "placeholder": "Search by ministry name, portfolio, or .gov.np domain...",
+      "placeholderMobile": "Search within Ministries...",
+      "showingLabel": "Showing:",
+      "countLabel": "Active",
+      "totalCount": 22,
+      "filterLabel": "Filter Sector:",
+      "chips": [
+        {
+          "label": "All",
+          "filter": "all"
+        },
+        {
+          "label": "Finance",
+          "filter": "economy"
+        },
+        {
+          "label": "Security & Home",
+          "filter": "security"
+        },
+        {
+          "label": "Health",
+          "filter": "health"
+        },
+        {
+          "label": "Energy & Water",
+          "filter": "infrastructure"
+        }
+      ],
+      "pills": [
+        {
+          "label": "All",
+          "count": 22,
+          "filter": "all"
+        },
+        {
+          "label": "Economy & Finance",
+          "filter": "economy"
+        },
+        {
+          "label": "Security & Home",
+          "filter": "security"
+        },
+        {
+          "label": "Diplomacy & Foreign",
+          "filter": "diplomacy"
+        },
+        {
+          "label": "Health & Population",
+          "filter": "health"
+        },
+        {
+          "label": "Infrastructure & Energy",
+          "filter": "infrastructure"
+        },
+        {
+          "label": "Education & Science",
+          "filter": "education"
+        }
+      ]
+    },
+    "singhaDurbar": {
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuC6xw3xcpEy5SglCPbb5SD6LndCGHK_moNxmBFa1BpKPjZA8vjCGAr9Q4C0NjMVHMwUB5wQ3rX3QKRI1A9O3vJzgWu9HeVhfV9gOJM3T4J2qFIyg4uhcdmm0PyZX9rkVc6TnN1AY3geg4bJgPZM3CeXO0H3ZmYc1m4x6gGVQuxwFosFH8eOxUtNgkVyQQAQ-nOA4cfjWS-cpfDZmP-TvSyM1itqkHiCx8Nq-ms25j_bObfOi4zKUGUw",
+      "badge": {
+        "icon": "assured_workload",
+        "label": "Singha Durbar Secretariat"
+      },
+      "text": "Central seat of federal ministries coordinating national policy and governance."
+    },
+    "emptyState": {
+      "icon": "manage_search",
+      "title": "No matching federal ministries found",
+      "description": "Try checking for spelling variations, portfolio acronyms (e.g. MOF, MOHA), or clear the sector filter chips.",
+      "button": "Reset Directory Filters"
+    },
+    "trustNotice": {
+      "icon": "verified",
+      "title": "Official .gov.np TLD Standard",
+      "text": "All listed ministerial links are authenticated and under the National Information Technology Center (NITC) root domain."
+    }
+  },
+  "items": [
+    {
+      "code": "ministries",
+      "sector": "economy",
+      "sectorLabel": "Economic Core",
+      "icon": "account_balance_wallet",
+      "name": "Ministry of Finance",
+      "nepali": "अर्थ मन्त्रालय",
+      "domain": "mof.gov.np",
+      "description": "Responsible for financial management, national budget formulation, macroeconomic policy, public debt strategy, customs administration, and inland revenue collection.",
+      "keywords": "finance economic budget revenue tax arth mantralaya mof",
+      "url": "https://mof.gov.np",
+      "id": "mof.gov.np"
+    },
+    {
+      "code": "ministries",
+      "sector": "security",
+      "sectorLabel": "Public Security",
+      "icon": "local_police",
+      "name": "Ministry of Home Affairs",
+      "nepali": "गृह मन्त्रालय",
+      "domain": "moha.gov.np",
+      "description": "Responsible for internal security, public order, immigration and border control, national disaster risk mitigation, citizenship issuance, and civil administration coordination.",
+      "keywords": "home affairs security police immigration disaster griha mantralaya moha",
+      "url": "https://moha.gov.np",
+      "id": "moha.gov.np"
+    },
+    {
+      "code": "ministries",
+      "sector": "diplomacy",
+      "sectorLabel": "Diplomacy & Treaties",
+      "icon": "public",
+      "name": "Ministry of Foreign Affairs",
+      "nepali": "परराष्ट्र मन्त्रालय",
+      "domain": "mofa.gov.np",
+      "description": "Formulates and executes Nepal's sovereign foreign policy, oversees diplomatic bilateral and multilateral relations, manages global missions, and governs consular passport affairs.",
+      "keywords": "foreign affairs diplomacy passport treaty international pararashtra mantralaya mofa",
+      "url": "https://mofa.gov.np",
+      "id": "mofa.gov.np"
+    },
+    {
+      "code": "ministries",
+      "sector": "health",
+      "sectorLabel": "Public Healthcare",
+      "icon": "local_hospital",
+      "name": "Ministry of Health and Population",
+      "nepali": "स्वास्थ्य तथा जनसंख्या मन्त्रालय",
+      "domain": "mohp.gov.np",
+      "description": "Leads national healthcare delivery, public health standards, immunization drives, disease prevention protocols, pharmaceutical regulations, and tertiary hospital governance.",
+      "keywords": "health population hospital medicine disease swasthya mohp",
+      "url": "https://mohp.gov.np",
+      "id": "mohp.gov.np"
+    },
+    {
+      "code": "ministries",
+      "sector": "education",
+      "sectorLabel": "Education & R&D",
+      "icon": "school",
+      "name": "Ministry of Education, Science and Technology",
+      "nepali": "शिक्षा, विज्ञान तथा प्रविधि मन्त्रालय",
+      "domain": "moest.gov.np",
+      "description": "Oversees the national school curriculum, university grants, technical and vocational training, scientific research councils, and national scholarship certifications.",
+      "keywords": "education science technology university research shikhya moest",
+      "url": "https://moest.gov.np",
+      "id": "moest.gov.np"
+    },
+    {
+      "code": "ministries",
+      "sector": "infrastructure",
+      "sectorLabel": "Energy & Water",
+      "icon": "bolt",
+      "name": "Ministry of Energy, Water Resources & Irrigation",
+      "nepali": "ऊर्जा, जलस्रोत तथा सिँचाइ मन्त्रालय",
+      "domain": "moewri.gov.np",
+      "description": "Directs hydroelectric power plant generation, national power transmission grids, trans-boundary river resources, and agricultural irrigation infrastructure development.",
+      "keywords": "energy electricity hydropower water irrigation moewri urja",
+      "url": "https://moewri.gov.np",
+      "id": "moewri.gov.np"
+    },
+    {
+      "code": "ministries",
+      "sector": "infrastructure",
+      "sectorLabel": "Digital Governance",
+      "icon": "lan",
+      "name": "Ministry of Communication & Information Technology",
+      "nepali": "सञ्चार तथा सूचना प्रविधि मन्त्रालय",
+      "domain": "mocit.gov.np",
+      "description": "Leads national telecommunications expansion, digital public infrastructure (DPI), broadband networks, postal networks, cyber security directives, and broadcast media compliance.",
+      "keywords": "communication it telecom cyber postal media mocit sanchar",
+      "url": "https://mocit.gov.np",
+      "id": "mocit.gov.np"
+    },
+    {
+      "code": "ministries",
+      "sector": "infrastructure",
+      "sectorLabel": "Heritage & Aviation",
+      "icon": "flight_takeoff",
+      "name": "Ministry of Culture, Tourism & Civil Aviation",
+      "nepali": "संस्कृति, पर्यटन तथा नागरिक उड्डयन मन्त्रालय",
+      "domain": "tourism.gov.np",
+      "description": "Promotes sustainable tourism, conserves UNESCO world heritage monuments, regulates national airspace, and expands domestic and international civil airports across Nepal.",
+      "keywords": "tourism culture civil aviation airports heritage sanskriti tourism.gov.np",
+      "url": "https://tourism.gov.np",
+      "id": "tourism.gov.np"
+    },
+    {
+      "code": "ministries",
+      "sector": "security",
+      "sectorLabel": "Civil Service & Local",
+      "icon": "groups",
+      "name": "Ministry of Federal Affairs & General Administration",
+      "nepali": "संघीय मामिला तथा सामान्य प्रशासन मन्त्रालय",
+      "domain": "mofaga.gov.np",
+      "description": "Acts as the apex agency coordinating federal, provincial, and local levels of government, overseeing civil service deployment and institutional capacity across all 753 local bodies.",
+      "keywords": "federal affairs general administration civil service local government mofaga sanghiya",
+      "url": "https://mofaga.gov.np",
+      "id": "mofaga.gov.np"
+    }
+  ]
+}

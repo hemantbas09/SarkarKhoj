@@ -1,0 +1,125 @@
+{
+  "config": {
+    "title": "Commissions of Nepal",
+    "icon": "gavel",
+    "description": "Constitutional, oversight, and statutory regulatory bodies maintaining institutional integrity.",
+    "breadcrumbCurrent": "Commissions",
+    "hero": {
+      "badge": {
+        "icon": "gavel",
+        "label": "Statutory Regulatory Bodies"
+      },
+      "title": "Commissions of Nepal",
+      "nepali": "नेपालका आयोगहरू",
+      "description": "Constitutional, oversight, and statutory regulatory bodies maintaining institutional integrity.",
+      "descriptionDesktop": "Constitutional, oversight, and statutory regulatory bodies maintaining institutional integrity and public compliance across Nepal.",
+      "location": "Kathmandu, Nepal",
+      "stats": [
+        {
+          "icon": "verified_user",
+          "text": "12 Official Bodies"
+        },
+        {
+          "icon": "security",
+          "text": "Strict .gov.np Validation"
+        },
+        {
+          "icon": "domain",
+          "text": "NITC Tier-III Data Center Hosted"
+        }
+      ]
+    },
+    "search": {
+      "placeholder": "Search by commission name, mandate, or .gov.np domain...",
+      "showingLabel": "Showing:",
+      "countLabel": "Active",
+      "totalCount": 12,
+      "filterLabel": "Filter Type:",
+      "chips": [
+        {
+          "label": "All",
+          "filter": "all"
+        },
+        {
+          "label": "Anti-Corruption",
+          "filter": "anti-corruption"
+        },
+        {
+          "label": "Human Rights",
+          "filter": "human-rights"
+        }
+      ],
+      "pills": [
+        {
+          "label": "All",
+          "count": 12,
+          "filter": "all"
+        },
+        {
+          "label": "Anti-Corruption",
+          "filter": "anti-corruption"
+        },
+        {
+          "label": "Human Rights",
+          "filter": "human-rights"
+        },
+        {
+          "label": "Public Service",
+          "filter": "public-service"
+        }
+      ]
+    },
+    "emptyState": {
+      "icon": "manage_search",
+      "title": "No matching commissions found",
+      "description": "Try checking the spelling or clear the filter chips.",
+      "button": "Reset Directory Filters"
+    },
+    "trustNotice": {
+      "icon": "verified",
+      "title": "Official .gov.np TLD Standard",
+      "text": "All listed commission links are authenticated and under the National Information Technology Center (NITC) root domain."
+    }
+  },
+  "items": [
+    {
+      "code": "commissions",
+      "sector": "anti-corruption",
+      "sectorLabel": "Anti-Corruption",
+      "icon": "gavel",
+      "name": "Commission for the Investigation of Abuse of Authority (CIAA)",
+      "nepali": "सत्ताव्यवहार दुरुपयोग अनुसन्धान आयोग",
+      "domain": "ciaa.gov.np",
+      "description": "Apex anti-corruption body investigating abuse of authority, embezzlement, and corruption in public offices.",
+      "keywords": "ciaa corruption anti-corruption investigation ciaa.gov.np",
+      "url": "https://ciaa.gov.np",
+      "id": "ciaa.gov.np"
+    },
+    {
+      "code": "commissions",
+      "sector": "human-rights",
+      "sectorLabel": "Human Rights",
+      "icon": "diversity_3",
+      "name": "National Human Rights Commission (NHRC)",
+      "nepali": "राष्ट्रिय मानव अधिकार आयोग",
+      "domain": "nhrc.gov.np",
+      "description": "Protects and promotes human rights, investigates violations, and recommends policy reforms for inclusion.",
+      "keywords": "nhrc human rights protection nhrc.gov.np",
+      "url": "https://nhrc.gov.np",
+      "id": "nhrc.gov.np"
+    },
+    {
+      "code": "commissions",
+      "sector": "public-service",
+      "sectorLabel": "Public Service",
+      "icon": "badge",
+      "name": "Public Service Commission (PSC)",
+      "nepali": "सार्वजनिक सेवा आयोग",
+      "domain": "psc.gov.np",
+      "description": "Conducts recruitment, selection, and promotion for civil service positions across all government levels.",
+      "keywords": "psc public service recruitment civil psc.gov.np",
+      "url": "https://psc.gov.np",
+      "id": "psc.gov.np"
+    }
+  ]
+}

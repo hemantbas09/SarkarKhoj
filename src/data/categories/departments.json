@@ -1,0 +1,155 @@
+{
+  "config": {
+    "title": "Departments of Nepal",
+    "icon": "apartment",
+    "description": "Specialized administrative and execution bodies delivering public services, licensing, and records.",
+    "breadcrumbCurrent": "Departments",
+    "hero": {
+      "badge": {
+        "icon": "apartment",
+        "label": "Federal Line Agencies"
+      },
+      "title": "Departments of Nepal",
+      "nepali": "नेपालका विभागहरू",
+      "description": "Specialized administrative and execution bodies delivering public services, licensing, and records.",
+      "descriptionDesktop": "Specialized administrative and execution bodies delivering public services, licensing, and records across the federal government of Nepal.",
+      "location": "Kathmandu, Nepal",
+      "stats": [
+        {
+          "icon": "verified_user",
+          "text": "54 Verified Line Agencies"
+        },
+        {
+          "icon": "security",
+          "text": "Strict .gov.np Validation"
+        },
+        {
+          "icon": "domain",
+          "text": "NITC Tier-III Data Center Hosted"
+        }
+      ]
+    },
+    "search": {
+      "placeholder": "Search by department name, portfolio, or .gov.np domain...",
+      "showingLabel": "Showing:",
+      "countLabel": "Active",
+      "totalCount": 54,
+      "filterLabel": "Filter Sector:",
+      "chips": [
+        {
+          "label": "All",
+          "filter": "all"
+        },
+        {
+          "label": "Revenue",
+          "filter": "revenue"
+        },
+        {
+          "label": "Transport",
+          "filter": "transport"
+        },
+        {
+          "label": "Agriculture",
+          "filter": "agriculture"
+        }
+      ],
+      "pills": [
+        {
+          "label": "All",
+          "count": 54,
+          "filter": "all"
+        },
+        {
+          "label": "Revenue & Tax",
+          "filter": "revenue"
+        },
+        {
+          "label": "Transport & Infrastructure",
+          "filter": "transport"
+        },
+        {
+          "label": "Agriculture & Food",
+          "filter": "agriculture"
+        }
+      ]
+    },
+    "emptyState": {
+      "icon": "manage_search",
+      "title": "No matching departments found",
+      "description": "Try checking the spelling or clear the sector filter chips.",
+      "button": "Reset Directory Filters"
+    },
+    "trustNotice": {
+      "icon": "verified",
+      "title": "Official .gov.np TLD Standard",
+      "text": "All listed departmental links are authenticated and under the National Information Technology Center (NITC) root domain."
+    }
+  },
+  "items": [
+    {
+      "code": "departments",
+      "sector": "revenue",
+      "sectorLabel": "Revenue & Tax",
+      "icon": "receipt_long",
+      "name": "Inland Revenue Department (IRD)",
+      "nepali": "आन्तरिक राजस्व विभाग",
+      "domain": "ird.gov.np",
+      "description": "Department under the Ministry of Finance overseeing taxation, VAT, income tax assessments, and tax compliance across Nepal.",
+      "keywords": "ird tax vat income revenue ird.gov.np",
+      "url": "https://ird.gov.np",
+      "id": "ird.gov.np"
+    },
+    {
+      "code": "departments",
+      "sector": "revenue",
+      "sectorLabel": "Revenue & Tax",
+      "icon": "account_balance",
+      "name": "Customs Department",
+      "nepali": "सुट्रुना विभाग",
+      "domain": "customs.gov.np",
+      "description": "Handles import and export customs clearance, duty collection, and trade facilitation at all national border points.",
+      "keywords": "customs import export duty trade customs.gov.np",
+      "url": "https://customs.gov.np",
+      "id": "customs.gov.np"
+    },
+    {
+      "code": "departments",
+      "sector": "transport",
+      "sectorLabel": "Transport & Infrastructure",
+      "icon": "directions_car",
+      "name": "Department of Transport Management (DoTM)",
+      "nepali": "यातायात व्यवस्था विभाग",
+      "domain": "dotm.gov.np",
+      "description": "Regulates road transport, vehicle registration, driver licensing, and road safety standards across Nepal.",
+      "keywords": "dotm transport vehicle driver road dotm.gov.np",
+      "url": "https://dotm.gov.np",
+      "id": "dotm.gov.np"
+    },
+    {
+      "code": "departments",
+      "sector": "agriculture",
+      "sectorLabel": "Agriculture & Food",
+      "icon": "agriculture",
+      "name": "Department of Agriculture",
+      "nepali": "कृषि विभाग",
+      "domain": "doa.gov.np",
+      "description": "Promotes agricultural development, food security, crop research, and rural extension services nationwide.",
+      "keywords": "agriculture crop food rural doa.gov.np",
+      "url": "https://doa.gov.np",
+      "id": "doa.gov.np"
+    },
+    {
+      "code": "departments",
+      "sector": "revenue",
+      "sectorLabel": "Revenue & Tax",
+      "icon": "account_balance",
+      "name": "Financial Comptroller General Office (FCGO)",
+      "nepali": "महाराजस्व निरीक्षण कार्यालय",
+      "domain": "fcgo.gov.np",
+      "description": "Main government agency responsible for treasury operations, government accounting, and public financial reporting. Hosts the TSA (Treasury Single Account) system.",
+      "keywords": "fcgo treasury accounting financial comptroller fcgo.gov.np",
+      "url": "https://fcgo.gov.np",
+      "id": "fcgo.gov.np"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "config": {
+    "title": "Constitutional Bodies",
+    "icon": "gavel",
+    "description": "Supreme Court, Election Commission, CIAA, Auditor General, and National Human Rights Commission.",
+    "breadcrumbCurrent": "Constitutional Bodies",
+    "hero": {
+      "badge": {
+        "icon": "gavel",
+        "label": "Constitutional Authorities"
+      },
+      "title": "Constitutional Bodies",
+      "nepali": "नेपालका संवैधानिक निकायहरू",
+      "description": "Supreme Court, Election Commission, CIAA, Auditor General, and National Human Rights Commission.",
+      "descriptionDesktop": "Official portals of Nepal's independent constitutional bodies, mandated directly by the Constitution of Nepal for oversight and governance.",
+      "location": "Kathmandu, Nepal",
+      "stats": [
+        {
+          "icon": "verified_user",
+          "text": "9 Constitutional Bodies"
+        },
+        {
+          "icon": "security",
+          "text": "Strict .gov.np Validation"
+        },
+        {
+          "icon": "domain",
+          "text": "NITC Tier-III Data Center Hosted"
+        }
+      ]
+    },
+    "search": {
+      "placeholder": "Search by body name, mandate, or .gov.np domain...",
+      "showingLabel": "Showing:",
+      "countLabel": "Active",
+      "totalCount": 9,
+      "filterLabel": "Filter Type:",
+      "chips": [
+        {
+          "label": "All",
+          "filter": "all"
+        },
+        {
+          "label": "Judiciary",
+          "filter": "judiciary"
+        },
+        {
+          "label": "Election",
+          "filter": "election"
+        }
+      ],
+      "pills": [
+        {
+          "label": "All",
+          "count": 9,
+          "filter": "all"
+        },
+        {
+          "label": "Judiciary",
+          "filter": "judiciary"
+        },
+        {
+          "label": "Election",
+          "filter": "election"
+        },
+        {
+          "label": "Oversight",
+          "filter": "oversight"
+        }
+      ]
+    },
+    "emptyState": {
+      "icon": "manage_search",
+      "title": "No matching constitutional bodies found",
+      "description": "Try checking the spelling or clear the filter chips.",
+      "button": "Reset Directory Filters"
+    },
+    "trustNotice": {
+      "icon": "verified",
+      "title": "Official .gov.np TLD Standard",
+      "text": "All listed constitutional body links are authenticated and under the National Information Technology Center (NITC) root domain."
+    }
+  },
+  "items": [
+    {
+      "code": "constitutional-bodies",
+      "sector": "judiciary",
+      "sectorLabel": "Judiciary",
+      "icon": "gavel",
+      "name": "Supreme Court of Nepal",
+      "nepali": "नेपालको सर्वोच्च अदालत",
+      "domain": "sc.gov.np",
+      "description": "Highest court of justice in Nepal, interpreting the Constitution and delivering final appellate judgments.",
+      "keywords": "supreme court judiciary sc sc.gov.np",
+      "url": "https://sc.gov.np",
+      "id": "sc.gov.np"
+    },
+    {
+      "code": "constitutional-bodies",
+      "sector": "election",
+      "sectorLabel": "Election",
+      "icon": "how_to_vote",
+      "name": "Election Commission of Nepal (ECN)",
+      "nepali": "नेपाल निर्वाचन आयोग",
+      "domain": "ecn.gov.np",
+      "description": "Conducts national and local elections, manages voter registration, and ensures democratic electoral processes.",
+      "keywords": "election commission ecn vote ecn.gov.np",
+      "url": "https://ecn.gov.np",
+      "id": "ecn.gov.np"
+    },
+    {
+      "code": "constitutional-bodies",
+      "sector": "oversight",
+      "sectorLabel": "Oversight",
+      "icon": "account_balance",
+      "name": "Office of the Auditor General (OAG)",
+      "nepali": "राष्ट्रिय प्रहरी प्रमुख कार्यालय",
+      "domain": "oag.gov.np",
+      "description": "Conducts financial audits of federal, provincial, and local governments to ensure accountability and transparency.",
+      "keywords": "auditor general audit oag oag.gov.np",
+      "url": "https://oag.gov.np",
+      "id": "oag.gov.np"
+    },
+    {
+      "code": "constitutional-bodies",
+      "sector": "oversight",
+      "sectorLabel": "Oversight",
+      "icon": "gavel",
+      "name": "National Natural Resources and Fiscal Commission",
+      "nepali": "राष्ट्रिय प्राकृतिक स्रोत तथा आर्थिक आयोग",
+      "domain": "nrrfc.gov.np",
+      "description": "Constitutional commission determining the distribution of revenue and fiscal equalization grants among federal, provincial, and local levels of governance under the Constitution of Nepal.",
+      "keywords": "nrrfc fiscal natural resources revenue nrrfc.gov.np",
+      "url": "https://nrrfc.gov.np",
+      "id": "nrrfc.gov.np"
+    }
+  ]
+}

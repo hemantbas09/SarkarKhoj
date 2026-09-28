@@ -1,4 +1,4 @@
-import data from '../../data/categoryPage.json'
+import data from '../../data/categories'
 import './SinghaDurbarInset.scss'
 
 function SinghaDurbarInset({

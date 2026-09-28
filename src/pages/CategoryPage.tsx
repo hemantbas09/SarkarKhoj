@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
-import data from '../data/categoryPage.json'
+import data from '../data/categories'
 import Breadcrumb from '../components/Breadcrumb/Breadcrumb'
 import CategoryHero from '../components/CategoryHero/CategoryHero'
 import CategorySearch from '../components/CategorySearch/CategorySearch'

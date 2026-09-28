@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import data from '../../data/homepage.json'
-import categoryData from '../../data/categoryPage.json'
+import categoryData from '../../data/categories'
 import './CategoryCard.scss'
 
 const categoryKeys = Object.keys(categoryData.categories)

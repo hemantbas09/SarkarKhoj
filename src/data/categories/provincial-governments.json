@@ -1,0 +1,125 @@
+{
+  "config": {
+    "title": "Provincial Governments",
+    "icon": "map",
+    "description": "Koshi, Madhesh, Bagmati, Gandaki, Lumbini, Karnali, and Sudurpashchim state assemblies.",
+    "breadcrumbCurrent": "Provincial Governments",
+    "hero": {
+      "badge": {
+        "icon": "map",
+        "label": "Sub-National Governance"
+      },
+      "title": "Provincial Governments",
+      "nepali": "नेपालका प्रदेश सरकारहरू",
+      "description": "Koshi, Madhesh, Bagmati, Gandaki, Lumbini, Karnali, and Sudurpashchim state assemblies.",
+      "descriptionDesktop": "Official portals of the seven provincial governments of Nepal, including assemblies, chief ministers' offices, and provincial secretariats.",
+      "location": "7 Provinces, Nepal",
+      "stats": [
+        {
+          "icon": "verified_user",
+          "text": "7 Provincial Assemblies"
+        },
+        {
+          "icon": "security",
+          "text": "Strict .gov.np Validation"
+        },
+        {
+          "icon": "domain",
+          "text": "NITC Tier-III Data Center Hosted"
+        }
+      ]
+    },
+    "search": {
+      "placeholder": "Search by province name or .gov.np domain...",
+      "showingLabel": "Showing:",
+      "countLabel": "Active",
+      "totalCount": 7,
+      "filterLabel": "Filter Region:",
+      "chips": [
+        {
+          "label": "All",
+          "filter": "all"
+        },
+        {
+          "label": "East",
+          "filter": "east"
+        },
+        {
+          "label": "West",
+          "filter": "west"
+        }
+      ],
+      "pills": [
+        {
+          "label": "All",
+          "count": 7,
+          "filter": "all"
+        },
+        {
+          "label": "Eastern",
+          "filter": "east"
+        },
+        {
+          "label": "Central",
+          "filter": "central"
+        },
+        {
+          "label": "Western",
+          "filter": "west"
+        }
+      ]
+    },
+    "emptyState": {
+      "icon": "manage_search",
+      "title": "No matching provinces found",
+      "description": "Try checking the spelling or clear the filter chips.",
+      "button": "Reset Directory Filters"
+    },
+    "trustNotice": {
+      "icon": "verified",
+      "title": "Official .gov.np TLD Standard",
+      "text": "All listed provincial links are authenticated and under the National Information Technology Center (NITC) root domain."
+    }
+  },
+  "items": [
+    {
+      "code": "provincial-governments",
+      "sector": "east",
+      "sectorLabel": "Eastern Nepal",
+      "icon": "map",
+      "name": "Koshi Province",
+      "nepali": "कोशी प्रदेश",
+      "domain": "koshi.gov.np",
+      "description": "Official portal of Koshi Province, the easternmost province, covering assembly, executive, and provincial services.",
+      "keywords": "koshi province east koshi.gov.np",
+      "url": "https://koshi.gov.np",
+      "id": "koshi.gov.np"
+    },
+    {
+      "code": "provincial-governments",
+      "sector": "central",
+      "sectorLabel": "Central Nepal",
+      "icon": "map",
+      "name": "Bagmati Province",
+      "nepali": "बागमती प्रदेश",
+      "domain": "bagmati.gov.np",
+      "description": "Official portal of Bagmati Province, home to the capital Kathmandu, covering provincial governance and services.",
+      "keywords": "bagmati province kathmandu bagmati.gov.np",
+      "url": "https://bagmati.gov.np",
+      "id": "bagmati.gov.np"
+    },
+    {
+      "code": "provincial-governments",
+      "sector": "west",
+      "sectorLabel": "Western Nepal",
+      "icon": "map",
+      "name": "Karnali Province",
+      "nepali": "कर्णाली प्रदेश",
+      "domain": "karnali.gov.np",
+      "description": "Official portal of Karnali Province, the westernmost and most remote province, covering provincial governance.",
+      "keywords": "karnali province west karnali.gov.np",
+      "url": "https://karnali.gov.np",
+      "id": "karnali.gov.np"
+    }
+  ]
+}

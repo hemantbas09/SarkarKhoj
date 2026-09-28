@@ -1,0 +1,138 @@
+{
+  "config": {
+    "title": "Public Institutions",
+    "icon": "hub",
+    "description": "Public sector enterprises, civil aviation, electricity authorities (NEA), and national communication boards.",
+    "breadcrumbCurrent": "Public Institutions",
+    "hero": {
+      "badge": {
+        "icon": "hub",
+        "label": "Public Sector Enterprises"
+      },
+      "title": "Public Institutions",
+      "nepali": "नेपालका सार्वजनिक संस्थाहरू",
+      "description": "Public sector enterprises, civil aviation, electricity authorities (NEA), and national communication boards.",
+      "descriptionDesktop": "Official portals of Nepal's public sector enterprises, including civil aviation, electricity authorities, and national communication boards.",
+      "location": "40+ Corporations",
+      "stats": [
+        {
+          "icon": "verified_user",
+          "text": "40+ Public Enterprises"
+        },
+        {
+          "icon": "security",
+          "text": "Strict .gov.np Validation"
+        },
+        {
+          "icon": "domain",
+          "text": "NITC Tier-III Data Center Hosted"
+        }
+      ]
+    },
+    "search": {
+      "placeholder": "Search by institution name or .gov.np domain...",
+      "showingLabel": "Showing:",
+      "countLabel": "Active",
+      "totalCount": 40,
+      "filterLabel": "Filter Sector:",
+      "chips": [
+        {
+          "label": "All",
+          "filter": "all"
+        },
+        {
+          "label": "Energy",
+          "filter": "energy"
+        },
+        {
+          "label": "Aviation",
+          "filter": "aviation"
+        }
+      ],
+      "pills": [
+        {
+          "label": "All",
+          "count": 40,
+          "filter": "all"
+        },
+        {
+          "label": "Energy & Power",
+          "filter": "energy"
+        },
+        {
+          "label": "Aviation & Transport",
+          "filter": "aviation"
+        },
+        {
+          "label": "Communication",
+          "filter": "communication"
+        }
+      ]
+    },
+    "emptyState": {
+      "icon": "manage_search",
+      "title": "No matching institutions found",
+      "description": "Try checking the spelling or clear the filter chips.",
+      "button": "Reset Directory Filters"
+    },
+    "trustNotice": {
+      "icon": "verified",
+      "title": "Official .gov.np TLD Standard",
+      "text": "All listed institutional links are authenticated and under the National Information Technology Center (NITC) root domain."
+    }
+  },
+  "items": [
+    {
+      "code": "public-institutions",
+      "sector": "energy",
+      "sectorLabel": "Energy & Power",
+      "icon": "electric_bolt",
+      "name": "Nepal Electricity Authority (NEA)",
+      "nepali": "नेपाल विद्युत प्राधिकरण",
+      "domain": "nea.gov.np",
+      "description": "State-owned utility responsible for generation, transmission, and distribution of electricity across Nepal.",
+      "keywords": "nea electricity power energy nea.gov.np",
+      "url": "https://nea.gov.np",
+      "id": "nea.gov.np"
+    },
+    {
+      "code": "public-institutions",
+      "sector": "aviation",
+      "sectorLabel": "Aviation & Transport",
+      "icon": "flight",
+      "name": "Civil Aviation Authority of Nepal (CAAN)",
+      "nepali": "नेपाल नागरिक उड्डयन प्राधिकरण",
+      "domain": "caan.gov.np",
+      "description": "Regulates civil aviation, air traffic control, airport operations, and aviation safety standards in Nepal.",
+      "keywords": "caan aviation airport air caan.gov.np",
+      "url": "https://caan.gov.np",
+      "id": "caan.gov.np"
+    },
+    {
+      "code": "public-institutions",
+      "sector": "communication",
+      "sectorLabel": "Communication",
+      "icon": "cell_tower",
+      "name": "Nepal Telecommunications Corporation (NTC)",
+      "nepali": "नेपाल टेलिकम",
+      "domain": "ntc.gov.np",
+      "description": "State-owned telecommunications provider delivering mobile, fixed-line, and internet services nationwide.",
+      "keywords": "ntc telecom mobile internet ntc.gov.np",
+      "url": "https://ntc.gov.np",
+      "id": "ntc.gov.np"
+    },
+    {
+      "code": "public-institutions",
+      "sector": "finance",
+      "sectorLabel": "Public Banking",
+      "icon": "savings",
+      "name": "Rastriya Banijya Bank (RBB)",
+      "nepali": "राष्ट्रिय वाणिज्य बैंक लिमिटेड",
+      "domain": "rbb.com.np",
+      "description": "Wholly state-owned public commercial bank delivering retail and developmental finance services nationwide. Disburses state pensions, subsidies, and civic guarantees.",
+      "keywords": "rbb bank finance pension rbb.com.np",
+      "url": "https://rbb.com.np",
+      "id": "rbb.com.np"
+    }
+  ]
+}

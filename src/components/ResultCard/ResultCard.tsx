@@ -1,5 +1,5 @@
 import data from '../../data/searchResults.json'
-import categoryData from '../../data/categoryPage.json'
+import categoryData from '../../data/categories'
 import './ResultCard.scss'
 
 type Category = (typeof categoryData.categories)[keyof typeof categoryData.categories]
