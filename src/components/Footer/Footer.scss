@@ -4,6 +4,8 @@
   width: 100%;
   margin-top: $space-xl;
   padding: $space-lg $gutter-mobile;
+  // Keep footer content clear of the fixed bottom nav on mobile
+  padding-bottom: calc($bottom-nav-height + env(safe-area-inset-bottom, 0px) + $space-lg);
   background: $surface-container-low;
   box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.02);
   text-align: center;

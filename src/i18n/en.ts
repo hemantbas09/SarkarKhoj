@@ -2,7 +2,7 @@ import type { Dictionary } from './types'
 
 export const en: Dictionary = {
   header: {
-    title: 'Nepal Government Websites',
+    title: 'SarkarWeb',
     subtitle: 'नेपाल सरकार वेबसाइट निर्देशिका',
     navHome: 'Home',
     navAllCategories: 'All Categories',
@@ -10,7 +10,7 @@ export const en: Dictionary = {
   },
   hero: {
     badge: 'Official Directory • नेपाल सरकार',
-    heading: 'Find Nepal Government Websites',
+    heading: 'Find Nepal Government Websites on SarkarWeb',
     subheading:
       'Official government websites, organized in one place. Authenticated civic links across all administrative levels.',
     searchPlaceholder:

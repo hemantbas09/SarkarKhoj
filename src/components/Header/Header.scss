@@ -44,10 +44,44 @@
     &:hover {
       background: $surface-container-low;
     }
+
+    &--open {
+      background: $surface-container-low;
+      color: $primary;
+    }
   }
 
   &__menu-icon {
     font-size: 24px;
+  }
+
+  &__mobile-menu {
+    display: flex;
+    flex-direction: column;
+    padding: $space-sm $gutter-mobile $space-md;
+    border-top: 1px solid $outline-variant;
+    box-shadow: $shadow-md;
+    background: $surface-container-lowest;
+  }
+
+  &__mobile-menu-link {
+    padding: $space-sm $space-xs;
+    border-radius: $radius-lg;
+    text-decoration: none;
+    color: $on-surface;
+    font-size: $label-lg-size;
+    line-height: $label-lg-line;
+    font-weight: 500;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      background: $surface-container-low;
+      color: $primary;
+    }
   }
 
   &__brand-link {
@@ -169,37 +203,18 @@
     }
   }
 
-  &__avatar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    background: $primary;
-    flex-shrink: 0;
-  }
-
-  &__avatar-icon {
-    font-size: 18px;
-    color: $on-primary;
-  }
-
   @media (min-width: $bp-md) {
     &__inner {
       padding: 0 $margin;
     }
 
-    &__menu-btn {
+    &__menu-btn,
+    &__mobile-menu {
       display: none;
     }
 
     &__nav {
       display: flex;
-    }
-
-    &__avatar {
-      display: none;
     }
   }
 }

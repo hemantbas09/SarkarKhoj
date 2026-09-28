@@ -1,6 +1,6 @@
 {
   "header": {
-    "title": "Nepal Government Websites",
+    "title": "SarkarWeb",
     "subtitle": "नेपाल सरकार वेबसाइट निर्देशिका",
     "logo": "https://lh3.googleusercontent.com/aida/AEtjO1XseQTexVOzpMJKpOQS1nEEgxr5CHJe0C83tJMbNPSiOz3YwwdBakOa82mKq3fNMba52nn_5QZDUDprXIQ5G10bGNuHeA7TSsScO2JxZFC8kE8PhQ7iIhGwifasNLQj1xXN_D4hOdyWpmxOg2YDTVa049UmIPtVH9KRE734gmF_-j6dihY7VMfyQWykZZ_qbDLbX6Xfk1yPOrii9VM1iJLkob9UdeiOAGKiua0ytUvw2Jq6HFtRMl_ff1Y",
     "logoAlt": "Nepal National Emblem Flag Logo",
@@ -11,7 +11,7 @@
   },
   "hero": {
     "badge": "Official Directory • नेपाल सरकार",
-    "heading": "Find Nepal Government Websites",
+    "heading": "Find Nepal Government Websites on SarkarWeb",
     "subheading": "Official government websites, organized in one place. Authenticated civic links across all administrative levels.",
     "searchPlaceholder": "Search government websites by name, department, or keyword...",
     "popularSearchesLabel": "Popular searches:",

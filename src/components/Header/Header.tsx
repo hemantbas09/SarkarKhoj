@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import data from '../../data/homepage.json'
 import categoryData from '../../data/categories'
@@ -17,8 +18,10 @@ function Header() {
   const { lang, setLang, t } = useLanguage()
   const navigate = useNavigate()
   const location = useLocation()
+  const [menuOpen, setMenuOpen] = useState(false)
 
   const handleAllCategories = () => {
+    setMenuOpen(false)
     if (location.pathname === '/') {
       document
         .getElementById('categories')
@@ -33,12 +36,14 @@ function Header() {
       <div className="header__inner">
         <div className="header__brand">
           <button
-            className="header__menu-btn"
+            className={`header__menu-btn${menuOpen ? ' header__menu-btn--open' : ''}`}
             type="button"
-            aria-label="Open Directory Menu"
+            aria-label={menuOpen ? 'Close Directory Menu' : 'Open Directory Menu'}
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen((open) => !open)}
           >
             <span className="material-symbols-outlined header__menu-icon">
-              menu
+              {menuOpen ? 'close' : 'menu'}
             </span>
           </button>
           <Link to="/" className="header__brand-link" aria-label="Home">
@@ -114,14 +119,41 @@ function Header() {
               नेपाली
             </button>
           </div>
-          <div className="header__avatar">
-            <span className="material-symbols-outlined header__avatar-icon">
-              person
-            </span>
-          </div>
         </div>
       </div>
-    </header>
+      {menuOpen && (
+        <nav className="header__mobile-menu" aria-label="Mobile menu">
+          {header.navLinks.map((link) => {
+            const label =
+              link.path === 'all-categories'
+                ? t.header.navAllCategories
+                : t.header.navHome
+            if (link.path === 'all-categories') {
+              return (
+                <button
+                  key={link.path}
+                  type="button"
+                  className="header__mobile-menu-link"
+                  onClick={handleAllCategories}
+                >
+                  {label}
+                </button>
+              )
+            }
+            const to = resolveRoute(link.path)
+            return to ? (
+              <Link
+                key={link.path}
+                to={to}
+                className="header__mobile-menu-link"
+                onClick={() => setMenuOpen(false)}
+              >
+                {label}
+              </Link>
+            ) : null
+          })}
+        </nav>
+      )}    </header>
   )
 }
 

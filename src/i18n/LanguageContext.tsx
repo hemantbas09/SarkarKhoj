@@ -11,7 +11,7 @@ import { en } from './en'
 import { np } from './np'
 import type { Dictionary, Lang } from './types'
 
-const STORAGE_KEY = 'sarkarkhoj-lang'
+const STORAGE_KEY = 'sarkarweb-lang'
 
 interface LanguageContextValue {
   lang: Lang

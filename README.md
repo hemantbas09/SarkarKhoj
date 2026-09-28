@@ -1,8 +1,8 @@
-# 🇳🇵 SarkarKhoj
+# 🇳🇵 SarkarWeb
 
-**SarkarKhoj** is a simple and organized directory for finding **Nepal government websites and online services** in one place.
+**SarkarWeb** is a simple and organized directory for finding **Nepal government websites and online services** in one place.
 
-Instead of searching the internet for individual government websites, users can use SarkarKhoj to quickly discover and access official government portals, departments, organizations, and public services.
+Instead of searching the internet for individual government websites, users can use SarkarWeb to quickly discover and access official government portals, departments, organizations, and public services.
 
 ## 📸 Screenshots
 
@@ -39,7 +39,7 @@ Instead of searching the internet for individual government websites, users can 
 
 Nepal has many government websites and online services, but finding the correct official website can sometimes be difficult.
 
-**SarkarKhoj aims to solve this by providing a single, simple directory where users can discover government websites quickly.**
+**SarkarWeb aims to solve this by providing a single, simple directory where users can discover government websites quickly.**
 
 ## 🛠️ Tech Stack
 
@@ -52,7 +52,7 @@ Nepal has many government websites and online services, but finding the correct 
 ## 📂 Project Structure
 
 ```
-SarkarKhoj/
+SarkarWeb/
 ├── public/
 ├── src/
 │   ├── components/
@@ -87,13 +87,13 @@ Example:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/SarkarKhoj.git
+git clone https://github.com/YOUR_USERNAME/SarkarWeb.git
 ```
 
 ### 2. Navigate to the project
 
 ```bash
-cd SarkarKhoj
+cd SarkarWeb
 ```
 
 ### 3. Install dependencies
@@ -139,7 +139,7 @@ If you know of an official Nepal government website that is missing or contains 
 
 ## ⚠️ Disclaimer
 
-SarkarKhoj is an independent directory and is **not affiliated with or operated by the Government of Nepal**.
+SarkarWeb is an independent directory and is **not affiliated with or operated by the Government of Nepal**.
 
 The project provides links to government websites for easier discovery and access. Users should verify information on the respective official government website.
 
@@ -164,4 +164,4 @@ This project is open source and available under the **MIT License**.
 
 Made with ❤️ for easier access to Nepal's government services.
 
-🇳🇵 **SarkarKhoj — Find Government, Simply.**
+🇳🇵 **SarkarWeb — Find Government, Simply.**
