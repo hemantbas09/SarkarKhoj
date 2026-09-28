@@ -161,43 +161,6 @@
     ]
   },
   "footer": {
-    "brand": {
-      "title": "Nepal Government Web Directory",
-      "description": "Official centralized civic registry connecting citizens and organizations to all verified digital portals of the Government of Nepal (नेपाल सरकार).",
-      "standards": "National Information Technology Center (NITC) Standards"
-    },
-    "columns": [
-      {
-        "title": "Federal Entities",
-        "links": [
-          "Office of the Prime Minister",
-          "Federal Ministries",
-          "Departments & Bureaus",
-          "Constitutional Bodies"
-        ]
-      },
-      {
-        "title": "Sub-National",
-        "links": [
-          "Koshi Province",
-          "Madhesh Province",
-          "Bagmati Province",
-          "Gandaki Province",
-          "Lumbini Province",
-          "Karnali Province",
-          "Sudurpashchim Province"
-        ]
-      },
-      {
-        "title": "Directory Tools",
-        "links": [
-          "Domain Verification (.gov.np)",
-          "Public Service Directory",
-          "Nagarik App Integration",
-          "Report Broken Link"
-        ]
-      }
-    ],
     "copyright": "© 2025 Government of Nepal. All Rights Reserved.",
     "directoryLabel": "Official Public Directory",
     "backToTop": "Back to top"

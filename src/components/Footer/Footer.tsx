@@ -11,41 +11,6 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer__inner">
-        <div className="footer__grid">
-          <div className="footer__brand">
-            <div className="footer__brand-heading">
-              <span className="footer__brand-dot" aria-hidden="true" />
-              <span className="footer__brand-title">{footer.brand.title}</span>
-            </div>
-            <p className="footer__brand-description">
-              {footer.brand.description}
-            </p>
-            <div className="footer__standards">
-              <span className="material-symbols-outlined footer__standards-icon">
-                gavel
-              </span>
-              <span className="footer__standards-text">
-                {footer.brand.standards}
-              </span>
-            </div>
-          </div>
-
-          {footer.columns.map((column) => (
-            <div key={column.title} className="footer__column">
-              <h4 className="footer__column-title">{column.title}</h4>
-              <ul className="footer__column-list">
-                {column.links.map((link) => (
-                  <li key={link} className="footer__column-item">
-                    <a className="footer__column-link" href="#">
-                      {link}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-
         <div className="footer__bottom">
           <span className="footer__copyright">{footer.copyright}</span>
           <span className="footer__directory-label">

@@ -13,104 +13,6 @@
     margin: 0 auto;
   }
 
-  &__grid {
-    display: flex;
-    flex-direction: column;
-    gap: $space-lg;
-    padding-bottom: $space-lg;
-  }
-
-  &__brand {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: $space-sm;
-  }
-
-  &__brand-heading {
-    display: flex;
-    align-items: center;
-    gap: $space-sm;
-  }
-
-  &__brand-dot {
-    width: 0.75rem;
-    height: 0.75rem;
-    border-radius: 50%;
-    background: $primary;
-  }
-
-  &__brand-title {
-    color: $on-surface;
-    font-size: $title-sm-size;
-    line-height: $title-sm-line;
-    font-weight: $title-sm-weight;
-  }
-
-  &__brand-description {
-    margin: 0;
-    max-width: 28rem;
-    color: $on-surface-variant;
-    font-size: $body-sm-size;
-    line-height: $body-sm-line;
-  }
-
-  &__standards {
-    display: inline-flex;
-    align-items: center;
-    gap: $space-xs;
-    padding: $space-xs $space-sm;
-    border-radius: $radius-lg;
-    background: $surface-container-lowest;
-  }
-
-  &__standards-icon {
-    font-size: 16px;
-    color: $tertiary;
-  }
-
-  &__standards-text {
-    color: $secondary;
-    font-size: $label-sm-size;
-    line-height: $label-sm-line;
-  }
-
-  &__column {
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__column-title {
-    margin: 0 0 $space-md;
-    color: $on-surface;
-    font-size: $title-sm-size;
-    line-height: $title-sm-line;
-    font-weight: $title-sm-weight;
-    text-align: left;
-  }
-
-  &__column-list {
-    display: flex;
-    flex-direction: column;
-    gap: $space-sm;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  &__column-link {
-    color: $on-surface-variant;
-    font-size: $body-sm-size;
-    line-height: $body-sm-line;
-    text-decoration: none;
-    cursor: pointer;
-    transition: color 0.2s ease;
-
-    &:hover {
-      color: $primary;
-    }
-  }
-
   &__bottom {
     display: flex;
     flex-direction: column;
@@ -163,18 +65,6 @@
       padding-bottom: $space-lg;
     }
 
-    &__grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: $gutter;
-      padding-bottom: $space-xl;
-    }
-
-    &__brand {
-      align-items: flex-start;
-      grid-column: span 2;
-    }
-
     &__bottom {
       flex-direction: row;
       justify-content: space-between;
@@ -183,16 +73,6 @@
 
     &__back-to-top {
       margin-top: 0;
-    }
-  }
-
-  @media (min-width: $bp-lg) {
-    &__grid {
-      grid-template-columns: repeat(5, 1fr);
-    }
-
-    &__brand {
-      grid-column: span 2;
     }
   }
 }
