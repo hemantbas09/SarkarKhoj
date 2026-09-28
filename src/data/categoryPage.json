@@ -496,11 +496,11 @@
         "nepali": "नेपालका राष्ट्रिय विश्वविद्यालयहरू",
         "description": "Chartered national universities including Tribhuvan University, Kathmandu University, and regional academies.",
         "descriptionDesktop": "Official portals of Nepal's chartered national universities, covering admissions, research, academic programs, and institutional governance.",
-        "location": "14 Universities",
+        "location": "21 Universities",
         "stats": [
           {
             "icon": "verified_user",
-            "text": "14 National Universities"
+            "text": "21 National Universities"
           },
           {
             "icon": "security",
@@ -516,7 +516,7 @@
         "placeholder": "Search by university name or .edu.np domain...",
         "showingLabel": "Showing:",
         "countLabel": "Active",
-        "totalCount": 14,
+        "totalCount": 21,
         "filterLabel": "Filter Region:",
         "chips": [
           {
@@ -530,12 +530,16 @@
           {
             "label": "Eastern",
             "filter": "eastern"
+          },
+          {
+            "label": "Western",
+            "filter": "western"
           }
         ],
         "pills": [
           {
             "label": "All",
-            "count": 14,
+            "count": 21,
             "filter": "all"
           },
           {
@@ -985,8 +989,8 @@
       "name": "Tribhuvan University",
       "nepali": "त्रिभुवन विश्वविद्यालय",
       "domain": "tu.edu.np",
-      "description": "Largest public university in Nepal, offering undergraduate and postgraduate programs across 17 faculties.",
-      "keywords": "tribhuvan university tu kathmandu tu.edu.np",
+      "description": "Nepal's oldest and largest university, established in 1959 in Kirtipur, Kathmandu.",
+      "keywords": "tribhuvan university university bagmati tu.edu.np",
       "url": "https://tu.edu.np",
       "id": "tu.edu.np"
     },
@@ -996,10 +1000,10 @@
       "sectorLabel": "Central Nepal",
       "icon": "school",
       "name": "Kathmandu University",
-      "nepali": "काठमाडौं विश्वविद्यालय",
+      "nepali": "काठमाडौँ विश्वविद्यालय",
       "domain": "ku.edu.np",
-      "description": "Premier research university in Nepal, known for engineering, management, and natural sciences programs.",
-      "keywords": "kathmandu university ku ku.edu.np",
+      "description": "Autonomous public university in Dhulikhel, established in 1991.",
+      "keywords": "kathmandu university university bagmati ku.edu.np",
       "url": "https://ku.edu.np",
       "id": "ku.edu.np"
     },
@@ -1010,11 +1014,245 @@
       "icon": "school",
       "name": "Purbanchal University",
       "nepali": "पूर्वाञ्चल विश्वविद्यालय",
+      "domain": "purbuni.edu.np",
+      "description": "Federal university based in Sundar Haraicha (Gothgaun), Koshi Province.",
+      "keywords": "purbanchal university university koshi purbuni.edu.np",
+      "url": "https://purbuni.edu.np",
+      "id": "purbuni.edu.np"
+    },
+    {
+      "code": "universities",
+      "sector": "western",
+      "sectorLabel": "Western Nepal",
+      "icon": "school",
+      "name": "Pokhara University",
+      "nepali": "पोखरा विश्वविद्यालय",
       "domain": "pu.edu.np",
-      "description": "National university serving eastern Nepal, offering programs in management, engineering, and agriculture.",
-      "keywords": "purbanchal university pu pu.edu.np",
+      "description": "Federal university based in Pokhara, established in 1997.",
+      "keywords": "pokhara university university gandaki pu.edu.np",
       "url": "https://pu.edu.np",
       "id": "pu.edu.np"
+    },
+    {
+      "code": "universities",
+      "sector": "western",
+      "sectorLabel": "Western Nepal",
+      "icon": "school",
+      "name": "Sudurpaschim (Far Western) University",
+      "nepali": "सुदूरपश्चिम विश्वविद्यालय",
+      "domain": "fwu.edu.np",
+      "description": "Federal university in Bhimdatta (Mahendranagar), Kanchanpur, established in 2010.",
+      "keywords": "sudurpaschim (far western) university university sudurpashchim fwu.edu.np",
+      "url": "https://fwu.edu.np",
+      "id": "fwu.edu.np"
+    },
+    {
+      "code": "universities",
+      "sector": "western",
+      "sectorLabel": "Western Nepal",
+      "icon": "school",
+      "name": "Madhyapaschim (Mid-West) University",
+      "nepali": "मध्यपश्चिम विश्वविद्यालय",
+      "domain": "mwu.edu.np",
+      "description": "Federal university in Birendranagar, Surkhet, established in 2010.",
+      "keywords": "madhyapaschim (mid-west) university university karnali mwu.edu.np",
+      "url": "https://mwu.edu.np",
+      "id": "mwu.edu.np"
+    },
+    {
+      "code": "universities",
+      "sector": "central",
+      "sectorLabel": "Central Nepal",
+      "icon": "school",
+      "name": "Rajarshi Janak University",
+      "nepali": "राजरषि जनक विश्वविद्यालय",
+      "domain": "rju.edu.np",
+      "description": "Federal university in Janakpur, established in 2017.",
+      "keywords": "rajarshi janak university university madhesh rju.edu.np",
+      "url": "https://rju.edu.np",
+      "id": "rju.edu.np"
+    },
+    {
+      "code": "universities",
+      "sector": "western",
+      "sectorLabel": "Western Nepal",
+      "icon": "school",
+      "name": "University of Nepal",
+      "nepali": "नेपाल विश्वविद्यालय",
+      "domain": "unepal.edu.np",
+      "description": "Public university established by the University of Nepal Act 2024 (Gaindakot).",
+      "keywords": "university of nepal university gandaki unepal.edu.np",
+      "url": "https://unepal.edu.np",
+      "id": "unepal.edu.np"
+    },
+    {
+      "code": "universities",
+      "sector": "central",
+      "sectorLabel": "Central Nepal",
+      "icon": "school",
+      "name": "Nepal Open University",
+      "nepali": "नेपाल खुला विश्वविद्यालय",
+      "domain": "nou.edu.np",
+      "description": "Distance-learning public university in Lalitpur, established in 2016.",
+      "keywords": "nepal open university university bagmati nou.edu.np",
+      "url": "https://nou.edu.np",
+      "id": "nou.edu.np"
+    },
+    {
+      "code": "universities",
+      "sector": "central",
+      "sectorLabel": "Central Nepal",
+      "icon": "school",
+      "name": "Agriculture and Forestry University",
+      "nepali": "कृषि तथा वन विश्वविद्यालय",
+      "domain": "afu.edu.np",
+      "description": "Federal university in Rampur, Chitwan, focused on agriculture and forestry.",
+      "keywords": "agriculture and forestry university university bagmati afu.edu.np",
+      "url": "https://afu.edu.np",
+      "id": "afu.edu.np"
+    },
+    {
+      "code": "universities",
+      "sector": "central",
+      "sectorLabel": "Central Nepal",
+      "icon": "school",
+      "name": "Madan Bhandari University of Science and Technology",
+      "nepali": "मदन भण्डारी विज्ञान तथा प्रविधि विश्वविद्यालय",
+      "domain": "mbust.edu.np",
+      "description": "Science and technology university in Chitlang, Makwanpur, established in 2022.",
+      "keywords": "madan bhandari university of science and technology university bagmati mbust.edu.np",
+      "url": "https://mbust.edu.np",
+      "id": "mbust.edu.np"
+    },
+    {
+      "code": "universities",
+      "sector": "western",
+      "sectorLabel": "Western Nepal",
+      "icon": "school",
+      "name": "Nepal Sanskrit University",
+      "nepali": "नेपाल संस्कृत विश्वविद्यालय",
+      "domain": "nsu.edu.np",
+      "description": "Sanskrit university (formerly Mahendra Sanskrit University), Dang, established in 1986.",
+      "keywords": "nepal sanskrit university university lumbini nsu.edu.np",
+      "url": "https://nsu.edu.np",
+      "id": "nsu.edu.np"
+    },
+    {
+      "code": "universities",
+      "sector": "western",
+      "sectorLabel": "Western Nepal",
+      "icon": "school",
+      "name": "Lumbini Buddhist University",
+      "nepali": "लुम्बिनी बौद्ध विश्वविद्यालय",
+      "domain": "lbu.edu.np",
+      "description": "Buddhist studies university in Rupandehi, established in 2004.",
+      "keywords": "lumbini buddhist university university lumbini lbu.edu.np",
+      "url": "https://lbu.edu.np",
+      "id": "lbu.edu.np"
+    },
+    {
+      "code": "universities",
+      "sector": "western",
+      "sectorLabel": "Western Nepal",
+      "icon": "school",
+      "name": "Martyr Dasharath Chand University of Health Science",
+      "nepali": "शहीद दशरथ चन्द स्वास्थ्य विज्ञान विश्वविद्यालय",
+      "domain": "dcuhs.edu.np",
+      "description": "Health sciences university in Geta, Kailali.",
+      "keywords": "martyr dasharath chand university of health science university sudurpashchim dcuhs.edu.np",
+      "url": "https://dcuhs.edu.np",
+      "id": "dcuhs.edu.np"
+    },
+    {
+      "code": "universities",
+      "sector": "eastern",
+      "sectorLabel": "Eastern Nepal",
+      "icon": "school",
+      "name": "Yogamaya Ayurveda University",
+      "nepali": "योगमया आयुर्वेद विश्वविद्यालय",
+      "domain": "yogmayaau.edu.np",
+      "description": "Ayurveda university in Arun Valley, Sankhuwasabha.",
+      "keywords": "yogamaya ayurveda university university koshi yogmayaau.edu.np",
+      "url": "https://yogmayaau.edu.np",
+      "id": "yogmayaau.edu.np"
+    },
+    {
+      "code": "universities",
+      "sector": "eastern",
+      "sectorLabel": "Eastern Nepal",
+      "icon": "school",
+      "name": "Manmohan Technical University",
+      "nepali": "मनमोहन प्राविधिक विश्वविद्यालय",
+      "domain": "mtu.edu.np",
+      "description": "Provincial technical university in Budiganga, Morang, established in 2019.",
+      "keywords": "manmohan technical university university koshi mtu.edu.np",
+      "url": "https://mtu.edu.np",
+      "id": "mtu.edu.np"
+    },
+    {
+      "code": "universities",
+      "sector": "western",
+      "sectorLabel": "Western Nepal",
+      "icon": "school",
+      "name": "Gandaki University",
+      "nepali": "गण्डकी विश्वविद्यालय",
+      "domain": "gandakiuniversity.edu.np",
+      "description": "Provincial university in Pokhara, established in 2019.",
+      "keywords": "gandaki university university gandaki gandakiuniversity.edu.np",
+      "url": "https://gandakiuniversity.edu.np",
+      "id": "gandakiuniversity.edu.np"
+    },
+    {
+      "code": "universities",
+      "sector": "central",
+      "sectorLabel": "Central Nepal",
+      "icon": "school",
+      "name": "Madhesh Agricultural University",
+      "nepali": "मधेश कृषि विश्वविद्यालय",
+      "domain": "mau.edu.np",
+      "description": "Provincial agricultural university in Rajbiraj, Saptari.",
+      "keywords": "madhesh agricultural university university madhesh mau.edu.np",
+      "url": "https://mau.edu.np",
+      "id": "mau.edu.np"
+    },
+    {
+      "code": "universities",
+      "sector": "central",
+      "sectorLabel": "Central Nepal",
+      "icon": "school",
+      "name": "Madhesh University",
+      "nepali": "मधेश विश्वविद्यालय",
+      "domain": "madheshuniversity.edu.np",
+      "description": "Provincial university in Birgunj, established in 2022.",
+      "keywords": "madhesh university university madhesh madheshuniversity.edu.np",
+      "url": "https://madheshuniversity.edu.np",
+      "id": "madheshuniversity.edu.np"
+    },
+    {
+      "code": "universities",
+      "sector": "western",
+      "sectorLabel": "Western Nepal",
+      "icon": "school",
+      "name": "Lumbini Technological University",
+      "nepali": "लुम्बिनी प्राविधिक विश्वविद्यालय",
+      "domain": "ltu.edu.np",
+      "description": "Provincial technological university in Khajura, Banke.",
+      "keywords": "lumbini technological university university lumbini ltu.edu.np",
+      "url": "https://ltu.edu.np",
+      "id": "ltu.edu.np"
+    },
+    {
+      "code": "universities",
+      "sector": "central",
+      "sectorLabel": "Central Nepal",
+      "icon": "school",
+      "name": "Bagmati University",
+      "nepali": "बागमती विश्वविद्यालय",
+      "domain": "bagmatiuniversity.edu.np",
+      "description": "Provincial university in Hetauda, established in 2024.",
+      "keywords": "bagmati university university bagmati bagmatiuniversity.edu.np",
+      "url": "https://bagmatiuniversity.edu.np",
+      "id": "bagmatiuniversity.edu.np"
     },
     {
       "code": "public-institutions",
