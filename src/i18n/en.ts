@@ -49,7 +49,7 @@ export const en: Dictionary = {
     eyebrow: 'Singha Durbar Secretariat',
     title: 'Connecting citizens to authenticated federal governance',
     description:
-      'Direct navigation across all 7 Provinces, 753 Municipalities, and 22 Ministries under the Digital Nepal Framework.',
+      'Direct navigation across all 7 Provinces, 753 Municipalities, and 17 Ministries under the Digital Nepal Framework.',
   },
   categoriesSection: {
     eyebrow: 'Directory Taxonomy',
@@ -59,7 +59,7 @@ export const en: Dictionary = {
     explorePortals: 'Explore portals',
     cards: {
       ministries: {
-        count: '22 Ministries',
+        count: '17 Ministries',
         title: 'Ministries',
         description:
           'Central executive policy portfolios including Finance, Foreign Affairs, Health, and Home.',
@@ -230,7 +230,7 @@ export const en: Dictionary = {
         breadcrumbCurrent: 'Ministries',
         heroBadge: 'Federal Executive Portals',
         location: 'Singha Durbar, Kathmandu',
-        stat1: '22 Verified Federal Ministries',
+        stat1: '17 Verified Federal Ministries',
         statValidation: 'Strict .gov.np Validation',
         searchPlaceholder:
           'Search by ministry name, portfolio, or .gov.np domain...',
@@ -243,7 +243,7 @@ export const en: Dictionary = {
           { label: 'Energy & Water', filter: 'infrastructure' },
         ],
         pills: [
-          { label: 'All', count: 22, filter: 'all' },
+          { label: 'All', count: 17, filter: 'all' },
           { label: 'Economy & Finance', filter: 'economy' },
           { label: 'Security & Home', filter: 'security' },
           { label: 'Diplomacy & Foreign', filter: 'diplomacy' },

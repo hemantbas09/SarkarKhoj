@@ -99,6 +99,7 @@
       "domain": "sc.gov.np",
       "description": "Highest court of justice in Nepal, interpreting the Constitution and delivering final appellate judgments.",
       "keywords": "supreme court judiciary sc sc.gov.np",
+      "tags": ["supreme court", "adalat", "अदालत", "judiciary", "sc"],
       "url": "https://sc.gov.np",
       "id": "sc.gov.np"
     },
@@ -112,6 +113,7 @@
       "domain": "ecn.gov.np",
       "description": "Conducts national and local elections, manages voter registration, and ensures democratic electoral processes.",
       "keywords": "election commission ecn vote ecn.gov.np",
+      "tags": ["election", "nirbachan", "निर्वाचन", "vote", "voter", "ecn"],
       "url": "https://ecn.gov.np",
       "id": "ecn.gov.np"
     },
@@ -125,6 +127,7 @@
       "domain": "oag.gov.np",
       "description": "Conducts financial audits of federal, provincial, and local governments to ensure accountability and transparency.",
       "keywords": "auditor general audit oag oag.gov.np",
+      "tags": ["auditor general", "audit", "prahari", "प्रहरी", "oag"],
       "url": "https://oag.gov.np",
       "id": "oag.gov.np"
     },
@@ -138,6 +141,7 @@
       "domain": "nrrfc.gov.np",
       "description": "Constitutional commission determining the distribution of revenue and fiscal equalization grants among federal, provincial, and local levels of governance under the Constitution of Nepal.",
       "keywords": "nrrfc fiscal natural resources revenue nrrfc.gov.np",
+      "tags": ["fiscal", "natural resources", "revenue", "nrrfc"],
       "url": "https://nrrfc.gov.np",
       "id": "nrrfc.gov.np"
     }

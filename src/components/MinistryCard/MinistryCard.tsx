@@ -43,7 +43,7 @@ function MinistryCard({
         </div>
       </div>
       <p className="ministry-card__description">
-        {itemDescription(t, ministry)}
+        {itemDescription(t, ministry, lang)}
       </p>
       <div className="ministry-card__footer">
         <div className="ministry-card__domain-col">

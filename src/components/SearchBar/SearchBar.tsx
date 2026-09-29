@@ -7,20 +7,35 @@ import './SearchBar.scss'
 
 const items = categoryData.items
 
+const MAX_DROPDOWN_RESULTS = 8
+const MIN_QUERY_LENGTH = 2
+const DEBOUNCE_MS = 200
+
 function SearchBar() {
   const navigate = useNavigate()
   const { lang, t } = useLanguage()
   const [query, setQuery] = useState('')
+  const [debouncedQuery, setDebouncedQuery] = useState('')
   const [focused, setFocused] = useState(false)
   const wrapperRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
 
-  const results = useMemo(() => {
-    if (!query.trim()) return []
-    return searchItems(items, query)
+  // Debounce so the dropdown doesn't flicker through intermediate
+  // results on every keystroke.
+  useEffect(() => {
+    const timer = setTimeout(() => setDebouncedQuery(query), DEBOUNCE_MS)
+    return () => clearTimeout(timer)
   }, [query])
 
-  const showDialog = focused && query.trim().length > 0
+  const allResults = useMemo(() => {
+    if (debouncedQuery.trim().length < MIN_QUERY_LENGTH) return []
+    return searchItems(items, debouncedQuery)
+  }, [debouncedQuery])
+
+  // The dropdown shows only the top matches; the footer shows the true total.
+  const results = allResults.slice(0, MAX_DROPDOWN_RESULTS)
+
+  const showDialog = focused && debouncedQuery.trim().length >= MIN_QUERY_LENGTH
 
   const goAll = () => {
     const q = query.trim()
@@ -116,8 +131,8 @@ function SearchBar() {
             <div className="search-bar__dialog-footer">
               <span className="search-bar__dialog-count">
                 {lang === 'np'
-                  ? `${results.length} परिणाम`
-                  : `${results.length} result${results.length === 1 ? '' : 's'}`}
+                  ? `${allResults.length} परिणाम`
+                  : `${allResults.length} result${allResults.length === 1 ? '' : 's'}`}
               </span>
               <button
                 type="button"

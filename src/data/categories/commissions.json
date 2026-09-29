@@ -99,6 +99,7 @@
       "domain": "ciaa.gov.np",
       "description": "Apex anti-corruption body investigating abuse of authority, embezzlement, and corruption in public offices.",
       "keywords": "ciaa corruption anti-corruption investigation ciaa.gov.np",
+      "tags": ["corruption", "anti-corruption", "abuse of authority", "dhorunpayog", "दुरुपयोग", "ciaa"],
       "url": "https://ciaa.gov.np",
       "id": "ciaa.gov.np"
     },
@@ -112,6 +113,7 @@
       "domain": "nhrc.gov.np",
       "description": "Protects and promotes human rights, investigates violations, and recommends policy reforms for inclusion.",
       "keywords": "nhrc human rights protection nhrc.gov.np",
+      "tags": ["human rights", "manab adhikar", "मानव अधिकार", "nhrc"],
       "url": "https://nhrc.gov.np",
       "id": "nhrc.gov.np"
     },
@@ -125,6 +127,7 @@
       "domain": "psc.gov.np",
       "description": "Conducts recruitment, selection, and promotion for civil service positions across all government levels.",
       "keywords": "psc public service recruitment civil psc.gov.np",
+      "tags": ["public service", "recruitment", "civil service", "psc"],
       "url": "https://psc.gov.np",
       "id": "psc.gov.np"
     }

@@ -40,7 +40,7 @@ function ResultCard({
   const categoryLabel =
     t.categoryPage.categories[item.code as CategoryKey]?.breadcrumbCurrent ??
     category.breadcrumbCurrent
-  const description = itemDescription(t, item)
+  const description = itemDescription(t, item, lang)
 
   return (
     <article

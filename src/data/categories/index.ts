@@ -26,7 +26,14 @@ export interface CategoryItem {
   nepali: string
   domain: string
   description: string
+  descriptionNepali?: string
   keywords: string
+  /**
+   * Curated synonyms in any script (English, Romanized-Nepali, Devanagari)
+   * that should match this item in search — e.g. a forest office tagged
+   * "jungle", an electricity office tagged "bijuli" / "bidyuta".
+   */
+  tags?: string[]
   url: string
   id: string
   province?: string

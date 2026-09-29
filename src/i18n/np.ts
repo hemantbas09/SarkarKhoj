@@ -49,7 +49,7 @@ export const np: Dictionary = {
     eyebrow: 'सिंहदरबार सचिवालय',
     title: 'प्रमाणित संघीय शासनसँग नागरिकहरूलाई जोड्दै',
     description:
-      'डिजिटल नेपाल ढाँचाअन्तर्गत ७ प्रदेश, ७५३ नगरपालिका र २२ मन्त्रालयमा प्रत्यक्ष नेभिगेसन।',
+      'डिजिटल नेपाल ढाँचान्तर्गत ७ प्रदेश, ७५३ नगरपालिका र १७ मन्त्रालयमा प्रत्यक्ष नेभिगेसन।',
   },
   categoriesSection: {
     eyebrow: 'निर्देशिका वर्गीकरण',
@@ -59,7 +59,7 @@ export const np: Dictionary = {
     explorePortals: 'पोर्टलहरू हेर्नुहोस्',
     cards: {
       ministries: {
-        count: '२२ मन्त्रालय',
+        count: '१७ मन्त्रालय',
         title: 'मन्त्रालयहरू',
         description:
           'आर्थिक, परराष्ट्र, स्वास्थ्य र गृह समेटिएका केन्द्रीय कार्यकारी नीति पोर्टफोलियो।',
@@ -229,7 +229,7 @@ export const np: Dictionary = {
         breadcrumbCurrent: 'मन्त्रालयहरू',
         heroBadge: 'संघीय कार्यकारी पोर्टल',
         location: 'सिंहदरबार, काठमाडौं',
-        stat1: '२२ प्रमाणित संघीय मन्त्रालय',
+        stat1: '१७ प्रमाणित संघीय मन्त्रालय',
         statValidation: 'कडा .gov.np प्रमाणीकरण',
         searchPlaceholder:
           'मन्त्रालयको नाम, पोर्टफोलियो वा .gov.np डोमेनले खोज्नुहोस्...',
@@ -242,7 +242,7 @@ export const np: Dictionary = {
           { label: 'ऊर्जा र जल', filter: 'infrastructure' },
         ],
         pills: [
-          { label: 'सबै', count: 22, filter: 'all' },
+          { label: 'सबै', count: 17, filter: 'all' },
           { label: 'अर्थ र आर्थिक', filter: 'economy' },
           { label: 'सुरक्षा र गृह', filter: 'security' },
           { label: 'दूतावादी र परराष्ट्र', filter: 'diplomacy' },

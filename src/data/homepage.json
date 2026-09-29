@@ -70,7 +70,7 @@
     "imageAlt": "Distant wide architectural view of Singha Durbar and government ministry complex in Kathmandu under a clear blue Himalayan sky",
     "eyebrow": "Singha Durbar Secretariat",
     "title": "Connecting citizens to authenticated federal governance",
-    "description": "Direct navigation across all 7 Provinces, 753 Municipalities, and 22 Ministries under the Digital Nepal Framework."
+    "description": "Direct navigation across all 7 Provinces, 753 Municipalities, and 17 Ministries under the Digital Nepal Framework."
   },
   "categoriesSection": {
     "eyebrow": "Directory Taxonomy",
@@ -79,7 +79,7 @@
     "categories": [
       {
         "icon": "corporate_fare",
-        "count": "22 Ministries",
+        "count": "17 Ministries",
         "title": "Ministries",
         "description": "Central executive policy portfolios including Finance, Foreign Affairs, Health, and Home.",
         "path": "ministries"

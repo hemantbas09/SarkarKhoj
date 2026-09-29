@@ -99,6 +99,7 @@
       "domain": "nea.gov.np",
       "description": "State-owned utility responsible for generation, transmission, and distribution of electricity across Nepal.",
       "keywords": "nea electricity power energy nea.gov.np",
+      "tags": ["electricity", "bijuli", "बिजुली", "bijuloi", "bidyuta", "विद्युत", "power", "energy", "hydropower", "nea"],
       "url": "https://nea.gov.np",
       "id": "nea.gov.np"
     },
@@ -112,6 +113,7 @@
       "domain": "caan.gov.np",
       "description": "Regulates civil aviation, air traffic control, airport operations, and aviation safety standards in Nepal.",
       "keywords": "caan aviation airport air caan.gov.np",
+      "tags": ["aviation", "airport", "air traffic", "udayan", "उड्डयन", "caan"],
       "url": "https://caan.gov.np",
       "id": "caan.gov.np"
     },
@@ -125,6 +127,7 @@
       "domain": "ntc.gov.np",
       "description": "State-owned telecommunications provider delivering mobile, fixed-line, and internet services nationwide.",
       "keywords": "ntc telecom mobile internet ntc.gov.np",
+      "tags": ["telecom", "telecommunications", "mobile", "internet", "sanchar", "सञ्चार", "ntc"],
       "url": "https://ntc.gov.np",
       "id": "ntc.gov.np"
     },
@@ -138,6 +141,7 @@
       "domain": "rbb.com.np",
       "description": "Wholly state-owned public commercial bank delivering retail and developmental finance services nationwide. Disburses state pensions, subsidies, and civic guarantees.",
       "keywords": "rbb bank finance pension rbb.com.np",
+      "tags": ["bank", "banijya bank", "वाणिज्य बैंक", "pension", "rbb"],
       "url": "https://rbb.com.np",
       "id": "rbb.com.np"
     }

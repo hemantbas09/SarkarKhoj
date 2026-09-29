@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import data from '../data/categories'
+import { scoreItem } from '../utils/search'
 import { useLanguage, type CategoryKey } from '../i18n'
 import Breadcrumb from '../components/Breadcrumb/Breadcrumb'
 import CategoryHero from '../components/CategoryHero/CategoryHero'
@@ -76,10 +77,7 @@ function CategoryPage() {
     const matchesDistrict =
       activeDistrict === 'all' || item.district === activeDistrict
     const q = query.trim().toLowerCase()
-    const haystack =
-      `${item.name} ${item.nepali} ${item.domain} ` +
-      `${item.description} ${item.keywords}`.toLowerCase()
-    const matchesQuery = !q || haystack.includes(q)
+    const matchesQuery = !q || scoreItem(item, q) >= 0
     return matchesSector && matchesProvince && matchesDistrict && matchesQuery
   })
 

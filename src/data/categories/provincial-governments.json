@@ -99,6 +99,7 @@
       "domain": "koshi.gov.np",
       "description": "Official portal of Koshi Province, the easternmost province, covering assembly, executive, and provincial services.",
       "keywords": "koshi province east koshi.gov.np",
+      "tags": ["koshi", "province", "pradesh", "प्रदेश", "east"],
       "url": "https://koshi.gov.np",
       "id": "koshi.gov.np"
     },
@@ -112,6 +113,7 @@
       "domain": "bagmati.gov.np",
       "description": "Official portal of Bagmati Province, home to the capital Kathmandu, covering provincial governance and services.",
       "keywords": "bagmati province kathmandu bagmati.gov.np",
+      "tags": ["bagmati", "province", "pradesh", "प्रदेश", "kathmandu"],
       "url": "https://bagmati.gov.np",
       "id": "bagmati.gov.np"
     },
@@ -125,6 +127,7 @@
       "domain": "karnali.gov.np",
       "description": "Official portal of Karnali Province, the westernmost and most remote province, covering provincial governance.",
       "keywords": "karnali province west karnali.gov.np",
+      "tags": ["karnali", "province", "pradesh", "प्रदेश", "west"],
       "url": "https://karnali.gov.np",
       "id": "karnali.gov.np"
     }

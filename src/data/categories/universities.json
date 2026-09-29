@@ -103,6 +103,7 @@
       "domain": "tu.edu.np",
       "description": "Nepal's oldest and largest university, established in 1959 in Kirtipur, Kathmandu.",
       "keywords": "tribhuvan university university bagmati tu.edu.np",
+      "tags": ["tribhuvan", "tu", "विश्वविद्यालय", "university"],
       "url": "https://tu.edu.np",
       "id": "tu.edu.np"
     },
@@ -116,6 +117,7 @@
       "domain": "ku.edu.np",
       "description": "Autonomous public university in Dhulikhel, established in 1991.",
       "keywords": "kathmandu university university bagmati ku.edu.np",
+      "tags": ["kathmandu", "ku", "dhulikhel", "university"],
       "url": "https://ku.edu.np",
       "id": "ku.edu.np"
     },
@@ -129,6 +131,7 @@
       "domain": "purbuni.edu.np",
       "description": "Federal university based in Sundar Haraicha (Gothgaun), Koshi Province.",
       "keywords": "purbanchal university university koshi purbuni.edu.np",
+      "tags": ["purbanchal", "purbuni", "sundarharaicha", "university"],
       "url": "https://purbuni.edu.np",
       "id": "purbuni.edu.np"
     },
@@ -142,6 +145,7 @@
       "domain": "pu.edu.np",
       "description": "Federal university based in Pokhara, established in 1997.",
       "keywords": "pokhara university university gandaki pu.edu.np",
+      "tags": ["pokhara", "pu", "university"],
       "url": "https://pu.edu.np",
       "id": "pu.edu.np"
     },
@@ -155,6 +159,7 @@
       "domain": "fwu.edu.np",
       "description": "Federal university in Bhimdatta (Mahendranagar), Kanchanpur, established in 2010.",
       "keywords": "sudurpaschim (far western) university university sudurpashchim fwu.edu.np",
+      "tags": ["sudurpaschim", "far western", "fwu", "bhimdatta", "university"],
       "url": "https://fwu.edu.np",
       "id": "fwu.edu.np"
     },
@@ -168,6 +173,7 @@
       "domain": "mwu.edu.np",
       "description": "Federal university in Birendranagar, Surkhet, established in 2010.",
       "keywords": "madhyapaschim (mid-west) university university karnali mwu.edu.np",
+      "tags": ["madhyapaschim", "mid-west", "mwu", "birendranagar", "university"],
       "url": "https://mwu.edu.np",
       "id": "mwu.edu.np"
     },
@@ -181,6 +187,7 @@
       "domain": "rju.edu.np",
       "description": "Federal university in Janakpur, established in 2017.",
       "keywords": "rajarshi janak university university madhesh rju.edu.np",
+      "tags": ["rajarshi janak", "janak", "rju", "janakpur", "university"],
       "url": "https://rju.edu.np",
       "id": "rju.edu.np"
     },
@@ -194,6 +201,7 @@
       "domain": "unepal.edu.np",
       "description": "Public university established by the University of Nepal Act 2024 (Gaindakot).",
       "keywords": "university of nepal university gandaki unepal.edu.np",
+      "tags": ["university of nepal", "unepal", "gaindakot", "university"],
       "url": "https://unepal.edu.np",
       "id": "unepal.edu.np"
     },
@@ -207,6 +215,7 @@
       "domain": "nou.edu.np",
       "description": "Distance-learning public university in Lalitpur, established in 2016.",
       "keywords": "nepal open university university bagmati nou.edu.np",
+      "tags": ["open university", "nou", "distance learning", "university"],
       "url": "https://nou.edu.np",
       "id": "nou.edu.np"
     },
@@ -220,6 +229,7 @@
       "domain": "afu.edu.np",
       "description": "Federal university in Rampur, Chitwan, focused on agriculture and forestry.",
       "keywords": "agriculture and forestry university university bagmati afu.edu.np",
+      "tags": ["agriculture", "forestry", "afu", "rampur", "university"],
       "url": "https://afu.edu.np",
       "id": "afu.edu.np"
     },
@@ -233,6 +243,7 @@
       "domain": "mbust.edu.np",
       "description": "Science and technology university in Chitlang, Makwanpur, established in 2022.",
       "keywords": "madan bhandari university of science and technology university bagmati mbust.edu.np",
+      "tags": ["madan bhandari", "mbust", "science and technology", "university"],
       "url": "https://mbust.edu.np",
       "id": "mbust.edu.np"
     },
@@ -246,6 +257,7 @@
       "domain": "nsu.edu.np",
       "description": "Sanskrit university (formerly Mahendra Sanskrit University), Dang, established in 1986.",
       "keywords": "nepal sanskrit university university lumbini nsu.edu.np",
+      "tags": ["sanskrit", "nsu", "mahendra sanskrit", "university"],
       "url": "https://nsu.edu.np",
       "id": "nsu.edu.np"
     },
@@ -259,6 +271,7 @@
       "domain": "lbu.edu.np",
       "description": "Buddhist studies university in Rupandehi, established in 2004.",
       "keywords": "lumbini buddhist university university lumbini lbu.edu.np",
+      "tags": ["lumbini", "buddhist", "lbu", "university"],
       "url": "https://lbu.edu.np",
       "id": "lbu.edu.np"
     },
@@ -272,6 +285,7 @@
       "domain": "dcuhs.edu.np",
       "description": "Health sciences university in Geta, Kailali.",
       "keywords": "martyr dasharath chand university of health science university sudurpashchim dcuhs.edu.np",
+      "tags": ["dasharath chand", "dcuhs", "health science", "university"],
       "url": "https://dcuhs.edu.np",
       "id": "dcuhs.edu.np"
     },
@@ -285,6 +299,7 @@
       "domain": "yogmayaau.edu.np",
       "description": "Ayurveda university in Arun Valley, Sankhuwasabha.",
       "keywords": "yogamaya ayurveda university university koshi yogmayaau.edu.np",
+      "tags": ["yogamaya", "ayurveda", "ayurved", "आयुर्वेद", "university"],
       "url": "https://yogmayaau.edu.np",
       "id": "yogmayaau.edu.np"
     },
@@ -298,6 +313,7 @@
       "domain": "mtu.edu.np",
       "description": "Provincial technical university in Budiganga, Morang, established in 2019.",
       "keywords": "manmohan technical university university koshi mtu.edu.np",
+      "tags": ["manmohan", "technical", "mtu", "budiganga", "university"],
       "url": "https://mtu.edu.np",
       "id": "mtu.edu.np"
     },
@@ -311,6 +327,7 @@
       "domain": "gandakiuniversity.edu.np",
       "description": "Provincial university in Pokhara, established in 2019.",
       "keywords": "gandaki university university gandaki gandakiuniversity.edu.np",
+      "tags": ["gandaki", "pokhara", "university"],
       "url": "https://gandakiuniversity.edu.np",
       "id": "gandakiuniversity.edu.np"
     },
@@ -324,6 +341,7 @@
       "domain": "mau.edu.np",
       "description": "Provincial agricultural university in Rajbiraj, Saptari.",
       "keywords": "madhesh agricultural university university madhesh mau.edu.np",
+      "tags": ["madhesh", "agricultural", "mau", "rajbiraj", "university"],
       "url": "https://mau.edu.np",
       "id": "mau.edu.np"
     },
@@ -337,6 +355,7 @@
       "domain": "madheshuniversity.edu.np",
       "description": "Provincial university in Birgunj, established in 2022.",
       "keywords": "madhesh university university madhesh madheshuniversity.edu.np",
+      "tags": ["madhesh", "birgunj", "university"],
       "url": "https://madheshuniversity.edu.np",
       "id": "madheshuniversity.edu.np"
     },
@@ -350,6 +369,7 @@
       "domain": "ltu.edu.np",
       "description": "Provincial technological university in Khajura, Banke.",
       "keywords": "lumbini technological university university lumbini ltu.edu.np",
+      "tags": ["lumbini", "technological", "ltu", "khajura", "university"],
       "url": "https://ltu.edu.np",
       "id": "ltu.edu.np"
     },
@@ -363,6 +383,7 @@
       "domain": "bagmatiuniversity.edu.np",
       "description": "Provincial university in Hetauda, established in 2024.",
       "keywords": "bagmati university university bagmati bagmatiuniversity.edu.np",
+      "tags": ["bagmati", "hetauda", "university"],
       "url": "https://bagmatiuniversity.edu.np",
       "id": "bagmatiuniversity.edu.np"
     }

@@ -2,38 +2,37 @@
   "config": {
     "title": "Departments of Nepal",
     "icon": "apartment",
-    "description": "Specialized administrative and execution bodies delivering public services, licensing, and records.",
+    "description": "Specialized government departments providing public services, regulation, administration, licensing, records, and technical services across Nepal.",
     "breadcrumbCurrent": "Departments",
     "hero": {
       "badge": {
         "icon": "apartment",
-        "label": "Federal Line Agencies"
+        "label": "Federal Government Departments"
       },
       "title": "Departments of Nepal",
       "nepali": "नेपालका विभागहरू",
-      "description": "Specialized administrative and execution bodies delivering public services, licensing, and records.",
-      "descriptionDesktop": "Specialized administrative and execution bodies delivering public services, licensing, and records across the federal government of Nepal.",
+      "description": "Specialized government departments providing public services, regulation, administration, licensing, records, and technical services across Nepal.",
+      "descriptionDesktop": "A centralized directory of official websites of federal government departments of Nepal.",
       "location": "Kathmandu, Nepal",
       "stats": [
         {
           "icon": "verified_user",
-          "text": "54 Verified Line Agencies"
+          "text": "Verified Government Departments"
         },
         {
           "icon": "security",
-          "text": "Strict .gov.np Validation"
+          "text": "Official .gov.np Domains"
         },
         {
-          "icon": "domain",
-          "text": "NITC Tier-III Data Center Hosted"
+          "icon": "language",
+          "text": "Nepal Government Directory"
         }
       ]
     },
     "search": {
-      "placeholder": "Search by department name, portfolio, or .gov.np domain...",
+      "placeholder": "Search by department name, sector, or .gov.np domain...",
       "showingLabel": "Showing:",
       "countLabel": "Active",
-      "totalCount": 54,
       "filterLabel": "Filter Sector:",
       "chips": [
         {
@@ -41,26 +40,7 @@
           "filter": "all"
         },
         {
-          "label": "Revenue",
-          "filter": "revenue"
-        },
-        {
-          "label": "Transport",
-          "filter": "transport"
-        },
-        {
-          "label": "Agriculture",
-          "filter": "agriculture"
-        }
-      ],
-      "pills": [
-        {
-          "label": "All",
-          "count": 54,
-          "filter": "all"
-        },
-        {
-          "label": "Revenue & Tax",
+          "label": "Revenue & Finance",
           "filter": "revenue"
         },
         {
@@ -68,13 +48,79 @@
           "filter": "transport"
         },
         {
-          "label": "Agriculture & Food",
+          "label": "Agriculture & Environment",
           "filter": "agriculture"
+        },
+        {
+          "label": "Health",
+          "filter": "health"
+        },
+        {
+          "label": "Land & Administration",
+          "filter": "land"
+        },
+        {
+          "label": "Industry & Commerce",
+          "filter": "industry"
+        },
+        {
+          "label": "Home Affairs & Security",
+          "filter": "security"
+        },
+        {
+          "label": "Information & Technology",
+          "filter": "technology"
+        },
+        {
+          "label": "Culture & Tourism",
+          "filter": "culture"
+        }
+      ],
+      "pills": [
+        {
+          "label": "All",
+          "filter": "all"
+        },
+        {
+          "label": "Revenue & Finance",
+          "filter": "revenue"
+        },
+        {
+          "label": "Transport & Infrastructure",
+          "filter": "transport"
+        },
+        {
+          "label": "Agriculture & Environment",
+          "filter": "agriculture"
+        },
+        {
+          "label": "Health",
+          "filter": "health"
+        },
+        {
+          "label": "Land & Administration",
+          "filter": "land"
+        },
+        {
+          "label": "Industry & Commerce",
+          "filter": "industry"
+        },
+        {
+          "label": "Home Affairs & Security",
+          "filter": "security"
+        },
+        {
+          "label": "Information & Technology",
+          "filter": "technology"
+        },
+        {
+          "label": "Culture & Tourism",
+          "filter": "culture"
         }
       ]
     },
     "pagination": {
-      "pageSize": 5,
+      "pageSize": 10,
       "showingLabel": "Showing",
       "ofLabel": "of",
       "prevLabel": "Previous page",
@@ -83,80 +129,526 @@
     "emptyState": {
       "icon": "manage_search",
       "title": "No matching departments found",
-      "description": "Try checking the spelling or clear the sector filter chips.",
+      "description": "Try checking the spelling or clear the sector filter.",
       "button": "Reset Directory Filters"
     },
     "trustNotice": {
       "icon": "verified",
-      "title": "Official .gov.np TLD Standard",
-      "text": "All listed departmental links are authenticated and under the National Information Technology Center (NITC) root domain."
+      "title": "Official Government Website Directory",
+      "text": "Department websites are included only when they can be associated with an official Government of Nepal organization or official government source."
     }
   },
+
   "items": [
     {
       "code": "departments",
       "sector": "revenue",
-      "sectorLabel": "Revenue & Tax",
+      "sectorLabel": "Revenue & Finance",
       "icon": "receipt_long",
-      "name": "Inland Revenue Department (IRD)",
+      "name": "Inland Revenue Department",
       "nepali": "आन्तरिक राजस्व विभाग",
       "domain": "ird.gov.np",
-      "description": "Department under the Ministry of Finance overseeing taxation, VAT, income tax assessments, and tax compliance across Nepal.",
-      "keywords": "ird tax vat income revenue ird.gov.np",
+      "description": "Responsible for domestic tax administration, income tax, VAT, excise duties, taxpayer services, and tax compliance.",
+      "descriptionNepali": "आन्तरिक कर प्रशासन, आयकर, मूल्य अभिवृद्धि कर, अन्तःशुल्क, करदाता सेवा तथा कर अनुपालनसम्बन्धी कार्य गर्ने विभाग।",
+      "keywords": "ird tax vat income revenue taxpayer ird.gov.np",
+      "tags": ["tax", "income tax", "vat", "revenue", "kar", "कर", "taxpayer", "ird"],
       "url": "https://ird.gov.np",
       "id": "ird.gov.np"
     },
     {
       "code": "departments",
       "sector": "revenue",
-      "sectorLabel": "Revenue & Tax",
+      "sectorLabel": "Revenue & Finance",
       "icon": "account_balance",
-      "name": "Customs Department",
-      "nepali": "सुट्रुना विभाग",
+      "name": "Department of Customs",
+      "nepali": "भन्सार विभाग",
       "domain": "customs.gov.np",
-      "description": "Handles import and export customs clearance, duty collection, and trade facilitation at all national border points.",
+      "description": "Responsible for customs administration, import and export clearance, customs revenue collection, and trade facilitation.",
+      "descriptionNepali": "भन्सार प्रशासन, आयात तथा निर्यात जाँचपास, भन्सार राजस्व सङ्कलन तथा व्यापार सहजीकरणसम्बन्धी कार्य गर्ने विभाग।",
       "keywords": "customs import export duty trade customs.gov.np",
+      "tags": ["customs", "bansar", "भन्सार", "import", "export", "duty", "trade"],
       "url": "https://customs.gov.np",
       "id": "customs.gov.np"
+    },
+    {
+      "code": "departments",
+      "sector": "revenue",
+      "sectorLabel": "Revenue & Finance",
+      "icon": "search",
+      "name": "Department of Revenue Investigation",
+      "nepali": "राजस्व अनुसन्धान विभाग",
+      "domain": "dri.gov.np",
+      "description": "Responsible for investigation of revenue leakage, tax evasion, and related financial and economic offenses.",
+      "descriptionNepali": "राजस्व चुहावट, कर छली तथा सम्बन्धित आर्थिक तथा वित्तीय अपराधको अनुसन्धान गर्ने विभाग।",
+      "keywords": "revenue investigation tax evasion financial crime dri.gov.np",
+      "tags": ["revenue", "investigation", "tax evasion", "financial crime", "dri"],
+      "url": "https://dri.gov.np",
+      "id": "dri.gov.np"
+    },
+    {
+      "code": "departments",
+      "sector": "revenue",
+      "sectorLabel": "Revenue & Finance",
+      "icon": "gavel",
+      "name": "Department of Money Laundering Investigation",
+      "nepali": "सम्पत्ति शुद्धीकरण अनुसन्धान विभाग",
+      "domain": "dmlib.gov.np",
+      "description": "Responsible for investigation of money laundering and related financial offenses.",
+      "descriptionNepali": "सम्पत्ति शुद्धीकरण तथा सम्बन्धित वित्तीय अपराधको अनुसन्धान गर्ने विभाग।",
+      "keywords": "money laundering financial crime investigation dmlib.gov.np",
+      "tags": ["money laundering", "financial crime", "investigation", "dmlib"],
+      "url": "https://dmlib.gov.np",
+      "id": "dmlib.gov.np"
     },
     {
       "code": "departments",
       "sector": "transport",
       "sectorLabel": "Transport & Infrastructure",
       "icon": "directions_car",
-      "name": "Department of Transport Management (DoTM)",
+      "name": "Department of Transport Management",
       "nepali": "यातायात व्यवस्था विभाग",
       "domain": "dotm.gov.np",
-      "description": "Regulates road transport, vehicle registration, driver licensing, and road safety standards across Nepal.",
-      "keywords": "dotm transport vehicle driver road dotm.gov.np",
+      "description": "Responsible for transport administration, vehicle registration, driver licensing, and related road transport services.",
+      "descriptionNepali": "यातायात प्रशासन, सवारी दर्ता, चालक अनुमतिपत्र तथा सडक यातायातसम्बन्धी सेवाको व्यवस्थापन गर्ने विभाग।",
+      "keywords": "dotm transport vehicle driver license road dotm.gov.np",
+      "tags": ["transport", "vehicle", "driver license", "yaatayat", "यतयात", "road", "dotm"],
       "url": "https://dotm.gov.np",
       "id": "dotm.gov.np"
     },
     {
       "code": "departments",
+      "sector": "transport",
+      "sectorLabel": "Transport & Infrastructure",
+      "icon": "engineering",
+      "name": "Department of Roads",
+      "nepali": "सडक विभाग",
+      "domain": "dor.gov.np",
+      "description": "Responsible for planning, development, maintenance, and management of the strategic road network.",
+      "descriptionNepali": "रणनीतिक सडक सञ्जालको योजना, निर्माण, विकास, मर्मत तथा व्यवस्थापनसम्बन्धी कार्य गर्ने विभाग।",
+      "keywords": "roads highway infrastructure transport dor.gov.np",
+      "tags": ["roads", "road", "sadak", "सडक", "highway", "dor"],
+      "url": "https://dor.gov.np",
+      "id": "dor.gov.np"
+    },
+    {
+      "code": "departments",
+      "sector": "transport",
+      "sectorLabel": "Transport & Infrastructure",
+      "icon": "water",
+      "name": "Department of Water Supply and Sewerage Management",
+      "nepali": "खानेपानी तथा ढल व्यवस्थापन विभाग",
+      "domain": "dwssm.gov.np",
+      "description": "Responsible for planning and technical management of water supply and sewerage infrastructure and services.",
+      "descriptionNepali": "खानेपानी तथा ढल व्यवस्थापनसम्बन्धी पूर्वाधार र सेवाको योजना तथा प्राविधिक व्यवस्थापन गर्ने विभाग।",
+      "keywords": "water supply sewerage sanitation drinking water dwssm.gov.np",
+      "tags": ["water supply", "drinking water", "khanepani", "खानेपानी", "sewerage", "dhal", "ढल", "sanitation", "dwssm"],
+      "url": "https://dwssm.gov.np",
+      "id": "dwssm.gov.np"
+    },
+    {
+      "code": "departments",
+      "sector": "transport",
+      "sectorLabel": "Transport & Infrastructure",
+      "icon": "location_city",
+      "name": "Department of Urban Development and Building Construction",
+      "nepali": "शहरी विकास तथा भवन निर्माण विभाग",
+      "domain": "dudbc.gov.np",
+      "description": "Responsible for urban development, public buildings, housing, and related physical infrastructure programs.",
+      "descriptionNepali": "शहरी विकास, सरकारी भवन, आवास तथा सम्बन्धित भौतिक पूर्वाधार विकाससम्बन्धी कार्यक्रम सञ्चालन गर्ने विभाग।",
+      "keywords": "urban development building housing infrastructure dudbc.gov.np",
+      "tags": ["urban development", "building", "bhawan", "भवन", "housing", "shahri", "शहरी", "dudbc"],
+      "url": "https://dudbc.gov.np",
+      "id": "dudbc.gov.np"
+    },
+    {
+      "code": "departments",
       "sector": "agriculture",
-      "sectorLabel": "Agriculture & Food",
+      "sectorLabel": "Agriculture & Environment",
       "icon": "agriculture",
       "name": "Department of Agriculture",
       "nepali": "कृषि विभाग",
       "domain": "doa.gov.np",
-      "description": "Promotes agricultural development, food security, crop research, and rural extension services nationwide.",
-      "keywords": "agriculture crop food rural doa.gov.np",
+      "description": "Responsible for agricultural development, crop production, extension services, and agricultural technology promotion.",
+      "descriptionNepali": "कृषि विकास, बाली उत्पादन, कृषि प्रसार सेवा तथा कृषि प्रविधिको प्रवर्द्धनसम्बन्धी कार्य गर्ने विभाग।",
+      "keywords": "agriculture crop farming food rural doa.gov.np",
+      "tags": ["agriculture", "krsi", "कृषि", "crop", "farming", "bali", "बाली", "doa"],
       "url": "https://doa.gov.np",
       "id": "doa.gov.np"
     },
     {
       "code": "departments",
-      "sector": "revenue",
-      "sectorLabel": "Revenue & Tax",
+      "sector": "agriculture",
+      "sectorLabel": "Agriculture & Environment",
+      "icon": "pets",
+      "name": "Department of Livestock Services",
+      "nepali": "पशु सेवा विभाग",
+      "domain": "dls.gov.np",
+      "description": "Responsible for livestock development, animal health, veterinary services, and livestock production.",
+      "descriptionNepali": "पशुपन्छी विकास, पशु स्वास्थ्य, पशु चिकित्सा सेवा तथा पशु उत्पादनसम्बन्धी कार्य गर्ने विभाग।",
+      "keywords": "livestock animal health veterinary dls.gov.np",
+      "tags": ["livestock", "animal", "pashu", "पशु", "veterinary", "dls"],
+      "url": "https://dls.gov.np",
+      "id": "dls.gov.np"
+    },
+    {
+      "code": "departments",
+      "sector": "agriculture",
+      "sectorLabel": "Agriculture & Environment",
+      "icon": "restaurant",
+      "name": "Department of Food Technology and Quality Control",
+      "nepali": "खाद्य प्रविधि तथा गुण नियन्त्रण विभाग",
+      "domain": "dftqc.gov.np",
+      "description": "Responsible for food safety, food technology, food testing, quality control, and regulation of food products.",
+      "descriptionNepali": "खाद्य सुरक्षा, खाद्य प्रविधि, खाद्य परीक्षण, गुण नियन्त्रण तथा खाद्य पदार्थको नियमनसम्बन्धी कार्य गर्ने विभाग।",
+      "keywords": "food safety technology quality control dftqc.gov.np",
+      "tags": ["food", "food safety", "khaadya", "खाद्य", "quality control", "dftqc"],
+      "url": "https://dftqc.gov.np",
+      "id": "dftqc.gov.np"
+    },
+    {
+      "code": "departments",
+      "sector": "agriculture",
+      "sectorLabel": "Agriculture & Environment",
+      "icon": "forest",
+      "name": "Department of Forests and Soil Conservation",
+      "nepali": "वन तथा भू-संरक्षण विभाग",
+      "domain": "dofsc.gov.np",
+      "description": "Responsible for forest management, soil conservation, watershed protection, and related forestry programs.",
+      "descriptionNepali": "वन व्यवस्थापन, भू-संरक्षण, जलाधार संरक्षण तथा सम्बन्धित वन व्यवस्थापन कार्यक्रम सञ्चालन गर्ने विभाग।",
+      "keywords": "forest forestry soil conservation watershed dofsc.gov.np",
+      "tags": ["forest", "jungle", "jangal", "जंगल", "van", "वन", "soil conservation", "watershed", "dofsc"],
+      "url": "https://dofsc.gov.np",
+      "id": "dofsc.gov.np"
+    },
+    {
+      "code": "departments",
+      "sector": "agriculture",
+      "sectorLabel": "Agriculture & Environment",
+      "icon": "park",
+      "name": "Department of National Parks and Wildlife Conservation",
+      "nepali": "राष्ट्रिय निकुञ्ज तथा वन्यजन्तु संरक्षण विभाग",
+      "domain": "dnpwc.gov.np",
+      "description": "Responsible for national parks, protected areas, wildlife conservation, and biodiversity protection.",
+      "descriptionNepali": "राष्ट्रिय निकुञ्ज, संरक्षित क्षेत्र, वन्यजन्तु तथा जैविक विविधताको संरक्षणसम्बन्धी कार्य गर्ने विभाग।",
+      "keywords": "national parks wildlife biodiversity conservation dnpwc.gov.np",
+      "tags": ["national parks", "wildlife", "vanajanatu", "वन्यजनतु", "biodiversity", "conservation", "dnpwc"],
+      "url": "https://dnpwc.gov.np",
+      "id": "dnpwc.gov.np"
+    },
+    {
+      "code": "departments",
+      "sector": "agriculture",
+      "sectorLabel": "Agriculture & Environment",
+      "icon": "cloud",
+      "name": "Department of Hydrology and Meteorology",
+      "nepali": "जल तथा मौसम विज्ञान विभाग",
+      "domain": "dhm.gov.np",
+      "description": "Provides hydrological and meteorological observations, forecasting, climate information, and related services.",
+      "descriptionNepali": "जल तथा मौसमसम्बन्धी अवलोकन, पूर्वानुमान, जलवायु सूचना तथा सम्बन्धित सेवा उपलब्ध गराउने विभाग।",
+      "keywords": "weather climate hydrology meteorology dhm.gov.np",
+      "tags": ["weather", "mausam", "मौसम", "climate", "hydrology", "meteorology", "dhm"],
+      "url": "https://dhm.gov.np",
+      "id": "dhm.gov.np"
+    },
+    {
+      "code": "departments",
+      "sector": "health",
+      "sectorLabel": "Health",
+      "icon": "medical_services",
+      "name": "Department of Health Services",
+      "nepali": "स्वास्थ्य सेवा विभाग",
+      "domain": "dohs.gov.np",
+      "description": "Implements and coordinates public health programs and health service delivery across Nepal.",
+      "descriptionNepali": "नेपालभर सार्वजनिक स्वास्थ्य कार्यक्रम तथा स्वास्थ्य सेवा प्रवाहसम्बन्धी कार्यक्रम कार्यान्वयन र समन्वय गर्ने विभाग।",
+      "keywords": "health healthcare public health dohs.gov.np",
+      "tags": ["health", "swasthya", "स्वास्थ्य", "healthcare", "public health", "dohs"],
+      "url": "https://dohs.gov.np",
+      "id": "dohs.gov.np"
+    },
+    {
+      "code": "departments",
+      "sector": "health",
+      "sectorLabel": "Health",
+      "icon": "medication",
+      "name": "Department of Drug Administration",
+      "nepali": "औषधि व्यवस्था विभाग",
+      "domain": "dda.gov.np",
+      "description": "Responsible for regulation, registration, quality, safety, and monitoring of medicines and pharmaceutical products.",
+      "descriptionNepali": "औषधि तथा औषधिजन्य पदार्थको दर्ता, गुणस्तर, सुरक्षा, नियमन तथा अनुगमनसम्बन्धी कार्य गर्ने विभाग।",
+      "keywords": "medicine drug pharmaceutical regulation dda.gov.np",
+      "tags": ["medicine", "drug", "aushadhi", "औषधि", "pharmaceutical", "dda"],
+      "url": "https://dda.gov.np",
+      "id": "dda.gov.np"
+    },
+    {
+      "code": "departments",
+      "sector": "land",
+      "sectorLabel": "Land & Administration",
+      "icon": "map",
+      "name": "Department of Survey",
+      "nepali": "नापी विभाग",
+      "domain": "dos.gov.np",
+      "description": "Responsible for cadastral surveying, mapping, geospatial surveying, and land measurement services.",
+      "descriptionNepali": "नापी, कित्ताकाट, भू-सर्वेक्षण, नक्साङ्कन तथा भौगोलिक सूचना सम्बन्धी कार्य गर्ने विभाग।",
+      "keywords": "survey cadastral mapping land geospatial dos.gov.np",
+      "tags": ["survey", "napi", "नापी", "mapping", "cadastral", "geospatial", "dos"],
+      "url": "https://dos.gov.np",
+      "id": "dos.gov.np"
+    },
+    {
+      "code": "departments",
+      "sector": "land",
+      "sectorLabel": "Land & Administration",
+      "icon": "landscape",
+      "name": "Department of Land Management and Archive",
+      "nepali": "भूमि व्यवस्थापन तथा अभिलेख विभाग",
+      "domain": "dolrm.gov.np",
+      "description": "Responsible for land administration, land records, registration, and management of land-related information.",
+      "descriptionNepali": "भूमि प्रशासन, जग्गा अभिलेख, दर्ता तथा भूमि सम्बन्धी सूचनाको व्यवस्थापन गर्ने विभाग।",
+      "keywords": "land management land records registration dolrm.gov.np",
+      "tags": ["land", "bhumi", "भूमि", "land records", "registration", "jagga", "जग्गा", "dolrm"],
+      "url": "https://dolrm.gov.np",
+      "id": "dolrm.gov.np"
+    },
+    {
+      "code": "departments",
+      "sector": "industry",
+      "sectorLabel": "Industry & Commerce",
+      "icon": "factory",
+      "name": "Department of Industry",
+      "nepali": "उद्योग विभाग",
+      "domain": "doind.gov.np",
+      "description": "Responsible for industrial registration, investment facilitation, industrial promotion, and regulation.",
+      "descriptionNepali": "उद्योग दर्ता, औद्योगिक लगानी सहजीकरण, उद्योग प्रवर्द्धन तथा नियमनसम्बन्धी कार्य गर्ने विभाग।",
+      "keywords": "industry investment industrial registration doind.gov.np",
+      "tags": ["industry", "udyog", "उद्योग", "investment", "industrial registration", "doind"],
+      "url": "https://doind.gov.np",
+      "id": "doind.gov.np"
+    },
+    {
+      "code": "departments",
+      "sector": "industry",
+      "sectorLabel": "Industry & Commerce",
+      "icon": "business",
+      "name": "Department of Cottage and Small Industries",
+      "nepali": "घरेलु तथा साना उद्योग विभाग",
+      "domain": "dcsi.gov.np",
+      "description": "Supports registration, development, promotion, and regulation of cottage and small industries.",
+      "descriptionNepali": "घरेलु तथा साना उद्योगको दर्ता, विकास, प्रवर्द्धन तथा नियमनसम्बन्धी कार्य गर्ने विभाग।",
+      "keywords": "cottage small industries entrepreneurship dcsi.gov.np",
+      "tags": ["cottage", "small industries", "gharelu", "घरेलु", "entrepreneurship", "dcsi"],
+      "url": "https://dcsi.gov.np",
+      "id": "dcsi.gov.np"
+    },
+    {
+      "code": "departments",
+      "sector": "industry",
+      "sectorLabel": "Industry & Commerce",
+      "icon": "scale",
+      "name": "Department of Commerce, Supplies and Consumer Protection",
+      "nepali": "वाणिज्य, आपूर्ति तथा उपभोक्ता संरक्षण विभाग",
+      "domain": "doc.gov.np",
+      "description": "Responsible for commerce administration, market monitoring, supply management, and consumer protection.",
+      "descriptionNepali": "वाणिज्य प्रशासन, बजार अनुगमन, आपूर्ति व्यवस्थापन तथा उपभोक्ता संरक्षणसम्बन्धी कार्य गर्ने विभाग।",
+      "keywords": "commerce supply consumer protection market doc.gov.np",
+      "tags": ["commerce", "vanijya", "वाणिज्य", "consumer protection", "market", "bajar", "बाजार", "doc"],
+      "url": "https://doc.gov.np",
+      "id": "doc.gov.np"
+    },
+    {
+      "code": "departments",
+      "sector": "industry",
+      "sectorLabel": "Industry & Commerce",
+      "icon": "science",
+      "name": "Department of Mines and Geology",
+      "nepali": "खानी तथा भूगर्भ विभाग",
+      "domain": "dmgnepal.gov.np",
+      "description": "Responsible for geological surveys, mineral exploration, geological research, and mineral resource management.",
+      "descriptionNepali": "भूगर्भीय सर्वेक्षण, खनिज अन्वेषण, भूगर्भीय अनुसन्धान तथा खनिज स्रोत व्यवस्थापनसम्बन्धी कार्य गर्ने विभाग।",
+      "keywords": "mines geology minerals geological survey dmgnepal.gov.np",
+      "tags": ["mines", "khan", "खान", "geology", "minerals", "geological survey", "dmgnepal"],
+      "url": "https://dmgnepal.gov.np",
+      "id": "dmgnepal.gov.np"
+    },
+    {
+      "code": "departments",
+      "sector": "security",
+      "sectorLabel": "Home Affairs & Security",
+      "icon": "badge",
+      "name": "Department of Immigration",
+      "nepali": "अध्यागमन विभाग",
+      "domain": "immigration.gov.np",
+      "description": "Responsible for immigration administration, visas, entry, stay, and departure of foreign nationals in Nepal.",
+      "descriptionNepali": "नेपालमा विदेशी नागरिकको प्रवेश, भिसा, बसाइ तथा प्रस्थानसम्बन्धी अध्यागमन व्यवस्थापन गर्ने विभाग।",
+      "keywords": "immigration visa foreign nationals immigration.gov.np",
+      "tags": ["immigration", "adhyagaman", "अध्यागमन", "visa", "foreign nationals"],
+      "url": "https://immigration.gov.np",
+      "id": "immigration.gov.np"
+    },
+    {
+      "code": "departments",
+      "sector": "security",
+      "sectorLabel": "Home Affairs & Security",
+      "icon": "security",
+      "name": "Department of Prison Management",
+      "nepali": "कारागार व्यवस्थापन विभाग",
+      "domain": "dopm.gov.np",
+      "description": "Responsible for administration and management of prisons and correctional facilities in Nepal.",
+      "descriptionNepali": "नेपालका कारागार तथा सुधारगृहको प्रशासन र व्यवस्थापनसम्बन्धी कार्य गर्ने विभाग।",
+      "keywords": "prison correctional facility prison management dopm.gov.np",
+      "tags": ["prison", "karagar", "कारागार", "correctional", "dopm"],
+      "url": "https://dopm.gov.np",
+      "id": "dopm.gov.np"
+    },
+    {
+      "code": "departments",
+      "sector": "security",
+      "sectorLabel": "Home Affairs & Security",
+      "icon": "badge",
+      "name": "Department of National ID and Civil Registration",
+      "nepali": "राष्ट्रिय परिचयपत्र तथा पञ्जीकरण विभाग",
+      "domain": "donidcr.gov.np",
+      "description": "Responsible for national identity management and civil registration services including vital event registration.",
+      "descriptionNepali": "राष्ट्रिय परिचयपत्र तथा जन्म, मृत्यु, विवाह, बसाइँसराइ लगायतका व्यक्तिगत घटना दर्तासम्बन्धी सेवा व्यवस्थापन गर्ने विभाग।",
+      "keywords": "national id civil registration birth death marriage donidcr.gov.np",
+      "tags": ["national id", "citizenship", "parichaypatra", "परिचयपत्र", "civil registration", "birth", "death", "marriage", "donidcr"],
+      "url": "https://donidcr.gov.np",
+      "id": "donidcr.gov.np"
+    },
+    {
+      "code": "departments",
+      "sector": "technology",
+      "sectorLabel": "Information & Technology",
+      "icon": "computer",
+      "name": "Department of Information Technology",
+      "nepali": "सूचना प्रविधि विभाग",
+      "domain": "doit.gov.np",
+      "description": "Responsible for development and implementation of information technology and digital government initiatives.",
+      "descriptionNepali": "सूचना प्रविधिको विकास, प्रयोग तथा डिजिटल सरकारी सेवासम्बन्धी कार्यक्रम कार्यान्वयन गर्ने विभाग।",
+      "keywords": "information technology digital government e-government doit.gov.np",
+      "tags": ["information technology", "it", "digital government", "e-government", "suachana", "सूचना", "doit"],
+      "url": "https://doit.gov.np",
+      "id": "doit.gov.np"
+    },
+    {
+      "code": "departments",
+      "sector": "culture",
+      "sectorLabel": "Culture & Tourism",
       "icon": "account_balance",
-      "name": "Financial Comptroller General Office (FCGO)",
-      "nepali": "महाराजस्व निरीक्षण कार्यालय",
+      "name": "Department of Archaeology",
+      "nepali": "पुरातत्व विभाग",
+      "domain": "doa.gov.np",
+      "description": "Responsible for archaeological research, conservation, protection, and management of cultural heritage.",
+      "descriptionNepali": "पुरातात्त्विक अनुसन्धान, सांस्कृतिक सम्पदा संरक्षण, पुरातात्त्विक स्थल तथा स्मारकको व्यवस्थापनसम्बन्धी कार्य गर्ने विभाग।",
+      "keywords": "archaeology heritage culture monuments doa.gov.np",
+      "tags": ["archaeology", "puratatwa", "पुरातत्त्व", "heritage", "monuments", "smarak", "स्मारक"],
+      "url": "https://doa.gov.np",
+      "id": "doa.gov.np"
+    },
+    {
+      "code": "departments",
+      "sector": "technology",
+      "sectorLabel": "Information & Technology",
+      "icon": "print",
+      "name": "Department of Printing",
+      "nepali": "मुद्रण विभाग",
+      "domain": "dop.gov.np",
+      "description": "Provides official government printing and publication-related services.",
+      "descriptionNepali": "सरकारी कागजात, प्रकाशन तथा आधिकारिक मुद्रणसम्बन्धी सेवा प्रदान गर्ने विभाग।",
+      "keywords": "printing government publication documents dop.gov.np",
+      "tags": ["printing", "mudran", "मुद्रण", "publication", "documents", "dop"],
+      "url": "https://dop.gov.np",
+      "id": "dop.gov.np"
+    },
+    {
+      "code": "departments",
+      "sector": "culture",
+      "sectorLabel": "Culture & Tourism",
+      "icon": "mail",
+      "name": "Department of Postal Services",
+      "nepali": "हुलाक सेवा विभाग",
+      "domain": "nepalpost.gov.np",
+      "description": "Responsible for postal administration and delivery of postal services throughout Nepal.",
+      "descriptionNepali": "नेपालभर हुलाक प्रशासन तथा हुलाक सेवा सञ्चालन र व्यवस्थापन गर्ने विभाग।",
+      "keywords": "postal post mail nepalpost.gov.np",
+      "tags": ["postal", "post", "mail", "hulaka", "हुलाका", "nepalpost"],
+      "url": "https://nepalpost.gov.np",
+      "id": "nepalpost.gov.np"
+    },
+    {
+      "code": "departments",
+      "sector": "revenue",
+      "sectorLabel": "Revenue & Finance",
+      "icon": "account_balance",
+      "name": "Financial Comptroller General Office",
+      "nepali": "महालेखा नियन्त्रक कार्यालय",
       "domain": "fcgo.gov.np",
-      "description": "Main government agency responsible for treasury operations, government accounting, and public financial reporting. Hosts the TSA (Treasury Single Account) system.",
-      "keywords": "fcgo treasury accounting financial comptroller fcgo.gov.np",
+      "description": "Responsible for government accounting, treasury operations, financial reporting, and public financial management systems.",
+      "descriptionNepali": "सरकारी लेखा, कोष सञ्चालन, वित्तीय प्रतिवेदन तथा सार्वजनिक वित्त व्यवस्थापन प्रणालीसम्बन्धी कार्य गर्ने केन्द्रीय निकाय।",
+      "keywords": "fcgo treasury accounting public finance fcgo.gov.np",
+      "tags": ["treasury", "kosh", "कोष", "accounting", "lekhapatra", "लेखापत्र", "public finance", "fcgo"],
       "url": "https://fcgo.gov.np",
       "id": "fcgo.gov.np"
-    }
+    },
+    {
+  "code": "departments", "sector": "transport", "sectorLabel": "Transport & Infrastructure",
+  "icon": "train", "name": "Department of Railways", "nepali": "रेल विभाग",
+  "domain": "dorw.gov.np",
+  "description": "Responsible for planning, development, expansion, and management of railway infrastructure and services in Nepal.",
+  "descriptionNepali": "नेपालमा रेल्वे पूर्वाधार तथा सेवाको योजना, विकास, विस्तार र व्यवस्थापनसम्बन्धी कार्य गर्ने विभाग।",
+  "keywords": "railways rail train transport dorw dorw.gov.np",
+  "tags": ["railways", "rail", "train", "rel", "रेल", "transport", "dorw"],
+  "url": "https://dorw.gov.np", "id": "dorw.gov.np"
+},
+{
+  "code": "departments", "sector": "labour", "sectorLabel": "Labour & Social Welfare",
+  "icon": "health_and_safety", "name": "Department of Labour and Occupational Safety", "nepali": "श्रम तथा व्यवसायजन्य सुरक्षा विभाग",
+  "domain": "dolos.gov.np",
+  "description": "Responsible for labour administration, labour inspection, occupational safety and health, and implementation of labour laws.",
+  "descriptionNepali": "श्रम प्रशासन, श्रम निरीक्षण, व्यवसायजन्य सुरक्षा तथा स्वास्थ्य र श्रम कानून कार्यान्वयनसम्बन्धी कार्य गर्ने विभाग।",
+  "keywords": "labour occupational safety osh inspection workers dolos dolos.gov.np",
+  "tags": ["labour", "shram", "श्रम", "occupational safety", "osh", "inspection", "dolos"],
+  "url": "https://dolos.gov.np", "id": "dolos.gov.np"
+},
+{
+  "code": "departments", "sector": "land", "sectorLabel": "Land & Administration",
+  "icon": "handshake", "name": "Department of Cooperatives", "nepali": "सहकारी विभाग",
+  "domain": "deoc.gov.np",
+  "description": "Responsible for registration, regulation, promotion, and development of cooperatives in Nepal.",
+  "descriptionNepali": "नेपालमा सहकारीको दर्ता, नियमन, प्रवर्द्धन तथा विकाससम्बन्धी कार्य गर्ने विभाग।",
+  "keywords": "cooperatives co-op sahakari registration deoc deoc.gov.np",
+  "tags": ["cooperatives", "co-op", "sahakari", "सहकारी", "registration", "deoc"],
+  "url": "https://deoc.gov.np", "id": "deoc.gov.np"
+},
+{
+  "code": "departments", "sector": "health", "sectorLabel": "Health",
+  "icon": "spa", "name": "Department of Ayurveda and Alternative Medicine", "nepali": "आयुर्वेद तथा वैकल्पिक चिकित्सा विभाग",
+  "domain": "doaa.gov.np",
+  "description": "Responsible for development, regulation, and service delivery of Ayurveda and other traditional and alternative medicine systems.",
+  "descriptionNepali": "आयुर्वेद तथा अन्य परम्परागत र वैकल्पिक चिकित्सा प्रणालीको विकास, नियमन तथा सेवा प्रवाहसम्बन्धी कार्य गर्ने विभाग।",
+  "keywords": "ayurveda alternative traditional medicine health doaa doaa.gov.np",
+  "tags": ["ayurveda", "ayurved", "आयुर्वेद", "alternative medicine", "traditional medicine", "doaa"],
+  "url": "https://doaa.gov.np", "id": "doaa.gov.np"
+},
+{
+  "code": "departments", "sector": "technology", "sectorLabel": "Information & Technology",
+  "icon": "podcasts", "name": "Department of Information and Broadcasting", "nepali": "सूचना तथा प्रसारण विभाग",
+  "domain": "doib.gov.np",
+  "description": "Responsible for government information and broadcasting services, media monitoring, and dissemination of public information.",
+  "descriptionNepali": "सरकारी सूचना तथा प्रसारण सेवा, सञ्चार माध्यमको अनुगमन र सार्वजनिक सूचनाको प्रवाहसम्बन्धी कार्य गर्ने विभाग।",
+  "keywords": "information broadcasting media press government doib doib.gov.np",
+  "tags": ["information", "broadcasting", "prasaran", "प्रसारण", "media", "press", "doib"],
+  "url": "https://doib.gov.np", "id": "doib.gov.np"
+},
+{
+  "code": "departments", "sector": "security", "sectorLabel": "Home Affairs & Security",
+  "icon": "badge", "name": "Department of Passports", "nepali": "रहदानी विभाग",
+  "domain": "nepalpassport.gov.np",
+  "description": "Responsible for issuance of Nepali passports, passport applications, pre-enrollment booking, and verification services.",
+  "descriptionNepali": "नेपाली पासपोर्ट जारीकरण, आवेदन प्रक्रिया, पूर्व-पंजीकरण र प्रमाणीकरण सेवाहरूको कार्य गर्ने विभाग।",
+  "keywords": "passport rahadani passport issuance nepalpassport nepalpassport.gov.np",
+  "tags": ["passport", "rahadani", "रहदानी", "पासपोर्ट", "passport issuance", "nepalpassport"],
+  "url": "https://nepalpassport.gov.np", "id": "nepalpassport.gov.np"
+}
   ]
 }
