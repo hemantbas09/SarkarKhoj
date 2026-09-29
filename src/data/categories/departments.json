@@ -33,6 +33,7 @@
       "placeholder": "Search by department name, sector, or .gov.np domain...",
       "showingLabel": "Showing:",
       "countLabel": "Active",
+      "totalCount": 36,
       "filterLabel": "Filter Sector:",
       "chips": [
         {
